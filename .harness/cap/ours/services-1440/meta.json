@@ -5,7 +5,7 @@
   "target": "http://127.0.0.1:3100/services",
   "status": 200,
   "consoleErrors": [],
-  "capturedAt": "2026-09-01T21:51:13.797Z",
+  "capturedAt": "2026-09-01T23:45:08.300Z",
   "url": "http://127.0.0.1:3100/services",
   "title": "Garage Door Services by Symptom | Titan Garage Door Repairs",
   "viewport": {
@@ -19,7 +19,7 @@
     "bodyBg": "oklch(1 0 89.88)",
     "bodyFont": "Lato, \"Lato Fallback\", Lato, Arial, sans-serif",
     "bodyFontSize": 16,
-    "textChars": 102873
+    "textChars": 51211
   },
   "sections": [
     {

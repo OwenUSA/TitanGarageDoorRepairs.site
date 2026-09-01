@@ -5,7 +5,7 @@
   "target": "http://127.0.0.1:3100/",
   "status": 200,
   "consoleErrors": [],
-  "capturedAt": "2026-09-01T21:49:40.450Z",
+  "capturedAt": "2026-09-01T23:44:36.650Z",
   "url": "http://127.0.0.1:3100/",
   "title": "Garage Door Repair, Oklahoma City | Titan Garage Door Repairs",
   "viewport": {
@@ -19,7 +19,7 @@
     "bodyBg": "oklch(1 0 89.88)",
     "bodyFont": "Lato, \"Lato Fallback\", Lato, Arial, sans-serif",
     "bodyFontSize": 16,
-    "textChars": 90404
+    "textChars": 40410
   },
   "sections": [
     {

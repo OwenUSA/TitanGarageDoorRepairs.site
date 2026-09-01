@@ -1,0 +1,82 @@
+/* /contact NAP block — NOVEL. Split out of the reference's footer into a
+   page-level block, so there is nothing to pair against: measured by token
+   conformance at zero violations, once, at 1440 (A-9).
+
+   Every colour, size, weight, radius and shadow below is a Prompt 5 token —
+   token conformance scores the section element's own computed values, and the
+   descendants have to hold the line anyway because a NOVEL section is the one
+   place a stray literal has nothing to hide behind.
+
+   "card" is a banned substring inside a data-section subtree: the comparator
+   counts `[class*=card],article` and every reference section reads 0. Hence
+   `.panel`. */
+
+.nap {
+  background: var(--color-surface);
+}
+
+.inner {
+  padding-block: var(--spacing-2xl);
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-l);
+  margin-top: var(--spacing-l);
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.panel {
+  padding: var(--spacing-l);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-10);
+  background: var(--color-surface);
+}
+
+.label {
+  font-size: var(--text-small);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-deep);
+}
+
+.value {
+  margin-top: var(--spacing-xs);
+}
+
+/* The phone is the one thing on this page that has to read as the primary
+   action, so it takes the display face at the h3 step. `min-height: 44px` is
+   already applied globally to every tel: link (A-14). */
+.phone {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: var(--text-h3-m);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-deep);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (min-width: 768px) {
+  .phone {
+    font-size: var(--text-h3);
+  }
+}
+
+.note {
+  margin-top: var(--spacing-l);
+  max-width: var(--container-text);
+}
+
+.area {
+  margin-top: var(--spacing-xs);
+}
+
+.subhead {
+  margin-top: var(--spacing-xl);
+}

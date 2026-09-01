@@ -231,16 +231,54 @@
       "bp": 390,
       "section": "s14-090e14dc-frequently-asked-questions",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 0.41,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "progress",
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 10.34,
+      "threshold": 5,
+      "status": "FAIL",
       "detail": {
-        "refHeight": 982.59,
-        "refHeading": "Frequently Asked Questions"
-      }
+        "worst": [
+          {
+            "name": "buttons",
+            "ref": 0,
+            "ours": 1,
+            "dev": 100
+          },
+          {
+            "name": "textAlign",
+            "ref": "start",
+            "ours": "left",
+            "dev": 100
+          },
+          {
+            "name": "box.h",
+            "ref": 982.59,
+            "ours": 612,
+            "dev": 37.72
+          },
+          {
+            "name": "box.w",
+            "ref": 390,
+            "ours": 390,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/privacy",
@@ -279,16 +317,54 @@
       "bp": 390,
       "section": "s17-6c5257e3",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 0.69,
       "joinedVia": "progress",
-      "pairedVia": "unpaired",
+      "pairedVia": "progress",
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 8.09,
+      "threshold": 5,
+      "status": "FAIL",
       "detail": {
-        "refHeight": 80,
-        "refHeading": null
-      }
+        "worst": [
+          {
+            "name": "buttons",
+            "ref": 0,
+            "ours": 1,
+            "dev": 100
+          },
+          {
+            "name": "box.h",
+            "ref": 80,
+            "ours": 578,
+            "dev": 86.16
+          },
+          {
+            "name": "box.w",
+            "ref": 390,
+            "ours": 390,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=4 (75%), innerCount ref=2 ours=4 (50%)"
     },
     {
       "route": "/privacy",
@@ -344,13 +420,13 @@
       "section": "(page)",
       "class": "PAGE",
       "metric": "height delta %",
-      "value": 88.72,
+      "value": 60.11,
       "threshold": 5,
       "detail": {
         "refH": 9503,
-        "ourH": 1072,
+        "ourH": 3791,
         "refSections": 21,
-        "ourSections": 5,
+        "ourSections": 7,
         "consoleErrors": 0
       },
       "status": "FAIL"

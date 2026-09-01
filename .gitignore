@@ -7,3 +7,4 @@ next-env.d.ts
 # Harness artifacts: JSON traces are committed (they are the record), images are not.
 .harness/**/*.png
 .harness/devserver.log
+.harness/prodserver.log

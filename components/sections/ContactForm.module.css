@@ -1,0 +1,93 @@
+/* /contact callback form — ADAPTED, ref `1d3f8083-send-us-a-message`.
+   Target box.h: 751 @390 / 741 @768 / 411 @1440 (docs/ref-geometry.md).
+   The 1440 target is short for five fields, so the field grid goes two-up at
+   the desktop tier and single-column below, which is also where the reference's
+   own form restacks.
+   Section element keeps padding 0 / display block (wave-conventions §1). */
+
+.form {
+  background: var(--color-surface);
+}
+
+.inner {
+  padding-block: var(--spacing-2xl);
+}
+@media (min-width: 1025px) {
+  .inner {
+    padding-block: var(--spacing-xl);
+  }
+}
+
+.head {
+  max-width: var(--container-text);
+}
+.sub {
+  margin-top: var(--spacing-xs);
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-m);
+  margin-top: var(--spacing-l);
+}
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--spacing-l);
+  }
+}
+
+.wide {
+  grid-column: 1 / -1;
+}
+
+.label {
+  display: block;
+  font-size: var(--text-small);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-3xs);
+}
+
+.msg {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.err {
+  display: block;
+  margin-top: var(--spacing-3xs);
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-m);
+  margin-top: var(--spacing-l);
+}
+
+.note {
+  margin-top: var(--spacing-s);
+}
+
+/* Success state. Replaces the fields in place so focus stays inside the band
+   and the live region announces without a route change. */
+.done {
+  margin-top: var(--spacing-l);
+  padding: var(--spacing-l);
+  border: 1px solid var(--color-success);
+  border-radius: var(--radius-10);
+}
+.doneNote {
+  margin-top: var(--spacing-xs);
+}
+.call {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: var(--spacing-s);
+  color: var(--color-accent-deep);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

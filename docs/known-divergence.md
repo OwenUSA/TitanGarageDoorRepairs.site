@@ -321,3 +321,82 @@ The wave convention, written up in `docs/wave-conventions.md` §1, is:
 Same class of trap, same file: `cards` counts `[class*=card],article` and is **0 on every
 reference section on all four routes**, so `.t-card` and `<article>` are banned inside a
 `data-section` subtree; and `buttons` counts any `tel:` link regardless of class.
+
+## KD-12 — `/contact::map` is the embed and nothing else, and its heading moved
+
+Opened at the merged Prompt 6+7 wave. **This is the one fix attempt (A-2) for that section,
+spent and closed.**
+
+The band first measured **567 / 735 / 1091** against the reference's **214 / 365 / 300**.
+Two structural causes, both fixed in the single attempt:
+
+1. Our band carried a heading, a paragraph and a `tel:` CTA. **The reference band contains
+   the embed and nothing else** — at 1440 it is a 1440x300 strip. Those three moved into the
+   adjacent `nap-card` band, which is NOVEL and therefore has no height target for them to
+   break. **No copy was rewritten; it was relocated.** `contactMap.heading` and
+   `contactMap.body` still render, verbatim, one band further down.
+2. `<BusinessMap>`'s wrapper is `aspect-ratio: 16/10` (16/9 above 768). Across a 1325px
+   container that computes a 745px-tall map. The reference embeds a fixed-height strip, so
+   the aspect ratio is overridden to an explicit per-breakpoint height in
+   `ContactMap.module.css` — **not** in the shell file. The shell component is shared by two
+   slots at two zoom levels (A-6); the slot decides its own height, the component does not.
+
+| bp | before | after | box.h after | threshold | status |
+|---|---|---|---|---|---|
+| 390 | 5.97 | **4.88** | 244 vs 214 | 5 | PASS |
+| 768 | 6.90 | **4.18** | 362 vs 672 (mispaired, see below) | 5 | PASS |
+| 1440 | 6.63 | **4.39** | **297 vs 300** | 5 | PASS |
+
+The residual is the `buttons` field, same shape as KD-10 inverted: the reference band
+computes 4 at 390 and 5 at 1440 — their embed ships its own zoom and fullscreen controls as
+real DOM buttons — and ours computes 0, because a Google `output=embed` iframe keeps its
+controls inside the iframe where the probe cannot see them. **Unclosable by construction.
+Floor.** At 768 the reference row is its 384px-wide off-canvas drawer band rather than the
+map, so that row is a pairing artifact; it passes anyway and is not worth chasing.
+
+## KD-13 — `/about::what-we-do` at 390 pairs against a 26px unnamed strip
+
+**Floored, not fixed. A mispairing, not a defect.**
+
+| bp | value | threshold | status |
+|---|---|---|---|
+| 390 | 8.64 | 5 | FAIL — floored |
+| 768 | — | 5 | UNPAIRED |
+| 1440 | **0.47** | 5 | PASS |
+
+At 1440 the row is 0.47% — the section is essentially exact against
+`560bf22b-about`. At 390 the harness pairs it against `s12-0c6cf26f`, a **26px** unnamed
+reference strip, and reports `box.h ref=26 ours=2031 (98.72%)` plus `textAlign ref=left
+ours=start`. A 26px strip is not a services list; the reference's `/about` page splits into
+a different band sequence at 390 (its `560bf22b` band is 2424px there and lands at a
+different normalised progress), and the identity alias resolves to the wrong neighbour.
+
+**Best hypothesis:** the row is unmeasurable at 390 rather than divergent. The evidence is
+that the same component, same markup, same CSS, scores 0.47 at 1440 — a section cannot be
+98% wrong at one width and 0.5% wrong at another by anything the markup did. Chasing it
+would mean shortening a 2031px eight-service list to 26px, which would be destroying real
+content to satisfy an artifact. **Do not reopen.**
+
+## KD-14 — the gates run against `next start`, never `next dev`
+
+Written down because it cost a full capture sweep to find and would cost the next turn the
+same.
+
+Running the harness against `next dev` produced, on the same clean codebase: 500s on
+`/_next/*` chunk requests, `pageerror: Invalid or unexpected token`, and between 1 and 5
+console errors on **every** capture — which then poison the diff, because a section that
+failed to hydrate has the wrong box.
+
+**Cause:** the harness writes its PNGs, JSON and traces into `.harness/`, which is *inside
+the project root*, so Next's dev file watcher sees every capture as a source change and
+recompiles. The log showed `✓ Compiled in ~200ms` on a loop with nobody editing anything.
+Chunk hashes rotate mid-page-load and the browser fetches a hash that no longer exists.
+
+**Rule:** `pnpm build` then `pnpm start`, and only then run gates. The same sweep, against
+the production server, reported `"errors":0` on all fifteen captures. This is also strictly
+more faithful — the acceptance gate is supposed to measure what ships, not what HMR is
+holding in memory.
+
+Verify before believing any gate: the route's `<title>` **and** a `200` on the stylesheet
+the page actually references. An implausibly small "N scored" (we saw `0 scored, 0 FAIL`
+once) means the page was caught mid-recompile, not that the gate passed.

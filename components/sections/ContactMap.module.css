@@ -1,16 +1,42 @@
 /* Contact map — ADAPTED, ref `63d93a8b83aac101be57176d`.
    Target box.h: 214 @390 / 365 @768 / 300 @1440 (docs/ref-geometry.md).
-   Section keeps padding 0 / display block; rhythm lives on .inner. */
+   Section keeps padding 0 / display block; rhythm lives on .inner.
+
+   ITERATION 1 of 1 (A-2). The band first measured 567 / 735 / 1091 against the
+   reference's 214 / 365 / 300. Two causes, both structural:
+
+   1. The band carried a heading, a paragraph and a tel: CTA that the reference
+      band does not have — theirs contains the embed and nothing else. Those
+      three moved to the NOVEL <ContactNap> band, which has no height target to
+      break. Copy was not rewritten, only relocated.
+   2. <BusinessMap>'s wrapper is `aspect-ratio: 16/10` (16/9 above 768), which
+      across a 1325px container computes a 745px-tall map. The reference embeds
+      a fixed-height strip. The aspect ratio is overridden to an explicit height
+      here, per breakpoint, rather than in the frozen shell file: the shell is
+      the shared component, and the slot decides its own height.
+
+   Heights below are the reference band height minus the directions/address row
+   (~56px, ~80px wrapped at 390) and this band's own padding. */
 
 .map {
   background: var(--color-surface);
 }
 
-.body {
-  margin-top: var(--spacing-s);
-  max-width: var(--container-text);
+.inner {
+  padding-block: var(--spacing-xs);
 }
 
-.frame {
-  margin-top: var(--spacing-m);
+.frame :global(.t-map) {
+  aspect-ratio: auto;
+  height: 140px;
+}
+@media (min-width: 768px) {
+  .frame :global(.t-map) {
+    height: 290px;
+  }
+}
+@media (min-width: 1025px) {
+  .frame :global(.t-map) {
+    height: 225px;
+  }
 }

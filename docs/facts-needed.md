@@ -43,3 +43,33 @@ faces the public, and they are listed again in `docs/PRE-LAUNCH.md`:
 
 No other fact was needed to build the shell. Every value it renders — name, phone, address,
 coordinates, hours, service area — comes from `lib/business.ts` and is in CONSTANTS.
+
+## Added at the merged Prompt 6+7 build wave
+
+Every one of these renders as a literal `TODO(fact)` string in the shipped markup. None was
+guessed, and none is placeheld with a plausible-looking value — a fabricated credential is
+a legal problem, not a content gap (D-13, D-14, D-17).
+
+| # | TODO(fact) | route | section | how it renders now |
+|---|---|---|---|---|
+| 1 | `TODO(fact)` (unspecified fourth claim chip) | `/` | `trust-row` | claim chip at the reference's chip dimensions |
+| 2 | `TODO(fact): certification` | `/` | `trust-row` | claim chip |
+| 3 | `TODO(fact): insured` | `/` | `trust-row` | claim chip |
+| 4 | `TODO(fact): year the shop opened` | `/about` | `story` | inline, at the end of the first paragraph |
+| 5 | `TODO(fact): number of technicians on the crew` | `/about` | `story` | inline, second paragraph |
+| 6 | `TODO(fact): licensing, bonding and insurance details` | `/about` | `story` | inline, second paragraph |
+| 7 | `TODO(fact): manufacturer certifications held` | `/about` | `story` | inline, second paragraph |
+| 8 | `TODO(fact): license number` | `/about` | `credentials` | badge chip at the `about-credentials-1` slot dimensions |
+| 9 | `TODO(fact): insurance carrier` | `/about` | `credentials` | badge chip, `about-credentials-2` |
+| 10 | `TODO(fact): certifications` | `/about` | `credentials` | badge chip, `about-credentials-3` |
+
+Still open from earlier turns: `TODO(fact): logo asset` (KD-04).
+
+**Deliberately still absent, and not to be invented to close a metric:** years in business,
+jobs completed, review counts, star ratings, named customers or quotes (the home
+`testimonials` band ships three literal `[TESTIMONIAL PLACEHOLDER]` blocks per D-13, and
+carries no `Review` or `AggregateRating` JSON-LD at all), prices or price bands (D-12),
+response times, warranty terms, service radius in miles, and any "24/7" or after-hours
+claim (D-06). The `/contact` callback-window select offers plain time bands — Morning,
+Midday, Afternoon, Early evening — precisely because "within X hours" would be a response
+-time claim we cannot make.

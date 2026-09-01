@@ -39,7 +39,7 @@
       "bp": 1440,
       "section": "s02-ac810934",
       "class": "ADAPTED",
-      "progressDelta": 7.33,
+      "progressDelta": 0.55,
       "joinedVia": "direct",
       "pairedVia": "id",
       "metric": "structural deviation %",
@@ -109,32 +109,108 @@
       "bp": 1440,
       "section": "s04-687131be-contact",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 0.93,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 0.4,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 90,
-        "refHeading": "Contact"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 90,
+            "ours": 99,
+            "dev": 9.09
+          },
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/contact",
       "bp": 1440,
       "section": "s05-63d93a8b83aac101be57176d",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 1.65,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 4.39,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 300,
-        "refHeading": null
-      }
+        "worst": [
+          {
+            "name": "buttons",
+            "ref": 5,
+            "ours": 0,
+            "dev": 100
+          },
+          {
+            "name": "box.h",
+            "ref": 300,
+            "ours": 297,
+            "dev": 1
+          },
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/contact",
@@ -173,16 +249,54 @@
       "bp": 1440,
       "section": "s08-1d3f8083-send-us-a-message",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 0.83,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 2.87,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 411.19,
-        "refHeading": "Send Us a Message"
-      }
+        "worst": [
+          {
+            "name": "buttons",
+            "ref": 3,
+            "ours": 2,
+            "dev": 33.33
+          },
+          {
+            "name": "box.h",
+            "ref": 411.19,
+            "ours": 610,
+            "dev": 32.59
+          },
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/contact",
@@ -221,59 +335,43 @@
       "bp": 1440,
       "section": "s11-9328cbef-learn-more-about",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
-      "joinedVia": "direct",
-      "pairedVia": "unpaired",
-      "detail": {
-        "refHeight": 413.19,
-        "refHeading": "Learn more about"
-      }
-    },
-    {
-      "route": "/contact",
-      "bp": 1440,
-      "section": "s12-e4ad708c",
-      "class": "ADAPTED",
-      "progressDelta": 22.1,
+      "progressDelta": 5.53,
       "joinedVia": "direct",
       "pairedVia": "id",
-      "metric": "structural deviation %",
-      "value": 13.12,
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 4.35,
       "threshold": 5,
-      "status": "FAIL",
+      "status": "PASS",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 32,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 32,
-            "dev": 100
-          },
-          {
-            "name": "textAlign",
-            "ref": "left",
-            "ours": "start",
+            "ours": 1,
             "dev": 100
           },
           {
             "name": "box.h",
-            "ref": 178,
-            "ours": 175,
-            "dev": 1.69
+            "ref": 413.19,
+            "ours": 413,
+            "dev": 0.05
           },
           {
             "name": "box.w",
             "ref": 1440,
             "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
             "dev": 0
           },
           {
@@ -284,32 +382,42 @@
           }
         ]
       },
-      "advisory": "advisory: innerCols ref=1 ours=3 (66.67%), innerCount ref=2 ours=4 (50%)"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
+    },
+    {
+      "route": "/contact",
+      "bp": 1440,
+      "section": "s12-e4ad708c",
+      "class": "ADAPTED",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 178,
+        "refHeading": null
+      }
     },
     {
       "route": "/contact",
       "bp": 1440,
       "section": "s13-c52c188e",
       "class": "ADAPTED",
-      "progressDelta": 12.12,
+      "progressDelta": 0.07,
       "joinedVia": "direct",
-      "pairedVia": "id",
+      "pairedVia": "progress",
       "metric": "structural deviation %",
-      "value": 17.47,
+      "value": 11.23,
       "threshold": 5,
       "status": "FAIL",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 24,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 24,
+            "ours": 1,
             "dev": 100
           },
           {
@@ -319,31 +427,37 @@
             "dev": 100
           },
           {
-            "name": "borderStyle",
-            "ref": "none",
-            "ours": "solid",
-            "dev": 100
-          },
-          {
             "name": "box.h",
             "ref": 126.78,
-            "ours": 129,
-            "dev": 1.72
+            "ours": 304,
+            "dev": 58.3
           },
           {
             "name": "box.w",
             "ref": 1440,
             "ours": 1440,
             "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
           }
         ]
       },
-      "advisory": "advisory: none diverge"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=4 (75%), innerCount ref=2 ours=4 (50%)"
     },
     {
       "route": "/contact",
       "bp": 1440,
-      "section": "stub",
+      "section": "nap-card",
       "class": "NOVEL",
       "metric": "token violations",
       "value": 0,
@@ -361,13 +475,13 @@
       "section": "(page)",
       "class": "PAGE",
       "metric": "height delta %",
-      "value": 59.2,
+      "value": 10.52,
       "threshold": 5,
       "detail": {
         "refH": 2206,
-        "ourH": 900,
+        "ourH": 2438,
         "refSections": 14,
-        "ourSections": 4,
+        "ourSections": 7,
         "consoleErrors": 0
       },
       "status": "FAIL"

@@ -39,7 +39,7 @@
       "bp": 1440,
       "section": "s02-ac810934",
       "class": "ADAPTED",
-      "progressDelta": 10.27,
+      "progressDelta": 0.47,
       "joinedVia": "direct",
       "pairedVia": "id",
       "metric": "structural deviation %",
@@ -109,16 +109,54 @@
       "bp": 1440,
       "section": "s04-6f224353-roof-replacement",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 2.21,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 0,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 676,
-        "refHeading": "Roof Replacement"
-      }
+        "worst": [
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "box.h",
+            "ref": 676,
+            "ours": 676,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerRows ref=1 ours=2 (50%), innerCount ref=2 ours=4 (50%), position ref=static ours=relative (100%)"
     },
     {
       "route": "/services",
@@ -157,16 +195,54 @@
       "bp": 1440,
       "section": "s07-8b7b08bc-transform-your-property-with-a-new",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 3.02,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "progress",
+      "metric": "structural deviation %",
+      "value": 1.02,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 3036.8,
-        "refHeading": "Transform Your Property with a New Roof Today!"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 3036.8,
+            "ours": 3966,
+            "dev": 23.43
+          },
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/services",
@@ -205,59 +281,43 @@
       "bp": 1440,
       "section": "s10-9328cbef-learn-more-about",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
-      "joinedVia": "direct",
-      "pairedVia": "unpaired",
-      "detail": {
-        "refHeight": 413.19,
-        "refHeading": "Learn more about"
-      }
-    },
-    {
-      "route": "/services",
-      "bp": 1440,
-      "section": "s11-e4ad708c",
-      "class": "ADAPTED",
-      "progressDelta": 29.53,
+      "progressDelta": 3.46,
       "joinedVia": "direct",
       "pairedVia": "id",
-      "metric": "structural deviation %",
-      "value": 13.12,
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 4.35,
       "threshold": 5,
-      "status": "FAIL",
+      "status": "PASS",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 32,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 32,
-            "dev": 100
-          },
-          {
-            "name": "textAlign",
-            "ref": "left",
-            "ours": "start",
+            "ours": 1,
             "dev": 100
           },
           {
             "name": "box.h",
-            "ref": 178,
-            "ours": 175,
-            "dev": 1.69
+            "ref": 413.19,
+            "ours": 413,
+            "dev": 0.05
           },
           {
             "name": "box.w",
             "ref": 1440,
             "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
             "dev": 0
           },
           {
@@ -268,32 +328,42 @@
           }
         ]
       },
-      "advisory": "advisory: innerCols ref=1 ours=3 (66.67%), innerCount ref=2 ours=4 (50%)"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
+    },
+    {
+      "route": "/services",
+      "bp": 1440,
+      "section": "s11-e4ad708c",
+      "class": "ADAPTED",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 178,
+        "refHeading": null
+      }
     },
     {
       "route": "/services",
       "bp": 1440,
       "section": "s12-c52c188e",
       "class": "ADAPTED",
-      "progressDelta": 15.61,
+      "progressDelta": 0.3,
       "joinedVia": "direct",
-      "pairedVia": "id",
+      "pairedVia": "progress",
       "metric": "structural deviation %",
-      "value": 17.47,
+      "value": 11.23,
       "threshold": 5,
       "status": "FAIL",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 24,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 24,
+            "ours": 1,
             "dev": 100
           },
           {
@@ -303,32 +373,38 @@
             "dev": 100
           },
           {
-            "name": "borderStyle",
-            "ref": "none",
-            "ours": "solid",
-            "dev": 100
-          },
-          {
             "name": "box.h",
             "ref": 126.78,
-            "ours": 129,
-            "dev": 1.72
+            "ours": 304,
+            "dev": 58.3
           },
           {
             "name": "box.w",
             "ref": 1440,
             "ours": 1440,
             "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
           }
         ]
       },
-      "advisory": "advisory: none diverge"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=4 (75%), innerCount ref=2 ours=4 (50%)"
     },
     {
       "route": "/services",
       "bp": 1440,
-      "section": "stub",
-      "class": "NOVEL",
+      "section": "faq",
+      "class": "ADAPTED",
       "metric": "token violations",
       "value": 0,
       "threshold": 0,
@@ -345,13 +421,13 @@
       "section": "(page)",
       "class": "PAGE",
       "metric": "height delta %",
-      "value": 82.42,
+      "value": 25.38,
       "threshold": 5,
       "detail": {
         "refH": 5118,
-        "ourH": 900,
+        "ourH": 6417,
         "refSections": 13,
-        "ourSections": 4,
+        "ourSections": 6,
         "consoleErrors": 0
       },
       "status": "FAIL"

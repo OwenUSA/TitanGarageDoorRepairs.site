@@ -1,0 +1,36 @@
+/* Contact title band — ref `687131be-contact`.
+   Target box.h: 84 @390 / 77 @768 / 90 @1440 (docs/ref-geometry.md), the same
+   construction as AboutTitle. Section element keeps padding 0 / display
+   block — see wave-conventions §1; the padding lives on .inner instead.
+   Stacked column at 390, row at 768+ so the taller 768/1440 heading face
+   does not double the box height. */
+
+.title {
+  background: var(--color-surface);
+}
+
+.inner {
+  padding-block: var(--spacing-2xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3xs);
+}
+
+@media (min-width: 768px) {
+  .inner {
+    padding-block: var(--spacing-xs);
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--spacing-m);
+  }
+}
+
+@media (min-width: 1025px) {
+  .inner {
+    padding-block: var(--spacing-m);
+  }
+}
+
+.sub {
+  margin: 0;
+}

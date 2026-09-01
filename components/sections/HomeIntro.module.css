@@ -1,0 +1,46 @@
+/* Home intro band — ADAPTED against ref `dfeef600-...`.
+   Target box.h: 763 @390 / 436 @768 / 316 @1440 (docs/ref-geometry.md). The
+   1440 height is SMALLER than 768's because `t-container--text` caps the
+   measure at 960px regardless of viewport, so the paragraphs wrap to fewer
+   lines once the container stops growing past 768. Padding and min-height
+   live on .inner, never on the section element (wave-conventions §1). */
+
+.inner {
+  min-height: 763px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .inner {
+    min-height: 436px;
+  }
+}
+@media (min-width: 1025px) {
+  .inner {
+    min-height: 316px;
+  }
+}
+
+.col {
+  width: 100%;
+}
+
+.body {
+  margin-top: var(--spacing-m);
+  max-width: none;
+}
+.body:first-of-type {
+  margin-top: var(--spacing-l);
+}
+
+.link {
+  margin-top: var(--spacing-l);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  width: fit-content;
+  color: var(--color-accent-deep);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

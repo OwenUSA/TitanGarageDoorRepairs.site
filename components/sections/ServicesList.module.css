@@ -1,0 +1,106 @@
+/* Services list — ADAPTED against ref `8b7b08bc-transform-your-property-with-a-new`.
+   Target box.h: 6585 @390 / 4939 @768 / 3037 @1440 (docs/ref-geometry.md). The
+   section element keeps padding 0, display block, inherited type —
+   docs/wave-conventions.md §1. Rhythm lives on .head/.items below. */
+
+.list {
+  background: var(--color-surface);
+}
+
+.head {
+  max-width: var(--container-text);
+}
+.intro {
+  margin-top: var(--spacing-m);
+  max-width: 62em;
+}
+
+.items {
+  margin-top: var(--spacing-3xl);
+  display: grid;
+  gap: var(--spacing-3xl);
+}
+
+.item {
+  display: grid;
+  gap: var(--spacing-l);
+  scroll-margin-top: calc(var(--header-h) + var(--spacing-m));
+}
+@media (min-width: 1025px) {
+  .item {
+    grid-template-columns: 40% 1fr;
+    align-items: start;
+    gap: var(--spacing-2xl);
+  }
+  .itemReverse {
+    grid-template-columns: 1fr 40%;
+  }
+  .itemReverse .media {
+    order: 2;
+  }
+}
+
+.media {
+  width: 100%;
+  height: 218px;
+  object-fit: cover;
+  border-radius: var(--radius-16);
+}
+@media (min-width: 768px) {
+  .media {
+    height: 224px;
+  }
+}
+@media (min-width: 1025px) {
+  .media {
+    height: 400px;
+  }
+}
+
+.label {
+  color: var(--color-accent-deep);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.text {
+  margin-top: var(--spacing-m);
+}
+
+.bullets {
+  margin-top: var(--spacing-l);
+  display: grid;
+  gap: var(--spacing-s);
+}
+.bullets li {
+  position: relative;
+  padding-left: var(--spacing-l);
+  color: var(--fg-muted);
+}
+.bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-round);
+  background: var(--color-accent);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-l);
+  margin-top: var(--spacing-l);
+}
+
+.moreLink {
+  color: var(--color-primary-deep);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}

@@ -1,14 +1,30 @@
 /**
- * ROUTE STUB — Prompt 5 landed the shell; this page renders the shell and a
- * single title band and nothing else. Prompt 6 replaces the body with the
- * sections listed for / in docs/sections.md.
+ * `/` — home.
  *
- * The band carries data-section="stub" so the harness reports it as an
- * unclaimed extra rather than silently pairing it against a reference band.
+ * Section order is the Prompt 3 structural gate, not the reference's:
+ *   - `trust-row` (their "Why Choose Us") rises ABOVE the intro band;
+ *   - the `intro` band drops BELOW the three service blocks;
+ *   - the FAQ leaves the home page entirely and lands on /services.
+ * Dropped per Prompt 3 item 2: discounts band, blog posts, partner logo strip.
+ * Added: the map band (D-08) and the mobile sticky call bar (shell).
+ *
+ * Composition is owned by the lead so two section builders never edit the same
+ * file. Each band lives in its own component under components/sections/.
  */
 
 import type { Metadata } from 'next';
 import { meta } from '@/content/copy';
+
+import HomeHero from '@/components/sections/HomeHero';
+import HomeTrustRow from '@/components/sections/HomeTrustRow';
+import HomeServiceA from '@/components/sections/HomeServiceA';
+import HomeServiceB from '@/components/sections/HomeServiceB';
+import HomeServiceC from '@/components/sections/HomeServiceC';
+import HomeIntro from '@/components/sections/HomeIntro';
+import HomeProjects from '@/components/sections/HomeProjects';
+import HomeTestimonials from '@/components/sections/HomeTestimonials';
+import HomeMap from '@/components/sections/HomeMap';
+import CtaBand from '@/components/sections/CtaBand';
 
 export const metadata: Metadata = {
   title: meta['/'].title,
@@ -18,13 +34,17 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <section className="t-section" data-section="stub" data-route="home">
-      <div className="t-container t-container--text">
-        <h1 className="t-h1 t-tight">Titan Garage Door Repairs</h1>
-        <p className="t-lede t-muted" style={{ marginTop: 'var(--spacing-m)' }}>
-          Prompt 6 builds the hero, trust row, service blocks, intro, projects, testimonials, map and CTA band here.
-        </p>
-      </div>
-    </section>
+    <>
+      <HomeHero />
+      <HomeTrustRow />
+      <HomeServiceA />
+      <HomeServiceB />
+      <HomeServiceC />
+      <HomeIntro />
+      <HomeProjects />
+      <HomeTestimonials />
+      <HomeMap />
+      <CtaBand />
+    </>
   );
 }

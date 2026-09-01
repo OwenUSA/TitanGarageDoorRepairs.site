@@ -1,0 +1,13 @@
+/* Home service-area map — NOVEL (D-08 makes it mandatory; the reference home
+   page has no counterpart). Measured by token conformance only, once, at 1440
+   (A-9), so every value below resolves to a Prompt 5 token. */
+
+.head {
+  max-width: var(--container-text);
+}
+.body {
+  margin-top: var(--spacing-s);
+}
+.map {
+  margin-top: var(--spacing-l);
+}

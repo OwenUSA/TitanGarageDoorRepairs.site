@@ -262,3 +262,62 @@ Two mappings are genuinely absent rather than wrong, and are floors for the wave
   `090e14dc-frequently-asked-questions` or floor it; do not chase it.
 - `/privacy` has no reference page at all, so its page-height row is meaningless. Every
   `/privacy` section is NOVEL and measured once by token conformance (A-9).
+
+## KD-10 — The shared CTA band carries one `tel:` link the reference does not
+
+Opened at the merged Prompt 6+7 wave, by the lead, on the section the lead owns.
+
+The comparator's `buttons` field counts
+`a[href^="tel:"], button, [class*=btn], [class*=button]`. The reference's
+`9328cbef-learn-more-about` band computes **0** — their two calls to action are plain
+anchors to other pages. Ours is a call band: D-04 makes every rendered phone number a
+dialable `tel:` link, and this band exists to be called from. So ours computes **1**.
+
+One field of twenty-three at 100% is **4.35%** of the deviation, and that is the *entire*
+residual: every other blocking field on this band — box width and height, all four
+paddings, font size, weight, line-height, letter-spacing, family, display, text-align,
+radius, shadow geometry, grid columns, gap, flex direction, text-transform, border style,
+overflow, cards — reads 0 at all three breakpoints, on all four routes that render it.
+
+| bp | value | threshold | status |
+|---|---|---|---|
+| 390 | 4.35 | 5 | PASS |
+| 768 | 4.35 | 5 | PASS |
+| 1440 | 4.35 | 5 | PASS |
+
+**Floor, not a defect.** Removing the `tel:` link would close it and would break D-04.
+Do not close it, and do not spend an iteration on the band while 4.35 is the whole number:
+any regression on this band shows up as a value above 4.35 and nothing else.
+
+**The one fix attempt (A-2), spent and recorded.** The band first measured 460px at 768
+against the reference's 359 — the lede-sized body wrapped to ten lines in a 378px column
+while the media slot was still held at its 1440 height of 298. The body dropped to the
+16/24 body face, the media took its own 768 slot height (231), the grid went to `1fr 40%`
+and the inner padding tightened one step. 5.30 -> 4.35, i.e. `box.h` went to zero.
+**That was attempt 1 of 1. Floored at the `buttons` field.**
+
+## KD-11 — Section padding lives on an inner element, and this is measured, not stylistic
+
+Recorded so no later turn "tidies" it back.
+
+Every reference section computes `padding: 0` on the element the comparator scores, and
+puts its rhythm on an inner builder div. `.t-section` in the frozen shell applies
+`padding-block: var(--section-y)` — 40 / 64 / 80px. Putting `t-section` on the element that
+carries `data-section` therefore moves **two** blocking fields (`padTop`, `padBottom`) to
+100% each: **8.7% of deviation before anything real is measured**, on every section of
+every route. The Prompt 5 scaffold band shipped that way and measured 271px against a
+reference band of 316.
+
+The wave convention, written up in `docs/wave-conventions.md` §1, is:
+
+```tsx
+<section data-section="id">      {/* padding 0, display block, inherited type */}
+  <div className="t-section">    {/* the rhythm */}
+    <div className="t-container"> ... </div>
+  </div>
+</section>
+```
+
+Same class of trap, same file: `cards` counts `[class*=card],article` and is **0 on every
+reference section on all four routes**, so `.t-card` and `<article>` are banned inside a
+`data-section` subtree; and `buttons` counts any `tel:` link regardless of class.

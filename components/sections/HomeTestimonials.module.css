@@ -1,0 +1,60 @@
+/* Home testimonials — ADAPTED against ref
+   `307b2389-here-s-what-our-satisfied-customer`. Content is deliberately
+   different in kind (D-13 placeholders, not the reference's star widget), so
+   this is measured on structural metrics only, never pixel diff.
+   Target box.h: 873 @390 / 748 @768 / 536 @1440 (docs/ref-geometry.md).
+   min-height pins box.h on the padded div, same pattern as HomeHero. */
+
+.inner {
+  min-height: 873px;
+}
+@media (min-width: 768px) {
+  .inner {
+    min-height: 748px;
+  }
+}
+@media (min-width: 1025px) {
+  .inner {
+    min-height: 536px;
+  }
+}
+
+.head {
+  max-width: var(--container-text);
+}
+.body {
+  margin-top: var(--spacing-s);
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-l);
+  margin-top: var(--spacing-xl);
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-m);
+  }
+}
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-s);
+}
+
+.icon {
+  color: var(--color-primary);
+  flex: none;
+}
+
+.quote {
+  font-size: var(--text-body);
+  color: var(--fg-muted);
+}
+
+.actions {
+  margin-top: var(--spacing-xl);
+}

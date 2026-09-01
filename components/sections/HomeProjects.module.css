@@ -1,0 +1,70 @@
+/* Home recent-projects strip — FIDELITY against ref `62d22b2f-recent-projects`.
+   Target box.h: 356 @390 / 378 @768 / 512 @1440 (docs/ref-geometry.md). The
+   section element itself stays padding 0 / display block (wave-conventions §1);
+   min-height on this padded div is what pins box.h, same pattern as
+   HomeHero.module.css. */
+
+.inner {
+  min-height: 356px;
+}
+@media (min-width: 768px) {
+  .inner {
+    min-height: 378px;
+  }
+}
+@media (min-width: 1025px) {
+  .inner {
+    min-height: 512px;
+  }
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-m);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s);
+}
+
+/* Slider strip. Native horizontal scroll, no library (Appendix A) — every
+   slot is visible by scrolling rather than a JS carousel. Off-screen items
+   inherit their colour swatch from the neighbouring slot per INVENTORY. */
+.strip {
+  display: flex;
+  gap: var(--spacing-m);
+  margin-top: var(--spacing-l);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: var(--spacing-3xs);
+}
+
+.slide {
+  flex: none;
+  scroll-snap-align: start;
+}
+
+.shot {
+  display: block;
+  width: 252px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-10);
+}
+@media (min-width: 768px) {
+  .shot {
+    width: 194px;
+    height: 200px;
+  }
+}
+@media (min-width: 1025px) {
+  .shot {
+    width: 378px;
+    height: 300px;
+  }
+}

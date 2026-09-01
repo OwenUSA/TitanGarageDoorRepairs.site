@@ -39,7 +39,7 @@
       "bp": 1440,
       "section": "s02-ac810934",
       "class": "ADAPTED",
-      "progressDelta": 8.69,
+      "progressDelta": 0.04,
       "joinedVia": "direct",
       "pairedVia": "id",
       "metric": "structural deviation %",
@@ -109,16 +109,54 @@
       "bp": 1440,
       "section": "s04-d753ccbe-about",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 0.21,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 0.4,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 90,
-        "refHeading": "About"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 90,
+            "ours": 99,
+            "dev": 9.09
+          },
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/about",
@@ -141,16 +179,54 @@
       "bp": 1440,
       "section": "s06-4e9af3f4-about-next-level-roofing",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 2.09,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 1.56,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 312.59,
-        "refHeading": "About \n \nNext Level Roofing"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 312.59,
+            "ours": 488,
+            "dev": 35.94
+          },
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/about",
@@ -173,16 +249,54 @@
       "bp": 1440,
       "section": "s08-560bf22b-about",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 2.95,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 0.47,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 1180.98,
-        "refHeading": "About"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 1180.98,
+            "ours": 1053,
+            "dev": 10.84
+          },
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/about",
@@ -221,59 +335,43 @@
       "bp": 1440,
       "section": "s11-9328cbef-learn-more-about",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
-      "joinedVia": "direct",
-      "pairedVia": "unpaired",
-      "detail": {
-        "refHeight": 413.19,
-        "refHeading": "Learn more about"
-      }
-    },
-    {
-      "route": "/about",
-      "bp": 1440,
-      "section": "s12-e4ad708c",
-      "class": "ADAPTED",
-      "progressDelta": 25.5,
+      "progressDelta": 2.44,
       "joinedVia": "direct",
       "pairedVia": "id",
-      "metric": "structural deviation %",
-      "value": 13.12,
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 4.35,
       "threshold": 5,
-      "status": "FAIL",
+      "status": "PASS",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 32,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 32,
-            "dev": 100
-          },
-          {
-            "name": "textAlign",
-            "ref": "left",
-            "ours": "start",
+            "ours": 1,
             "dev": 100
           },
           {
             "name": "box.h",
-            "ref": 178,
-            "ours": 175,
-            "dev": 1.69
+            "ref": 413.19,
+            "ours": 413,
+            "dev": 0.05
           },
           {
             "name": "box.w",
             "ref": 1440,
             "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
             "dev": 0
           },
           {
@@ -284,32 +382,42 @@
           }
         ]
       },
-      "advisory": "advisory: innerCols ref=1 ours=3 (66.67%), innerCount ref=2 ours=4 (50%)"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
+    },
+    {
+      "route": "/about",
+      "bp": 1440,
+      "section": "s12-e4ad708c",
+      "class": "ADAPTED",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 178,
+        "refHeading": null
+      }
     },
     {
       "route": "/about",
       "bp": 1440,
       "section": "s13-c52c188e",
       "class": "ADAPTED",
-      "progressDelta": 13.71,
+      "progressDelta": 0.53,
       "joinedVia": "direct",
-      "pairedVia": "id",
+      "pairedVia": "progress",
       "metric": "structural deviation %",
-      "value": 17.47,
+      "value": 11.23,
       "threshold": 5,
       "status": "FAIL",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 24,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 24,
+            "ours": 1,
             "dev": 100
           },
           {
@@ -319,31 +427,37 @@
             "dev": 100
           },
           {
-            "name": "borderStyle",
-            "ref": "none",
-            "ours": "solid",
-            "dev": 100
-          },
-          {
             "name": "box.h",
             "ref": 126.78,
-            "ours": 129,
-            "dev": 1.72
+            "ours": 304,
+            "dev": 58.3
           },
           {
             "name": "box.w",
             "ref": 1440,
             "ours": 1440,
             "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
           }
         ]
       },
-      "advisory": "advisory: none diverge"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=4 (75%), innerCount ref=2 ours=4 (50%)"
     },
     {
       "route": "/about",
       "bp": 1440,
-      "section": "stub",
+      "section": "credentials",
       "class": "NOVEL",
       "metric": "token violations",
       "value": 0,
@@ -361,16 +475,16 @@
       "section": "(page)",
       "class": "PAGE",
       "metric": "height delta %",
-      "value": 69.89,
+      "value": 0.23,
       "threshold": 5,
       "detail": {
         "refH": 2989,
-        "ourH": 900,
+        "ourH": 2982,
         "refSections": 14,
-        "ourSections": 4,
+        "ourSections": 7,
         "consoleErrors": 0
       },
-      "status": "FAIL"
+      "status": "PASS"
     }
   ]
 }

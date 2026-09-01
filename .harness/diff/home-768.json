@@ -7,7 +7,7 @@
       "bp": 768,
       "section": "s03-ac810934",
       "class": "ADAPTED",
-      "progressDelta": 4.72,
+      "progressDelta": 0,
       "joinedVia": "progress",
       "pairedVia": "id",
       "metric": "structural deviation %",
@@ -61,187 +61,475 @@
       "bp": 768,
       "section": "s01-81f74bc3-roofing-done-right",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 1.51,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 0,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 1004,
-        "refHeading": "Roofing Done Right"
-      }
+        "worst": [
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "box.h",
+            "ref": 1004,
+            "ours": 1004,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%), innerCount ref=2 ours=4 (50%), position ref=static ours=relative (100%)"
     },
     {
       "route": "/",
       "bp": 768,
       "section": "s06-dfeef600-elevate-your-roof-with-next-level",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 42.69,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 1.33,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 435.72,
-        "refHeading": "Elevate Your Roof with Next Level Excellence"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 435.72,
+            "ours": 628,
+            "dev": 30.62
+          },
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/",
       "bp": 768,
       "section": "s07-9794f2c3-why-choose-us",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 0.29,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 2.74,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 353.97,
-        "refHeading": "Why Choose Us"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 353.97,
+            "ours": 959.66,
+            "dev": 63.12
+          },
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/",
       "bp": 768,
       "section": "s08-4166deaa-residential-and-commercial-roof-in",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 5.44,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 1.82,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 379,
-        "refHeading": "Residential and Commercial Roof Installation"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 379,
+            "ours": 651,
+            "dev": 41.78
+          },
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/",
       "bp": 768,
       "section": "s09-16d2fa52-specialized-exterior-services",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 9.41,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 1.91,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 368,
-        "refHeading": "Specialized Exterior Services"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 368,
+            "ours": 656,
+            "dev": 43.9
+          },
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/",
       "bp": 768,
       "section": "s10-7e95da6d-specialty-roof-repairs",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 13.47,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 1.97,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 345,
-        "refHeading": "Specialty Roof Repairs"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 345,
+            "ours": 632,
+            "dev": 45.41
+          },
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/",
       "bp": 768,
       "section": "s12-62d22b2f-recent-projects",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 16.29,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 0.36,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 377.72,
-        "refHeading": "Recent Projects"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 377.72,
+            "ours": 412,
+            "dev": 8.32
+          },
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/",
       "bp": 768,
       "section": "s13-307b2389-here-s-what-our-satisfied-customer",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 16.73,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 0,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 747.53,
-        "refHeading": "Here's what our satisfied customers are saying..."
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 747.53,
+            "ours": 748,
+            "dev": 0.06
+          },
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/",
       "bp": 768,
       "section": "s18-9328cbef-learn-more-about",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 2.52,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
-      "detail": {
-        "refHeight": 359.44,
-        "refHeading": "Learn more about"
-      }
-    },
-    {
-      "route": "/",
-      "bp": 768,
-      "section": "s19-e4ad708c",
-      "class": "ADAPTED",
-      "progressDelta": 37.4,
-      "joinedVia": "progress",
       "pairedVia": "id",
-      "metric": "structural deviation %",
-      "value": 13.35,
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 4.35,
       "threshold": 5,
-      "status": "FAIL",
+      "status": "PASS",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 64,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 64,
-            "dev": 100
-          },
-          {
-            "name": "textAlign",
-            "ref": "left",
-            "ours": "start",
+            "ours": 1,
             "dev": 100
           },
           {
             "name": "box.h",
-            "ref": 309,
-            "ours": 287,
-            "dev": 7.12
+            "ref": 359.44,
+            "ours": 359,
+            "dev": 0.12
           },
           {
             "name": "box.w",
             "ref": 768,
             "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
             "dev": 0
           },
           {
@@ -252,32 +540,42 @@
           }
         ]
       },
-      "advisory": "advisory: innerCols ref=1 ours=3 (66.67%), innerCount ref=2 ours=4 (50%)"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
+    },
+    {
+      "route": "/",
+      "bp": 768,
+      "section": "s19-e4ad708c",
+      "class": "ADAPTED",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "progress",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 309,
+        "refHeading": null
+      }
     },
     {
       "route": "/",
       "bp": 768,
       "section": "s20-c52c188e",
       "class": "ADAPTED",
-      "progressDelta": 17.93,
+      "progressDelta": 0.27,
       "joinedVia": "progress",
-      "pairedVia": "id",
+      "pairedVia": "progress",
       "metric": "structural deviation %",
-      "value": 19.4,
+      "value": 10.54,
       "threshold": 5,
       "status": "FAIL",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 24,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 24,
+            "ours": 1,
             "dev": 100
           },
           {
@@ -287,26 +585,32 @@
             "dev": 100
           },
           {
-            "name": "borderStyle",
-            "ref": "none",
-            "ours": "solid",
-            "dev": 100
-          },
-          {
             "name": "box.h",
             "ref": 240,
-            "ours": 129,
-            "dev": 46.25
+            "ours": 416,
+            "dev": 42.31
           },
           {
             "name": "box.w",
             "ref": 768,
             "ours": 768,
             "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
           }
         ]
       },
-      "advisory": "advisory: none diverge"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=4 (75%), innerCount ref=2 ours=4 (50%)"
     },
     {
       "route": "/",
@@ -314,16 +618,16 @@
       "section": "(page)",
       "class": "PAGE",
       "metric": "height delta %",
-      "value": 88.04,
+      "value": 2.71,
       "threshold": 5,
       "detail": {
         "refH": 7524,
-        "ourH": 900,
+        "ourH": 7320,
         "refSections": 20,
-        "ourSections": 4,
+        "ourSections": 12,
         "consoleErrors": 0
       },
-      "status": "FAIL"
+      "status": "PASS"
     }
   ]
 }

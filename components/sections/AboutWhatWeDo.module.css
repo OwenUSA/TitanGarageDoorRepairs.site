@@ -1,0 +1,55 @@
+/* About what-we-do — ref `560bf22b-about`.
+   Target box.h: 2424 @390 / 1368 @768 / 1181 @1440 (docs/ref-geometry.md).
+   Eight items, single column, given real room via padding-block rather than
+   a tighter multi-column grid — the target shrinks as breakpoint grows
+   because fewer lines wrap, not because rows compress. */
+
+.whatWeDo {
+  background: var(--color-neutral-200);
+}
+
+.inner {
+  padding-block: var(--section-y);
+}
+
+.head {
+  max-width: 46em;
+}
+
+.intro {
+  margin: var(--spacing-s) 0 0;
+}
+
+.list {
+  list-style: none;
+  margin: var(--spacing-l) 0 0;
+  padding: 0;
+}
+
+.item {
+  padding-block: var(--spacing-4xl);
+  border-top: 1px solid var(--color-border);
+}
+.item:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.itemLabel {
+  margin: 0;
+}
+.itemBody {
+  margin: var(--spacing-xs) 0 0;
+  max-width: 46em;
+}
+
+@media (min-width: 768px) {
+  .item {
+    padding-block: var(--spacing-l);
+  }
+}
+
+@media (min-width: 1025px) {
+  .item {
+    padding-block: var(--spacing-s);
+  }
+}

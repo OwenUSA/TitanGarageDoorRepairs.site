@@ -1,14 +1,20 @@
+// UNREVIEWED TEMPLATE — requires legal review before launch
 /**
- * ROUTE STUB — Prompt 5 landed the shell; this page renders the shell and a
- * single title band and nothing else. Prompt 7 replaces the body with the
- * sections listed for /privacy in docs/sections.md.
+ * `/privacy` — three NOVEL sections (title, body, contact), measured once by
+ * token conformance at 1440 only (A-9). No reference page exists to diff
+ * against, so there is no height target here (docs/sections.md).
  *
- * The band carries data-section="stub" so the harness reports it as an
- * unclaimed extra rather than silently pairing it against a reference band.
+ * D-16: generated per what the site actually does — a phone-callback form,
+ * no email collection, no analytics, no tracking pixels, no chat widget, no
+ * cookie banner, no cookies beyond what the framework sets. No GDPR/CCPA
+ * compliance claim. Contact section lists phone and postal address only.
  */
 
 import type { Metadata } from 'next';
-import { meta } from '@/content/copy';
+import { meta, privacy } from '@/content/copy';
+import { business, addressLine, callAriaLabel } from '@/lib/business';
+import CtaBand from '@/components/sections/CtaBand';
+import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: meta['/privacy'].title,
@@ -18,13 +24,52 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <section className="t-section" data-section="stub" data-route="privacy">
-      <div className="t-container t-container--text">
-        <h1 className="t-h1 t-tight">Privacy policy</h1>
-        <p className="t-lede t-muted" style={{ marginTop: 'var(--spacing-m)' }}>
-          Prompt 7 builds the policy body and the phone-and-postal contact section here. NOVEL: token conformance only.
-        </p>
-      </div>
-    </section>
+    <>
+      {/* UNREVIEWED TEMPLATE — requires legal review before launch */}
+
+      <section data-section="title">
+        <div className="t-section">
+          <div className="t-container t-container--text">
+            <h1 className="t-h1 t-tight">{privacy.heading}</h1>
+            <p className={`t-lede t-muted ${styles.sub}`}>{privacy.updated}</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="body">
+        <div className="t-section">
+          <div className="t-container t-container--text">
+            <div className={styles.list}>
+              {privacy.sections.map((s) => (
+                <div className={styles.item} key={s.heading}>
+                  <h2 className="t-h3">{s.heading}</h2>
+                  <p className={`t-muted ${styles.itemBody}`}>{s.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="contact">
+        <div className="t-section t-band--alt">
+          <div className="t-container t-container--text">
+            <h2 className="t-h3">How to reach us</h2>
+            <p className={`t-muted ${styles.contactBody}`}>
+              Phone is the fastest way to reach us. No electronic mail address is published
+              anywhere on this site.
+            </p>
+            <div className={styles.contactDetails}>
+              <a className="t-btn t-btn--call" href={business.phoneHref} aria-label={callAriaLabel}>
+                {business.phoneDisplay}
+              </a>
+              <p className={`t-small t-muted ${styles.address}`}>{addressLine}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CtaBand />
+    </>
   );
 }

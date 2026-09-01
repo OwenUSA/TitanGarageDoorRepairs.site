@@ -1,0 +1,50 @@
+/* About story — ref `4e9af3f4-about-next-level-roofing`.
+   Target box.h: 313 @1440 only (docs/ref-geometry.md lists no 390/768 target
+   for this id). Padding lives on .inner per wave-conventions §1. */
+
+.story {
+  background: var(--color-surface);
+}
+
+.inner {
+  padding-block: var(--spacing-2xl);
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-l);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+    gap: var(--spacing-xl);
+  }
+}
+
+.body {
+  margin: var(--spacing-s) 0 0;
+  max-width: 60em;
+}
+.bodyFirst {
+  margin-top: var(--spacing-m);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: var(--spacing-m);
+  color: var(--color-primary-deep);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.media {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-10);
+}

@@ -1,0 +1,110 @@
+/* Services hero — ADAPTED against ref `6f224353-roof-replacement`.
+   Target box.h: 758 @390 / 846 @768 / 676 @1440 (docs/ref-geometry.md).
+   The section element itself keeps padding 0, display block, inherited type —
+   docs/wave-conventions.md §1. Everything below hangs off .inner. */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--color-primary-deep);
+  --fg: var(--color-surface);
+  --fg-muted: var(--color-neutral-200);
+  color: var(--fg);
+}
+
+/* Layer 1 — placeholder photograph, cover. INVENTORY: services-hero-bg,
+   aspect flips 0.51 -> 0.91 -> 2.13, mobile crop is a separate file. */
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url('/placeholders/services-hero-bg-m.svg');
+  background-size: cover;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .bg {
+    background-image: url('/placeholders/services-hero-bg.svg');
+  }
+}
+
+/* Layer 2 — scrim. Built the same way as HomeHero: a layer, not a band
+   class, so .t-eyebrow's default color is never overridden by the shell's
+   `.t-band--*` rules — the eyebrow color is set explicitly below instead. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--gradient-band);
+  opacity: 0.9;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 758px;
+}
+@media (min-width: 768px) {
+  .inner {
+    min-height: 846px;
+  }
+}
+@media (min-width: 1025px) {
+  .inner {
+    min-height: 676px;
+  }
+}
+
+.col {
+  max-width: 640px;
+}
+
+/* Gated body-on-dark pair: --color-surface on the scrim's darkest stop. */
+.eyebrow {
+  color: var(--color-surface);
+}
+
+.headline {
+  margin-top: var(--spacing-s);
+}
+
+.sub {
+  margin-top: var(--spacing-m);
+  max-width: 34em;
+}
+
+.points {
+  list-style: none;
+  margin: var(--spacing-l) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--spacing-2xs);
+}
+.point {
+  font-size: var(--text-small);
+  color: var(--fg-muted);
+}
+.point::before {
+  content: '\2013\00a0\00a0';
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s);
+  margin-top: var(--spacing-xl);
+}
+
+/* Buttons target: 1 @390, 2 @768/1440 (docs/ref-geometry.md). Hidden, not
+   just deferred, below 768 so the harness's visible-only button count
+   matches — the jump link is a nicety once there is room for two CTAs. */
+.jump {
+  display: none;
+}
+@media (min-width: 768px) {
+  .jump {
+    display: inline-flex;
+  }
+}

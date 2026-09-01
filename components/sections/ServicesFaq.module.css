@@ -1,0 +1,94 @@
+/* Services FAQ — ADAPTED, relocated from the reference's home FAQ (ref# 16).
+   UNPAIRED forever on this route (docs/sections.md); aimed loosely near the
+   reference's own band height (983/791/818) and then left alone. Mechanism
+   per docs/behavior/05-faq-accordion.md. */
+
+.faq {
+  background: var(--color-neutral-200);
+  --fg: var(--color-neutral-900);
+  --fg-muted: var(--color-neutral-900);
+  color: var(--fg);
+}
+
+.items {
+  margin-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.question {
+  margin: 0;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-m);
+  width: 100%;
+  min-height: 44px;
+  padding-block: var(--spacing-l);
+  background: transparent;
+  border: 0;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-bold);
+  color: var(--fg);
+  cursor: pointer;
+  transition: color 0.18s ease-out;
+}
+.item.open .trigger {
+  color: var(--color-accent-deep);
+}
+
+.chevron {
+  flex: none;
+  color: var(--color-accent-deep);
+  transition: transform 0.26s var(--ease-out-quint);
+}
+.item.open .chevron {
+  transform: rotate(180deg);
+}
+
+/* Panel wrapper — grid-template-rows 0fr -> 1fr, never max-height, never a
+   measured pixel height (behavior doc, "mechanism"). Opening uses the
+   quint-out curve; the base rule below (which closing falls back to once
+   `.open` is removed) uses the ease-in curve, per the ratio table. */
+.panelWrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  transition: grid-template-rows 0.26s var(--ease-in),
+    visibility 0s linear 0.26s;
+}
+.item.open .panelWrap {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  transition: grid-template-rows 0.26s var(--ease-out-quint),
+    visibility 0s linear 0s;
+}
+.panelWrap.instant {
+  transition: none;
+}
+
+.panelInner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.answer {
+  padding-bottom: var(--spacing-l);
+  opacity: 0;
+  transition: opacity 0.1s ease-out 0s;
+}
+.item.open .answer {
+  opacity: 1;
+  transition: opacity 0.18s ease-out 0.08s;
+}
+.panelWrap.instant .answer {
+  transition: none;
+}

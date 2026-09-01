@@ -1,0 +1,79 @@
+/* Home service feature B — ADAPTED against ref `16d2fa52-...`.
+   Target box.h: 604 @390 / 368 @768 / 450 @1440 (docs/ref-geometry.md).
+   Image right on desktop: DOM order stays image-first (mobile keeps the
+   image on top), `order` flips the visual column at 1025. Padding and
+   min-height live on .inner, never on the section element. */
+
+.inner {
+  min-height: 604px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .inner {
+    min-height: 368px;
+  }
+}
+@media (min-width: 1025px) {
+  .inner {
+    min-height: 450px;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-l);
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--spacing-2xl);
+  }
+}
+
+.media {
+  width: 100%;
+  height: 218px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+@media (min-width: 768px) {
+  .media {
+    height: 224px;
+  }
+}
+@media (min-width: 1025px) {
+  .media {
+    height: 400px;
+    order: 2;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1025px) {
+  .col {
+    order: 1;
+  }
+}
+
+.body {
+  margin-top: var(--spacing-s);
+  max-width: 42em;
+}
+
+.link {
+  margin-top: var(--spacing-l);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  width: fit-content;
+  color: var(--color-accent-deep);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

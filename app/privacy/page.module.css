@@ -1,0 +1,38 @@
+/* /privacy — three NOVEL sections, token conformance only, once at 1440
+   (A-9). No reference page exists, so there is no height to hit; every value
+   below still resolves to a Prompt 5 token (docs/wave-conventions.md §3). */
+
+.sub {
+  margin-top: var(--spacing-m);
+}
+
+.list {
+  display: grid;
+  gap: var(--spacing-xl);
+}
+
+.item {
+  display: grid;
+  gap: var(--spacing-s);
+}
+
+.itemBody {
+  max-width: 68ch;
+}
+
+.contactBody {
+  margin-top: var(--spacing-s);
+  max-width: 60ch;
+}
+
+.contactDetails {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-l);
+  margin-top: var(--spacing-l);
+}
+
+.address {
+  margin: 0;
+}

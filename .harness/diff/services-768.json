@@ -7,7 +7,7 @@
       "bp": 768,
       "section": "s02-ac810934",
       "class": "ADAPTED",
-      "progressDelta": 4.76,
+      "progressDelta": 0.06,
       "joinedVia": "progress",
       "pairedVia": "id",
       "metric": "structural deviation %",
@@ -61,91 +61,151 @@
       "bp": 768,
       "section": "s04-6f224353-roof-replacement",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 0.41,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "id",
+      "metric": "structural deviation %",
+      "value": 0,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 846,
-        "refHeading": "Roof Replacement"
-      }
+        "worst": [
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "box.h",
+            "ref": 846,
+            "ours": 846,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%), innerCount ref=2 ours=4 (50%), position ref=static ours=relative (100%)"
     },
     {
       "route": "/services",
       "bp": 768,
       "section": "s07-8b7b08bc-transform-your-property-with-a-new",
       "class": "ADAPTED",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 3.03,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
+      "pairedVia": "progress",
+      "metric": "structural deviation %",
+      "value": 0.77,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 4939.28,
-        "refHeading": "Transform Your Property with a New Roof Today!"
-      }
+        "worst": [
+          {
+            "name": "box.h",
+            "ref": 4939.28,
+            "ours": 6000,
+            "dev": 17.68
+          },
+          {
+            "name": "box.w",
+            "ref": 768,
+            "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padRight",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
     },
     {
       "route": "/services",
       "bp": 768,
       "section": "s10-9328cbef-learn-more-about",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 3.07,
       "joinedVia": "heading",
-      "pairedVia": "unpaired",
-      "detail": {
-        "refHeight": 359.44,
-        "refHeading": "Learn more about"
-      }
-    },
-    {
-      "route": "/services",
-      "bp": 768,
-      "section": "s11-e4ad708c",
-      "class": "ADAPTED",
-      "progressDelta": 37.74,
-      "joinedVia": "progress",
       "pairedVia": "id",
-      "metric": "structural deviation %",
-      "value": 13.35,
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 4.35,
       "threshold": 5,
-      "status": "FAIL",
+      "status": "PASS",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 64,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 64,
-            "dev": 100
-          },
-          {
-            "name": "textAlign",
-            "ref": "left",
-            "ours": "start",
+            "ours": 1,
             "dev": 100
           },
           {
             "name": "box.h",
-            "ref": 309,
-            "ours": 287,
-            "dev": 7.12
+            "ref": 359.44,
+            "ours": 359,
+            "dev": 0.12
           },
           {
             "name": "box.w",
             "ref": 768,
             "ours": 768,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
             "dev": 0
           },
           {
@@ -156,32 +216,42 @@
           }
         ]
       },
-      "advisory": "advisory: innerCols ref=1 ours=3 (66.67%), innerCount ref=2 ours=4 (50%)"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=2 (50%)"
+    },
+    {
+      "route": "/services",
+      "bp": 768,
+      "section": "s11-e4ad708c",
+      "class": "ADAPTED",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "progress",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 309,
+        "refHeading": null
+      }
     },
     {
       "route": "/services",
       "bp": 768,
       "section": "s12-c52c188e",
       "class": "ADAPTED",
-      "progressDelta": 18.08,
+      "progressDelta": 0.02,
       "joinedVia": "progress",
-      "pairedVia": "id",
+      "pairedVia": "progress",
       "metric": "structural deviation %",
-      "value": 19.4,
+      "value": 10.54,
       "threshold": 5,
       "status": "FAIL",
       "detail": {
         "worst": [
           {
-            "name": "padTop",
+            "name": "buttons",
             "ref": 0,
-            "ours": 24,
-            "dev": 100
-          },
-          {
-            "name": "padBottom",
-            "ref": 0,
-            "ours": 24,
+            "ours": 1,
             "dev": 100
           },
           {
@@ -191,26 +261,32 @@
             "dev": 100
           },
           {
-            "name": "borderStyle",
-            "ref": "none",
-            "ours": "solid",
-            "dev": 100
-          },
-          {
             "name": "box.h",
             "ref": 240,
-            "ours": 129,
-            "dev": 46.25
+            "ours": 416,
+            "dev": 42.31
           },
           {
             "name": "box.w",
             "ref": 768,
             "ours": 768,
             "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
           }
         ]
       },
-      "advisory": "advisory: none diverge"
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=4 (75%), innerCount ref=2 ours=4 (50%)"
     },
     {
       "route": "/services",
@@ -218,13 +294,13 @@
       "section": "(page)",
       "class": "PAGE",
       "metric": "height delta %",
-      "value": 88.71,
+      "value": 6.86,
       "threshold": 5,
       "detail": {
         "refH": 7972,
-        "ourH": 900,
+        "ourH": 8519,
         "refSections": 13,
-        "ourSections": 4,
+        "ourSections": 6,
         "consoleErrors": 0
       },
       "status": "FAIL"

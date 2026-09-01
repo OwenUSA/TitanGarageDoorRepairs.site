@@ -263,16 +263,54 @@
       "bp": 1440,
       "section": "s16-21379086",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 4.11,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "progress",
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 4.97,
+      "threshold": 5,
+      "status": "PASS",
       "detail": {
-        "refHeight": 353.78,
-        "refHeading": null
-      }
+        "worst": [
+          {
+            "name": "buttons",
+            "ref": 0,
+            "ours": 1,
+            "dev": 100
+          },
+          {
+            "name": "box.h",
+            "ref": 353.78,
+            "ours": 413,
+            "dev": 14.34
+          },
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%)"
     },
     {
       "route": "/privacy",
@@ -311,16 +349,54 @@
       "bp": 1440,
       "section": "s19-e4ad708c",
       "class": "FIDELITY",
-      "metric": "no counterpart in build",
-      "value": null,
-      "threshold": null,
-      "status": "UNPAIRED",
+      "progressDelta": 1.22,
       "joinedVia": "direct",
-      "pairedVia": "unpaired",
+      "pairedVia": "progress",
+      "metric": "structural deviation % (fidelityMode=structural, colour excluded)",
+      "value": 6.15,
+      "threshold": 5,
+      "status": "FAIL",
       "detail": {
-        "refHeight": 178,
-        "refHeading": null
-      }
+        "worst": [
+          {
+            "name": "textAlign",
+            "ref": "left",
+            "ours": "start",
+            "dev": 100
+          },
+          {
+            "name": "box.h",
+            "ref": 178,
+            "ours": 304,
+            "dev": 41.45
+          },
+          {
+            "name": "box.w",
+            "ref": 1440,
+            "ours": 1440,
+            "dev": 0
+          },
+          {
+            "name": "padTop",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padBottom",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          },
+          {
+            "name": "padLeft",
+            "ref": 0,
+            "ours": 0,
+            "dev": 0
+          }
+        ]
+      },
+      "advisory": "advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=4 (75%), innerCount ref=2 ours=4 (50%)"
     },
     {
       "route": "/privacy",
@@ -356,7 +432,7 @@
     {
       "route": "/privacy",
       "bp": 1440,
-      "section": "stub",
+      "section": "title",
       "class": "NOVEL",
       "metric": "token violations",
       "value": 0,
@@ -371,8 +447,8 @@
     {
       "route": "/privacy",
       "bp": 1440,
-      "section": "footer-nap",
-      "class": "ADAPTED",
+      "section": "body",
+      "class": "NOVEL",
       "metric": "token violations",
       "value": 0,
       "threshold": 0,
@@ -386,8 +462,8 @@
     {
       "route": "/privacy",
       "bp": 1440,
-      "section": "footer-links",
-      "class": "ADAPTED",
+      "section": "contact",
+      "class": "NOVEL",
       "metric": "token violations",
       "value": 0,
       "threshold": 0,
@@ -404,13 +480,13 @@
       "section": "(page)",
       "class": "PAGE",
       "metric": "height delta %",
-      "value": 87.91,
+      "value": 59.92,
       "threshold": 5,
       "detail": {
         "refH": 7442,
-        "ourH": 900,
+        "ourH": 2983,
         "refSections": 21,
-        "ourSections": 4,
+        "ourSections": 6,
         "consoleErrors": 0
       },
       "status": "FAIL"

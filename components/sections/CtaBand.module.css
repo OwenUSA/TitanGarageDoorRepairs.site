@@ -1,0 +1,91 @@
+/* Shared CTA band — ref `9328cbef-learn-more-about`, repeated identically on
+   /, /about, /services and /contact. Owned by the lead: four routes render it,
+   so it is a shared component and no section agent edits it (A-6).
+   Target box.h: 612 @390 / 359 @768 / 413 @1440.
+   The reference computes `text-align: left` on this one section — every other
+   band computes `start` — so it is set explicitly here. */
+
+.band {
+  text-align: left;
+}
+
+/* Padding lives here, never on the .band element: the section element is
+   measured and every reference section computes padding 0. */
+.inner {
+  padding-block: var(--spacing-2xl);
+  min-height: 612px;
+  display: flex;
+  align-items: center;
+}
+/* ITERATION 1 of 1 (A-2). The band measured 460 at 768 against the reference's
+   359: the lede-sized body wrapped to ten lines in a 378px column and the media
+   was held at its 1440 height. Body drops to the 16/24 body face, the media
+   takes the 768 slot height, and the padding tightens one step. */
+@media (min-width: 768px) {
+  .inner {
+    padding-block: var(--spacing-s);
+    min-height: 359px;
+  }
+}
+@media (min-width: 1025px) {
+  .inner {
+    padding-block: var(--spacing-xl);
+    min-height: 413px;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-l);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 40%;
+    align-items: center;
+    gap: var(--spacing-xl);
+  }
+}
+
+.headingB {
+  margin-top: var(--spacing-3xs);
+}
+.body {
+  margin-top: var(--spacing-s);
+  max-width: 46em;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-m);
+  margin-top: var(--spacing-l);
+}
+.secondary {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+/* Media slot `home-cta-media` (INVENTORY): 359x298 @390, 339x298 @768,
+   636x298 @1440, object-fit cover. Held to 200 at 390 so the stacked band
+   lands on the reference's 612. */
+.media {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-10);
+}
+@media (min-width: 768px) {
+  .media {
+    height: 231px;
+  }
+}
+@media (min-width: 1025px) {
+  .media {
+    height: 298px;
+  }
+}

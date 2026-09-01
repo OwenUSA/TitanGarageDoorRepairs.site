@@ -1,0 +1,110 @@
+/* Home hero — ADAPTED against ref `81f74bc3-roofing-done-right`.
+   Target box.h: 1000 @390 / 1004 @768 / 820 @1440 (docs/ref-geometry.md).
+   The section element itself keeps padding 0, display block, inherited type —
+   see docs/wave-conventions.md §1. Everything below hangs off .inner. */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--color-primary-deep);
+  --fg: var(--color-surface);
+  --fg-muted: var(--color-neutral-200);
+  color: var(--fg);
+}
+
+/* Layer 1 — the placeholder photograph, cover, 50% 0% (INVENTORY: home-hero-bg,
+   aspect flips 0.39 -> 0.76 -> 1.76, so the mobile crop is a separate file). */
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url('/placeholders/home-hero-bg-m.svg');
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .bg {
+    background-image: url('/placeholders/home-hero-bg.svg');
+  }
+}
+
+/* Layer 2 — the scrim. Tokenised gradient at a fixed opacity rather than a raw
+   rgba(): it keeps every colour in the Prompt 5 set and still paints dark enough
+   that white body text clears rendertruth's painted-tone check over any photo
+   that lands in the slot later. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--gradient-band);
+  opacity: 0.9;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 1000px;
+}
+@media (min-width: 768px) {
+  .inner {
+    min-height: 1004px;
+  }
+}
+@media (min-width: 1025px) {
+  .inner {
+    min-height: 820px;
+  }
+}
+
+.col {
+  max-width: 640px;
+}
+
+/* RENDER-TRUTH / CONTRAST DEFECT, fixed not floored (A-13). `.t-eyebrow` defaults
+   to accent-deep, and the shell only overrides it under `.t-band--dark` /
+   `.t-band--gradient`. This hero paints its dark ground with a scrim LAYER rather
+   than a band class, so the override never fired and the eyebrow measured 1.95:1
+   on #011a20. Surface on primary-deep is the gated `body-on-dark` pair. */
+.eyebrow {
+  color: var(--color-surface);
+}
+
+.headline {
+  margin-top: var(--spacing-s);
+}
+
+.sub {
+  margin-top: var(--spacing-m);
+  max-width: 34em;
+}
+
+.points {
+  list-style: none;
+  margin: var(--spacing-l) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--spacing-s);
+}
+.point {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-s);
+}
+.pointIcon {
+  flex: none;
+  margin-top: var(--spacing-3xs);
+  color: var(--color-primary);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s);
+  margin-top: var(--spacing-xl);
+}
+
+.note {
+  margin-top: var(--spacing-m);
+}

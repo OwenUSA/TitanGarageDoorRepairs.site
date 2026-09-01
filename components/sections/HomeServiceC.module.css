@@ -1,0 +1,74 @@
+/* Home service feature C — ADAPTED against ref `7e95da6d-...`.
+   Target box.h: 603 @390 / 345 @768 / 450 @1440 (docs/ref-geometry.md).
+   Image left, text right (desktop). Padding and min-height live on .inner,
+   never on the section element. */
+
+.inner {
+  min-height: 603px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .inner {
+    min-height: 345px;
+  }
+}
+@media (min-width: 1025px) {
+  .inner {
+    min-height: 450px;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-l);
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--spacing-2xl);
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  margin-top: var(--spacing-s);
+  max-width: 42em;
+}
+
+.link {
+  margin-top: var(--spacing-l);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  width: fit-content;
+  color: var(--color-accent-deep);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Slot `home-svc-c-img`: 327x217 @390, 337x224 @768, 659x400 @1440
+   (INVENTORY), radius 25px per the asset spec. */
+.media {
+  width: 100%;
+  height: 217px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+@media (min-width: 768px) {
+  .media {
+    height: 224px;
+  }
+}
+@media (min-width: 1025px) {
+  .media {
+    height: 400px;
+  }
+}

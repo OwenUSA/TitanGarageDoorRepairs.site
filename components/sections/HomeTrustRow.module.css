@@ -1,0 +1,68 @@
+/* Home trust row — ADAPTED against ref `9794f2c3-why-choose-us`.
+   Target box.h: 743 @390 / 354 @768 / 443 @1440 (docs/ref-geometry.md).
+   Section element keeps padding 0, display block, inherited type (wave-
+   conventions §1). Padding and min-height live on .inner instead. */
+
+.inner {
+  min-height: 743px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .inner {
+    min-height: 354px;
+  }
+}
+@media (min-width: 1025px) {
+  .inner {
+    min-height: 443px;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-xl);
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: 1fr 360px;
+    align-items: center;
+    gap: var(--spacing-2xl);
+  }
+}
+
+.chips {
+  margin-top: var(--spacing-l);
+  display: grid;
+  gap: var(--spacing-s);
+}
+@media (min-width: 768px) {
+  .chips {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  .chips {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.chip {
+  min-height: 60px;
+  padding-block: var(--spacing-s);
+}
+
+.icon {
+  flex: none;
+  color: var(--color-primary);
+}
+
+/* Slot `home-trust-img`: 311x227 @390/768, 360x223 @1440 (INVENTORY),
+   radius 30px per the asset spec. */
+.media {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+}

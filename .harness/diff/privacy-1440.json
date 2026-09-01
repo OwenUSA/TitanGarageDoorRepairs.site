@@ -1,32 +1,419 @@
-[
- {
+{
   "route": "/privacy",
   "bp": 1440,
-  "section": "title",
-  "class": "NOVEL",
-  "metric": "token violations",
-  "value": "section not rendered",
-  "threshold": 0,
-  "status": "FAIL"
- },
- {
-  "route": "/privacy",
-  "bp": 1440,
-  "section": "body",
-  "class": "NOVEL",
-  "metric": "token violations",
-  "value": "section not rendered",
-  "threshold": 0,
-  "status": "FAIL"
- },
- {
-  "route": "/privacy",
-  "bp": 1440,
-  "section": "contact",
-  "class": "NOVEL",
-  "metric": "token violations",
-  "value": "section not rendered",
-  "threshold": 0,
-  "status": "FAIL"
- }
-]
+  "rows": [
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s00-bb7ac507",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 100,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s01-81f74bc3-roofing-done-right",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 820,
+        "refHeading": "Roofing Done Right"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s02-4a1fde56",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 900,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s03-ac810934",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 220,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s04-63a049320d35b55b4ef2a373",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 359.88,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s05-6406026c90e1521f6ecb0ec9",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 460,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s06-dfeef600-elevate-your-roof-with-next-level",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 315.59,
+        "refHeading": "Elevate Your Roof with Next Level Excellence"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s07-9794f2c3-why-choose-us",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 442.58,
+        "refHeading": "Why Choose Us"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s08-4166deaa-residential-and-commercial-roof-in",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 450,
+        "refHeading": "Residential and Commercial Roof Installation"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s09-16d2fa52-specialized-exterior-services",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 450,
+        "refHeading": "Specialized Exterior Services"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s10-7e95da6d-specialty-roof-repairs",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 450,
+        "refHeading": "Specialty Roof Repairs"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s11-fc6ce0ef",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 524.2,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s12-62d22b2f-recent-projects",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 511.59,
+        "refHeading": "Recent Projects"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s13-307b2389-here-s-what-our-satisfied-customer",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 536.38,
+        "refHeading": "Here's what our satisfied customers are saying..."
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s14-090e14dc-frequently-asked-questions",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 817.59,
+        "refHeading": "Frequently Asked Questions"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s15-59b59a73-recent-blog-posts",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 919.59,
+        "refHeading": "Recent Blog Posts"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s16-21379086",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 353.78,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s17-6c5257e3",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 85,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s18-9328cbef-learn-more-about",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 413.19,
+        "refHeading": "Learn more about"
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s19-e4ad708c",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 178,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "s20-c52c188e",
+      "class": "FIDELITY",
+      "metric": "no counterpart in build",
+      "value": null,
+      "threshold": null,
+      "status": "UNPAIRED",
+      "joinedVia": "direct",
+      "pairedVia": "unpaired",
+      "detail": {
+        "refHeight": 126.78,
+        "refHeading": null
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "header",
+      "class": "ADAPTED",
+      "metric": "token violations",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS",
+      "joinedVia": "ours-only",
+      "detail": {
+        "violations": 0,
+        "items": []
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "stub",
+      "class": "NOVEL",
+      "metric": "token violations",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS",
+      "joinedVia": "ours-only",
+      "detail": {
+        "violations": 0,
+        "items": []
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "footer-nap",
+      "class": "ADAPTED",
+      "metric": "token violations",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS",
+      "joinedVia": "ours-only",
+      "detail": {
+        "violations": 0,
+        "items": []
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "footer-links",
+      "class": "ADAPTED",
+      "metric": "token violations",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS",
+      "joinedVia": "ours-only",
+      "detail": {
+        "violations": 0,
+        "items": []
+      }
+    },
+    {
+      "route": "/privacy",
+      "bp": 1440,
+      "section": "(page)",
+      "class": "PAGE",
+      "metric": "height delta %",
+      "value": 87.91,
+      "threshold": 5,
+      "detail": {
+        "refH": 7442,
+        "ourH": 900,
+        "refSections": 21,
+        "ourSections": 4,
+        "consoleErrors": 0
+      },
+      "status": "FAIL"
+    }
+  ]
+}

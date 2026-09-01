@@ -34,3 +34,12 @@ faces the public, and they are listed again in `docs/PRE-LAUNCH.md`:
   coordinates only, per D-07, and the fake address is never sent to a geocoder)
 - Hours — 7 days, 07:00–19:00
 - Service area sentence — Serving the Oklahoma City metro and the surrounding communities.
+
+## Added at the merged Prompt 5 turn
+
+| # | TODO(fact) | where it surfaces |
+|---|---|---|
+| — | `TODO(fact): logo asset` (already open as KD-04) | `components/SiteHeader.tsx` — the wordmark is type set in Mohave at the measured slot dimensions until a file is handed over |
+
+No other fact was needed to build the shell. Every value it renders — name, phone, address,
+coordinates, hours, service area — comes from `lib/business.ts` and is in CONSTANTS.

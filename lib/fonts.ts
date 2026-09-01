@@ -15,7 +15,7 @@ import { Mohave, Lato } from 'next/font/google';
 export const display = Mohave({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-display',
+  variable: '--font-mohave',
   display: 'swap',
 });
 
@@ -23,6 +23,6 @@ export const body = Lato({
   subsets: ['latin'],
   weight: ['400', '700', '900'],
   style: ['normal', 'italic'],
-  variable: '--font-body',
+  variable: '--font-lato',
   display: 'swap',
 });

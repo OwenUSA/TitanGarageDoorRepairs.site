@@ -1,3 +1,868 @@
 @import "tailwindcss";
 
-/* Prompt 5 owns @theme and app/tokens.css. Empty scaffold only. */
+/* ============================================================================
+   TITAN GARAGE DOOR REPAIRS — design tokens (merged Prompt 5 + 9)
+   ----------------------------------------------------------------------------
+   Structure is EXTRACTED from the reference (nextlevelok.com, painted-area
+   weighted over /, /contact and /roof-replacement). Hue is RANDOMISED at
+   token-write time per amendment A-7 — there is no later recolour pass.
+
+     master seed 3203 -> 9 rolls, 4 rejected, 5 survivors
+     candidates  260721 | 274299 | 955554 | 300175 | 579843
+     WINNER      260721   complementary (+180deg), primary hue 217,
+                          accent hue 37, neutral tint C 0.059,
+                          call-now CTA 5.86:1 (highest of the five)
+
+   Every L and every C is held exactly where the reference put it; only H moved.
+   Semantic colours (error / success / warning) are EXEMPT from the rotation.
+   See docs/known-divergence.md KD-07 for the full record.
+
+   THIS BLOCK IS THE TOKEN SET. `diff.mjs` reads it for NOVEL conformance, and
+   A-6 forbids any section agent from introducing a value that is not here.
+   ========================================================================= */
+
+@theme static {
+  /* ---- colour ------------------------------------------------------------
+     Roles, so nobody has to guess:
+       primary       structural brand teal — eyebrows on dark, icon strokes
+       primary-deep  the dark band: footer, hero scrim, CTA band start
+       accent        the call-now CTA fill. Highest chroma on the page, always.
+       accent-deep   CTA hover/pressed, and the CTA-band gradient end
+       surface       page ground
+       neutral-200   the light alt band, and input fills
+       neutral-400   DECORATIVE hairlines only — never gated, never load-bearing
+       neutral-600   muted text on surface, and control edges (border-strong)
+       neutral-900   body text
+     Pairs actually in use, and their measured ratios, are in
+     harness.config.mjs -> pairsInUse. Do not add a pair here without adding it
+     there; an ungated pair is how a build ships an invisible CTA. */
+  --color-primary: oklch(61.57% 0.1062 216.68);
+  --color-primary-deep: oklch(20.10% 0.0342 215.52);
+  --color-accent: oklch(52.48% 0.1729 37.14);
+  --color-accent-deep: oklch(41.46% 0.1353 36.99);
+  --color-surface: oklch(100.00% 0.0000 89.88);
+  --color-neutral-200: oklch(96.04% 0.0283 218.94);
+  --color-neutral-400: oklch(68.34% 0.0595 216.13);
+  --color-neutral-600: oklch(55.88% 0.0596 216.99);
+  --color-neutral-900: oklch(3.04% 0.0210 264.05);
+  --color-border: oklch(68.34% 0.0595 216.13);
+  --color-border-strong: oklch(55.88% 0.0596 216.99);
+  --color-focus: oklch(31.98% 0.1036 37.20);
+  /* semantic — EXEMPT from hue rotation, conventional hues held */
+  --color-error: oklch(50.13% 0.1783 28.70);
+  --color-success: oklch(51.18% 0.1274 149.71);
+  --color-warning: oklch(54.25% 0.1242 62.55);
+
+  /* ---- type scale --------------------------------------------------------
+     Two tiers, switching at 768, because that is how the reference's own CSS
+     is written (`(max-width: 767px)` / `(min-width: 768px)`). Values measured
+     at 1440 and 390; `-m` is the mobile tier.
+
+     DELIBERATELY NOT clamp(). A fluid scale computes an arbitrary px value at
+     every width, and NOVEL token conformance compares the COMPUTED font-size
+     against this set — a clamp would report a violation at every breakpoint
+     that is not an endpoint. Stepped tiers keep every rendered size a token. */
+  --text-micro: 12px;
+  --text-small: 15px;
+  --text-body: 16px;
+  --text-lede: 20px;
+  --text-lede-m: 18px;
+  --text-quote: 25px;
+  --text-quote-m: 20px;
+  --text-h3: 24px;
+  --text-h3-m: 22px;
+  --text-h2: 40px;
+  --text-h2-m: 30px;
+  --text-h1: 48px;
+  --text-h1-m: 40px;
+
+  /* ---- weight — the reference uses exactly two ---------------------------- */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* ---- radius — reference frequencies: 10px x27, 4px x10, 50% x9, 16px x8,
+     5px x6, 8px x2, 2px x2 -------------------------------------------------- */
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-5: 5px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-16: 16px;
+  --radius-round: 50%;
+
+  /* ---- shadow ------------------------------------------------------------
+     Declared in getComputedStyle's OWN serialisation order (colour first,
+     spread explicit). Written the human way — `0 3px 11px rgba(...)` — every
+     rendered shadow reads as a token violation even though the value matches. */
+  --shadow-card: rgba(0, 0, 0, 0.25) 0px 3px 11px 0px;
+  --shadow-card-hover: rgba(0, 0, 0, 0.25) 0px 10px 24px 0px;
+  --shadow-drawer: rgba(0, 0, 0, 0.25) 3px 3px 11px 0px;
+  --shadow-header: rgba(0, 0, 0, 0.25) 0px 0px 11px 0px;
+
+  /* ---- spacing — reference gaps: 24 (dominant), 20, 16, 8, 7, 4, 2 -------- */
+  --spacing-hair: 2px;
+  --spacing-3xs: 4px;
+  --spacing-2xs: 7px;
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing-m: 16px;
+  --spacing-ml: 20px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 64px;
+  --spacing-5xl: 80px;
+  --spacing-6xl: 96px;
+
+  /* ---- families ---------------------------------------------------------- */
+  --font-display: var(--font-mohave), "Mohave", Arial, sans-serif;
+  --font-body: var(--font-lato), "Lato", Arial, sans-serif;
+}
+
+/* ============================================================================
+   LAYOUT CONSTANTS — deliberately outside @theme. They are geometry, not
+   design tokens, and `diff.mjs` would otherwise try to conform computed
+   values against them.
+   ========================================================================= */
+:root {
+  /* Container maths, verified against the reference at all three widths:
+     92% of 390 = 358.8 (measured 359), of 768 = 706.6 (measured 707),
+     of 1440 = 1324.8 (measured 1325). The gutter is 4% a side, not a fixed px. */
+  --container-w: 92%;
+  --container-max: 1325px;
+  --container-text: 960px;
+
+  /* Reference header: 177 @390 / 96 @768 / 224 @1440. Faithful, and odd. */
+  --header-h: 177px;
+  --callbar-h: 80px;
+  --drawer-w: min(265px, 86vw);
+
+  --section-y: var(--spacing-2xl);
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --dur-fast: 0.12s;
+  --dur-hover: 0.18s;
+  --dur-panel: 0.32s;
+
+  /* Foreground pair, re-declared by every band. Every text rule reads these,
+     so a band cannot forget to recolour its own contents. */
+  --fg: var(--color-neutral-900);
+  --fg-muted: var(--color-neutral-600);
+
+  --gradient-band: linear-gradient(
+    118deg,
+    var(--color-primary-deep) 0%,
+    var(--color-accent-deep) 100%
+  );
+
+  color-scheme: light;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-h: 96px;
+    --section-y: var(--spacing-4xl);
+  }
+}
+@media (min-width: 1025px) {
+  :root {
+    --header-h: 224px;
+    --section-y: var(--spacing-5xl);
+  }
+}
+
+/* ============================================================================
+   BASE
+   ========================================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--color-surface);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-normal);
+  line-height: 24px; /* reference body line-height, 1.5 at 16px */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The fixed call bar must not cover the last footer row. */
+body {
+  padding-bottom: calc(var(--callbar-h) + env(safe-area-inset-bottom, 0px));
+}
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  color: inherit;
+  line-height: normal; /* reference headings compute `normal` */
+}
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img,
+svg,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+}
+
+/* A-14 — every tel: link is a primary conversion target. One rule, site-wide,
+   instead of chasing WCAG 2.5.8 class by class. `min-height` is inert on a
+   purely inline box, so a tel link inside prose keeps its natural metrics and
+   the type scale the diff measures is untouched. */
+a[href^="tel:"] {
+  min-height: 44px;
+}
+
+/* Focus: TWO layers. A surface-coloured inner halo plus a dark outer ring is
+   the only construction that holds 3:1 against BOTH a white page and a
+   saturated accent button using one token.
+     outer ring  --color-focus  vs page   13.24:1
+     inner halo  --color-surface vs accent 5.86:1 */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--color-surface);
+  border-radius: var(--radius-4);
+}
+
+[id] {
+  scroll-margin-top: calc(var(--header-h) + var(--spacing-m));
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-surface);
+}
+
+/* ============================================================================
+   PRIMITIVES — hand-rolled, no component library (Appendix A).
+   A-6: section agents consume these. They do not add to them.
+   ========================================================================= */
+
+.t-container {
+  width: var(--container-w);
+  max-width: var(--container-max);
+  margin-inline: auto;
+}
+.t-container--text {
+  max-width: var(--container-text);
+}
+
+.t-section {
+  padding-block: var(--section-y);
+}
+
+/* ---- bands. The band sets --fg / --fg-muted; every text rule reads them, so
+   a dark band cannot end up with dark text because one selector was missed. */
+.t-band--alt {
+  background: var(--color-neutral-200);
+  --fg: var(--color-neutral-900);
+  /* NOT neutral-600 here: 4.11:1 on this ground, below AA for body text. */
+  --fg-muted: var(--color-neutral-900);
+  color: var(--fg);
+}
+.t-band--dark {
+  background: var(--color-primary-deep);
+  --fg: var(--color-surface);
+  --fg-muted: var(--color-neutral-200);
+  color: var(--fg);
+}
+.t-band--gradient {
+  background-image: var(--gradient-band);
+  --fg: var(--color-surface);
+  --fg-muted: var(--color-neutral-200);
+  color: var(--fg);
+}
+
+.t-muted {
+  color: var(--fg-muted);
+}
+
+/* ---- type ------------------------------------------------------------- */
+.t-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-deep);
+}
+.t-band--dark .t-eyebrow {
+  color: var(--color-primary);
+}
+/* On the gradient the ramp passes under the eyebrow, so it takes the surface
+   colour, gated as band-text-on-gradient on the worst stop (9.23:1). */
+.t-band--gradient .t-eyebrow {
+  color: var(--color-surface);
+}
+
+.t-h1 {
+  font-size: var(--text-h1-m);
+  font-weight: var(--font-weight-normal);
+}
+.t-h2 {
+  font-size: var(--text-h2-m);
+  font-weight: var(--font-weight-normal);
+}
+.t-h3 {
+  font-size: var(--text-h3-m);
+  font-weight: var(--font-weight-bold);
+}
+.t-lede {
+  font-size: var(--text-lede-m);
+  line-height: 28px;
+}
+.t-quote {
+  font-size: var(--text-quote-m);
+}
+.t-small {
+  font-size: var(--text-small);
+}
+.t-micro {
+  font-size: var(--text-micro);
+}
+.t-tight {
+  letter-spacing: -0.012em; /* reference FAQ heading: -0.48px at 40px */
+}
+
+@media (min-width: 768px) {
+  .t-h1 {
+    font-size: var(--text-h1);
+  }
+  .t-h2 {
+    font-size: var(--text-h2);
+  }
+  .t-h3 {
+    font-size: var(--text-h3);
+  }
+  .t-lede {
+    font-size: var(--text-lede);
+  }
+  .t-quote {
+    font-size: var(--text-quote);
+  }
+}
+
+/* ---- buttons ----------------------------------------------------------
+   Reference primary CTA: 280x50 (40px tall in the header), radius 10px,
+   body face at 16/400, no uppercase. Ours is AA, theirs is not (KD-06). */
+.t-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  min-height: 50px;
+  padding-inline: var(--spacing-l);
+  border: 1px solid transparent;
+  border-radius: var(--radius-10);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-normal);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color var(--dur-hover) ease-out,
+    border-color var(--dur-hover) ease-out, color var(--dur-hover) ease-out;
+}
+.t-btn--call {
+  background: var(--color-accent);
+  color: var(--color-surface);
+  font-weight: var(--font-weight-bold);
+}
+.t-btn--call:hover {
+  background: var(--color-accent-deep);
+}
+.t-btn--call:active {
+  background: var(--color-accent-deep);
+  transition-duration: var(--dur-fast);
+}
+.t-btn--ghost {
+  background: var(--color-surface);
+  color: var(--color-primary-deep);
+  border-color: var(--color-border-strong);
+}
+.t-btn--ghost:hover {
+  border-color: var(--color-primary-deep);
+}
+.t-band--dark .t-btn--ghost,
+.t-band--gradient .t-btn--ghost {
+  background: transparent;
+  color: var(--color-surface);
+  border-color: var(--color-surface);
+}
+.t-btn--wide {
+  width: 100%;
+  max-width: 280px;
+}
+
+/* ---- surfaces ---------------------------------------------------------- */
+.t-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-10);
+  box-shadow: var(--shadow-card);
+  color: var(--color-neutral-900);
+}
+.t-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  min-height: 44px;
+  padding-inline: var(--spacing-m);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-5);
+}
+.t-rule {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ---- inputs ------------------------------------------------------------ */
+.t-field {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  padding: var(--spacing-s) var(--spacing-m);
+  background: var(--color-surface);
+  color: var(--color-neutral-900);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-10);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  transition: border-color 0.16s ease-out;
+}
+[data-state="invalid"] .t-field {
+  border-color: var(--color-error);
+}
+[data-state="valid"] .t-field {
+  border-color: var(--color-success);
+}
+.t-error {
+  color: var(--color-error);
+  font-size: var(--text-small);
+}
+.t-success {
+  color: var(--color-success);
+  font-size: var(--text-small);
+}
+
+/* ---- utility ----------------------------------------------------------- */
+.t-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.t-skip {
+  position: absolute;
+  left: var(--spacing-m);
+  top: 0;
+  z-index: 100;
+  transform: translateY(-200%);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: var(--spacing-m);
+  background: var(--color-surface);
+  color: var(--color-primary-deep);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-8);
+}
+.t-skip:focus-visible {
+  transform: translateY(var(--spacing-xs));
+}
+
+/* ============================================================================
+   SHELL — header, drawer, call bar, footer, map.
+   FROZEN after this prompt (A-6). A section agent that needs a change here
+   stops and hands it back to the lead.
+   ========================================================================= */
+
+/* ---- header. STATIC. The reference's rAF trace reports
+   headerDistinctStates: 1 — no shrink, no recolour, no shadow on scroll.
+   See docs/behavior/02-sticky-header.md. `sticky`, not `fixed`, so page
+   height stays comparable with the reference's. */
+.t-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+.t-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-m);
+  min-height: var(--header-h);
+  padding-block: var(--spacing-s);
+}
+.t-logo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--font-display);
+  color: var(--color-primary-deep);
+  line-height: normal;
+}
+.t-logo__mark {
+  font-size: var(--text-h3-m);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.012em;
+}
+.t-logo__sub {
+  font-family: var(--font-body);
+  font-size: var(--text-micro);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-neutral-600);
+}
+@media (min-width: 1025px) {
+  .t-logo__mark {
+    font-size: var(--text-h2-m);
+  }
+}
+
+.t-nav {
+  display: none;
+  align-items: center;
+  gap: var(--spacing-l);
+}
+@media (min-width: 1025px) {
+  .t-nav {
+    display: flex;
+  }
+}
+.t-nav__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-body);
+  color: var(--color-neutral-900);
+  transition: color var(--dur-hover) ease-out;
+}
+.t-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6px;
+  height: 2px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur-hover) ease-out;
+}
+.t-nav__link:hover::after,
+.t-nav__link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+.t-nav__link[aria-current="page"] {
+  font-weight: var(--font-weight-bold);
+}
+
+.t-header__cta {
+  display: none;
+}
+@media (min-width: 768px) {
+  .t-header__cta {
+    display: inline-flex;
+  }
+}
+
+.t-burger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--color-surface);
+  color: var(--color-primary-deep);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-8);
+  cursor: pointer;
+}
+@media (min-width: 1025px) {
+  .t-burger {
+    display: none;
+  }
+}
+
+/* ---- drawer. 265px, right-hand, off-canvas — matching the reference's
+   .hamburger-drawer.layout-drawer. Compositor properties only; body scroll
+   lock is position:fixed, never overflow:hidden.
+   See docs/behavior/01-mobile-nav-drawer.md. */
+.t-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(0, 0, 0, 0.4); /* reference overlay alpha, measured */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear, visibility 0s linear 0.2s;
+}
+.t-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  width: var(--drawer-w);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-m);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--color-primary-deep);
+  --fg: var(--color-surface);
+  --fg-muted: var(--color-neutral-200);
+  color: var(--fg);
+  box-shadow: var(--shadow-drawer);
+  transform: translate3d(100%, 0, 0);
+  visibility: hidden;
+  transition: transform var(--dur-panel) var(--ease-out-quint),
+    visibility 0s linear var(--dur-panel);
+}
+[data-drawer-open="true"] .t-backdrop {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s linear, visibility 0s linear 0s;
+}
+[data-drawer-open="true"] .t-drawer {
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+  transition: transform var(--dur-panel) var(--ease-out-quint),
+    visibility 0s linear 0s;
+}
+.t-drawer__link {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding-inline: var(--spacing-xs);
+  border-radius: var(--radius-8);
+  font-size: var(--text-lede-m);
+  color: var(--color-surface);
+  opacity: 0;
+  transform: translate3d(0, 6px, 0);
+  transition: opacity 0.18s ease-out, transform 0.18s ease-out;
+}
+[data-drawer-open="true"] .t-drawer__link {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition-delay: calc(0.08s + 0.03s * var(--i, 0));
+}
+.t-drawer__link[aria-current="page"] {
+  font-weight: var(--font-weight-bold);
+  background: rgba(255, 255, 255, 0.12);
+}
+[data-drawer-instant="true"] .t-drawer,
+[data-drawer-instant="true"] .t-backdrop,
+[data-drawer-instant="true"] .t-drawer__link {
+  transition-duration: 0s !important;
+  transition-delay: 0s !important;
+}
+
+/* ---- mobile sticky call bar. NOVEL — theirs is a promo bar, ours is a
+   dedicated tel: bar (D-04). See docs/behavior/03-mobile-call-bar.md. */
+.t-callbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  display: flex;
+  min-height: var(--callbar-h);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: var(--color-accent);
+}
+@media (min-width: 768px) {
+  .t-callbar {
+    display: none;
+  }
+}
+.t-callbar__link {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-hair);
+  min-height: var(--callbar-h);
+  background: var(--color-accent);
+  color: var(--color-surface);
+  transition: background-color var(--dur-hover) ease-out;
+}
+.t-callbar__link:active {
+  background: var(--color-accent-deep);
+  transition-duration: var(--dur-fast);
+}
+.t-callbar__label {
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-bold);
+}
+.t-callbar__sub {
+  font-size: var(--text-micro);
+}
+
+/* ---- footer ------------------------------------------------------------ */
+/* ITERATION 1 of 1 (A-2). The NAP band measured 271px at 1440 against the
+   reference's 178px — the section rhythm (--section-y 80px) is right for a
+   content band and far too tall for a three-column footer strip. Pinned to the
+   reference's own band height at the desktop tier; 390 (393 vs 413) and 768
+   (287 vs 309) were already inside a band's width of theirs and are untouched. */
+.t-footer__nap {
+  display: grid;
+  gap: var(--spacing-l);
+}
+@media (min-width: 1025px) {
+  [data-section="footer-nap"] {
+    padding-block: var(--spacing-xl);
+  }
+}
+@media (min-width: 768px) {
+  .t-footer__nap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.t-footer__heading {
+  font-family: var(--font-display);
+  font-size: var(--text-h3-m);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-surface);
+}
+.t-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s) var(--spacing-l);
+}
+.t-footer__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* WCAG 2.2 2.5.8: the SHORT labels ("Home") are the ones that fail on width,
+     not on height. Both axes are pinned here rather than height alone. */
+  min-height: 44px;
+  min-width: 44px;
+  padding-inline: var(--spacing-xs);
+  color: var(--color-surface);
+  transition: color var(--dur-hover) ease-out;
+}
+.t-footer__link:hover,
+.t-footer__link[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.t-footer__phone {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-h3-m);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-surface);
+}
+
+/* ---- map. Fixed aspect wrapper so a late iframe mount cannot shift layout.
+   See docs/behavior/07-map-lazy-mount.md. */
+.t-map {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: var(--radius-10);
+  background: var(--color-neutral-200);
+}
+@media (min-width: 768px) {
+  .t-map {
+    aspect-ratio: 16 / 9;
+  }
+}
+.t-map__frame,
+.t-map__poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+  transition: opacity 0.3s ease-out;
+}
+.t-map__directions {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  min-height: 44px;
+  color: var(--color-accent-deep);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.t-band--dark .t-map__directions,
+.t-band--gradient .t-map__directions {
+  color: var(--color-surface);
+}
+
+/* ============================================================================
+   REDUCED MOTION — D-19. Honoured on every animation on the site.
+   The drawer keeps a 0.01s transform rather than dropping to 0 so its
+   transitionend-driven focus and inert bookkeeping still fires identically.
+   ========================================================================= */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01s !important;
+    scroll-behavior: auto !important;
+  }
+  .t-drawer__link {
+    transform: none !important;
+    transition-delay: 0s !important;
+  }
+  .t-backdrop {
+    transition-duration: 0.15s !important;
+  }
+}

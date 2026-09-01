@@ -129,3 +129,133 @@ Prompt 5 scale, not browser defaults.
 | Discounts band | D-14 / D-06. |
 | reCAPTCHA, chat widget, contact modal, fixed promo bar | D-15, D-05. |
 | Email field in both reference forms; any `mailto:` | D-03. |
+
+---
+
+## Machine-readable contract - the table `diff.mjs` actually parses
+
+The shared harness reads this file with a fixed column order:
+
+`| route | ref section id | our section id | CLASS | reason |`
+
+**The human tables above use a different order and match ZERO rows.** That silently
+defaults every section to FIDELITY - the failure mode CLAUDE.md names as the most
+expensive one on this build, and the same class of bug as the Prompt 1 harness defect.
+Rather than reorder forty documented rows, the contract is restated below in the order the
+parser expects. **The two must agree: if you change a class above, change it here in the
+same edit.**
+
+Two further things the parser needs that the human tables do not carry:
+
+1. **The ref column is the reference's own section id**, not the ordinal `ref#` recorded
+   above. Those ids come from the canonical (1440) capture,
+   `.harness/cap/ref/<route>-1440/meta.json`, and `slugOf()` strips the leading `sNN-`
+   before lookup - so `s19-e4ad708c` is written here as `e4ad708c`. Without this column the
+   alias map is empty, identity pairing (PASS 1) never fires, and every deliberately moved
+   or dropped band mispairs on page progress.
+2. **Our components must declare the same id** in `data-section`, or PASS 1 has nothing to
+   match. The shell already does (`header`, `footer-nap`, `footer-links`, `callbar`); the
+   Prompt 6-7 wave must do the same for every section it builds.
+
+Shell rows are repeated per route because the parser keys on `route::id`. Rows named
+`ref-*` are reference bands that are states rather than sections on our side (their top
+strip, the contact modal, the two off-canvas drawer bands) or unnamed spacer strips; they
+are marked DELETED so they stop being scored as missing sections.
+
+Known gaps, deliberately left rather than faked:
+
+- `/services::faq` is relocated from the reference's **home** page. The harness pairs
+  within a route, so it has no same-route counterpart and will report UNPAIRED. Measure it
+  structurally by hand against home `090e14dc` or floor it; do not chase the UNPAIRED.
+- `/privacy` has no reference page at all. Every row is NOVEL and measured once (A-9).
+- The `stub` rows are the Prompt 5 scaffold band and are deleted by the build wave.
+
+| route | ref | id | class | reason |
+|---|---|---|---|---|
+| / | ac810934 | header | ADAPTED | fixed bar, same heights 177/96/224; flat 5-route nav, no mega-nav |
+| / |  | drawer | ADAPTED | off-canvas right panel; hidden when closed, so never captured as a band |
+| / |  | callbar | NOVEL | dedicated tel: bar (D-04); theirs is a promo bar |
+| / | e4ad708c | footer-nap | ADAPTED | one SERVICE_AREA sentence (D-02) and 07:00-19:00 seven days (D-06) |
+| / | c52c188e | footer-links | ADAPTED | five fixed routes incl. Privacy, which they do not have |
+| / |  | stub | NOVEL | Prompt 5 scaffold band; deleted by the Prompt 6-7 wave |
+| /about | ac810934 | header | ADAPTED | fixed bar, same heights 177/96/224; flat 5-route nav, no mega-nav |
+| /about |  | drawer | ADAPTED | off-canvas right panel; hidden when closed, so never captured as a band |
+| /about |  | callbar | NOVEL | dedicated tel: bar (D-04); theirs is a promo bar |
+| /about | e4ad708c | footer-nap | ADAPTED | one SERVICE_AREA sentence (D-02) and 07:00-19:00 seven days (D-06) |
+| /about | c52c188e | footer-links | ADAPTED | five fixed routes incl. Privacy, which they do not have |
+| /about |  | stub | NOVEL | Prompt 5 scaffold band; deleted by the Prompt 6-7 wave |
+| /services | ac810934 | header | ADAPTED | fixed bar, same heights 177/96/224; flat 5-route nav, no mega-nav |
+| /services |  | drawer | ADAPTED | off-canvas right panel; hidden when closed, so never captured as a band |
+| /services |  | callbar | NOVEL | dedicated tel: bar (D-04); theirs is a promo bar |
+| /services | e4ad708c | footer-nap | ADAPTED | one SERVICE_AREA sentence (D-02) and 07:00-19:00 seven days (D-06) |
+| /services | c52c188e | footer-links | ADAPTED | five fixed routes incl. Privacy, which they do not have |
+| /services |  | stub | NOVEL | Prompt 5 scaffold band; deleted by the Prompt 6-7 wave |
+| /contact | ac810934 | header | ADAPTED | fixed bar, same heights 177/96/224; flat 5-route nav, no mega-nav |
+| /contact |  | drawer | ADAPTED | off-canvas right panel; hidden when closed, so never captured as a band |
+| /contact |  | callbar | NOVEL | dedicated tel: bar (D-04); theirs is a promo bar |
+| /contact | e4ad708c | footer-nap | ADAPTED | one SERVICE_AREA sentence (D-02) and 07:00-19:00 seven days (D-06) |
+| /contact | c52c188e | footer-links | ADAPTED | five fixed routes incl. Privacy, which they do not have |
+| /contact |  | stub | NOVEL | Prompt 5 scaffold band; deleted by the Prompt 6-7 wave |
+| /privacy |  | header | ADAPTED | fixed bar, same heights 177/96/224; flat 5-route nav, no mega-nav |
+| /privacy |  | drawer | ADAPTED | off-canvas right panel; hidden when closed, so never captured as a band |
+| /privacy |  | callbar | NOVEL | dedicated tel: bar (D-04); theirs is a promo bar |
+| /privacy |  | footer-nap | ADAPTED | one SERVICE_AREA sentence (D-02) and 07:00-19:00 seven days (D-06) |
+| /privacy |  | footer-links | ADAPTED | five fixed routes incl. Privacy, which they do not have |
+| /privacy |  | stub | NOVEL | Prompt 5 scaffold band; deleted by the Prompt 6-7 wave |
+| / | bb7ac507 | ref-topbar | DELETED | their fixed top strip, captured as a band; state, not a section |
+| / | 4a1fde56 | ref-modal | DELETED | contact modal overlay (D-05, KD-05) |
+| / | 63a049320d35b55b4ef2a373 | ref-drawer-a | DELETED | their off-canvas drawer body; ours is one element |
+| / | 6406026c90e1521f6ecb0ec9 | ref-drawer-b | DELETED | their off-canvas drawer tail |
+| / | 21379086 | logos | DELETED | 11 third-party marks (D-09) |
+| / | 6c5257e3 | ref-spacer | DELETED | 85px unnamed strip between the logo band and the CTA band |
+| /about | bb7ac507 | ref-topbar | DELETED | their fixed top strip, captured as a band; state, not a section |
+| /about | 4a1fde56 | ref-modal | DELETED | contact modal overlay (D-05, KD-05) |
+| /about | 63a049320d35b55b4ef2a373 | ref-drawer-a | DELETED | their off-canvas drawer body; ours is one element |
+| /about | 6406026c90e1521f6ecb0ec9 | ref-drawer-b | DELETED | their off-canvas drawer tail |
+| /about | 21379086 | logos | DELETED | 11 third-party marks (D-09) |
+| /about | 6c5257e3 | ref-spacer | DELETED | 85px unnamed strip between the logo band and the CTA band |
+| /services | bb7ac507 | ref-topbar | DELETED | their fixed top strip, captured as a band; state, not a section |
+| /services | 4a1fde56 | ref-modal | DELETED | contact modal overlay (D-05, KD-05) |
+| /services | 63a049320d35b55b4ef2a373 | ref-drawer-a | DELETED | their off-canvas drawer body; ours is one element |
+| /services | 6406026c90e1521f6ecb0ec9 | ref-drawer-b | DELETED | their off-canvas drawer tail |
+| /services | 21379086 | logos | DELETED | 11 third-party marks (D-09) |
+| /services | 6c5257e3 | ref-spacer | DELETED | 85px unnamed strip between the logo band and the CTA band |
+| /contact | bb7ac507 | ref-topbar | DELETED | their fixed top strip, captured as a band; state, not a section |
+| /contact | 4a1fde56 | ref-modal | DELETED | contact modal overlay (D-05, KD-05) |
+| /contact | 63a049320d35b55b4ef2a373 | ref-drawer-a | DELETED | their off-canvas drawer body; ours is one element |
+| /contact | 6406026c90e1521f6ecb0ec9 | ref-drawer-b | DELETED | their off-canvas drawer tail |
+| /contact | 21379086 | logos | DELETED | 11 third-party marks (D-09) |
+| /contact | 6c5257e3 | ref-spacer | DELETED | 85px unnamed strip between the logo band and the CTA band |
+| / | 81f74bc3-roofing-done-right | hero | ADAPTED | ref 7 - proposition changes to a person picks up the phone |
+| / | dfeef600-elevate-your-roof-with-next-level | intro | ADAPTED | ref 8 - awards pitch replaced by the proposition |
+| / | 9794f2c3-why-choose-us | trust-row | ADAPTED | ref 9 - every chip of theirs is an invented fact for us (D-14) |
+| / | 4166deaa-residential-and-commercial-roof-in | svc-a | ADAPTED | ref 10 - regrouped by symptom |
+| / | 16d2fa52-specialized-exterior-services | svc-b | ADAPTED | ref 11 - regrouped by symptom |
+| / | 7e95da6d-specialty-roof-repairs | svc-c | ADAPTED | ref 12 - regrouped by symptom |
+| / | fc6ce0ef | discounts | DELETED | ref 13 - invents credentials and discounts (D-14/D-06) |
+| / | 62d22b2f-recent-projects | projects | FIDELITY | ref 14 - held; placeholder-blocked, KD-03 |
+| / | 307b2389-here-s-what-our-satisfied-customer | testimonials | ADAPTED | ref 15 - placeholder blocks, no names, no Review JSON-LD (D-13) |
+| / | 090e14dc-frequently-asked-questions | faq-home | DELETED | ref 16 - relocated to /services (structural move 3) |
+| / | 59b59a73-recent-blog-posts | blog | DELETED | ref 17 - no blog route (D-01) |
+| / | 9328cbef-learn-more-about | cta-band | FIDELITY | ref 19 - held; shared band |
+| / |  | map | NOVEL | required by D-08, no counterpart on their home page |
+| /about | d753ccbe-about | title | ADAPTED | ref 6 - 90px band, our route name and lede |
+| /about | 4e9af3f4-about-next-level-roofing | story | ADAPTED | ref 8 - no founding year, headcount or certifications (D-17) |
+| /about | 560bf22b-about | what-we-do | ADAPTED | ref 9 - eight garage-door services, not their 83-item tree |
+| /about | db4a2c84 | ref-thin | DELETED | 37px unnamed strip |
+| /about | 9328cbef-learn-more-about | cta-band | FIDELITY | ref 11 - held; shared band |
+| /about |  | credentials | NOVEL | replaces the dropped logo strip; every claim TODO(fact) |
+| /services | 6f224353-roof-replacement | hero | ADAPTED | ref 6 - their inline 5-field email form dropped (D-03/D-05) |
+| /services | 8b7b08bc-transform-your-property-with-a-new | list | ADAPTED | ref 8 - eight in-page services grouped by symptom, no prices (D-12) |
+| /services | 9cf8ab9a | ref-thin | DELETED | 37px unnamed strip |
+| /services | 9328cbef-learn-more-about | cta-band | FIDELITY | ref 10 - held; shared band |
+| /services |  | faq | ADAPTED | relocated from home ref 16; cross-page, so no same-route counterpart to pair against |
+| /contact | 687131be-contact | title | ADAPTED | ref 6 - our copy |
+| /contact | 63d93a8b83aac101be57176d | map | ADAPTED | ref 7 - their 300px Mapbox embed; ours is a keyless Google coords embed (D-07) |
+| /contact | 1d3f8083-send-us-a-message | form | ADAPTED | ref 9 - no email field, no reCAPTCHA, no backend (D-03/D-05/D-15) |
+| /contact | 6c8ab89e | ref-thin | DELETED | 37px unnamed strip |
+| /contact | 9328cbef-learn-more-about | cta-band | FIDELITY | ref 13 - held; shared band |
+| /contact |  | nap-card | NOVEL | split out of their footer into a page-level card |
+| /privacy |  | title | NOVEL | no reference page exists |
+| /privacy |  | body | NOVEL | generated per D-16 |
+| /privacy |  | contact | NOVEL | phone and postal only (D-03) |

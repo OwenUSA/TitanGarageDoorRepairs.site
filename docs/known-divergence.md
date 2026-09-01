@@ -108,8 +108,157 @@ Reference CTA anchors compute `color: rgb(0, 0, 238)` — the UA default link bl
 their `rgb(197, 23, 22)` red fill. That fails WCAG AA badly. Ours is AA per D-19, so the
 CTA's resolved text colour will differ from the reference on every page. Intentional.
 
-## KD-07 — Colour is terminal after Prompt 9
+## KD-07 — Colour: the palette is randomised, and colour is terminal
 
-*(placeholder — Prompt 9 fills this in: winning seed, all five candidate seeds, and the
-rule that colour divergence from the reference is permanently excluded from every diff
-and every threshold thereafter.)*
+Written at the merged Prompt 5 + 9 turn. Per amendment A-7 the palette is randomised **at
+token-write time**, so this site is built in its final colours from the first component
+onward. There is no recolour pass, no candidate crop render, no contact sheet, and no
+geometry/typography regression table — there is no recolour for a regression table to
+prove innocent.
+
+### The extracted reference ramp (structure), and what happened to it
+
+Painted-area-weighted extraction from `nextlevelok.com` over `/`, `/contact` and
+`/roof-replacement`. Every **L** and every **C** below is held EXACTLY; only **H** moved.
+
+| token | reference | L | C | H | ours (seed 260721) |
+|---|---|---|---|---|---|
+| `primary` | `rgb(27,139,215)` `#1b8bd7` | 0.6158 | 0.1476 | 245.4 | `#1494ae` |
+| `primaryDeep` | `rgb(1,24,40)` `#011828` | 0.1998 | 0.0444 | 240.8 | `#011a20` |
+| `accent` (their CTA) | `rgb(197,23,22)` `#c51716` | 0.5252 | 0.2041 | 28.2 | `#b83704` |
+| `accentDeep` | `#8e1010` (derived) | 0.4141 | 0.1587 | 27.8 | `#852604` |
+| `neutral0` | `#ffffff` | 1.0000 | 0 | — | `#ffffff` |
+| `neutral200` | `#f2f2f2` | 0.9612 | 0 | — | `#def7ff` |
+| `neutral400` | `#999999` | 0.6830 | 0 | — | `#6ea3b1` |
+| `neutral600` | `#747474` | 0.5590 | 0 | — | `#497d8b` |
+| `neutral900` | `#000000` | 0.0000 | 0 | — | `#000001` |
+
+Neutrals carry a **C 0.059** tint of the primary hue (inside the mandated 3-6% band); pure
+grey reads cheap beside a tinted ramp. `neutral400` is DECORATIVE only and is not gated;
+`neutral600` doubles as `border-strong` and is gated at 3:1.
+
+### The five candidates, and the winner
+
+`masterSeed` **3203** (was 3100 — see the collision note below). 9 rolls, 4 rejected,
+5 survivors. Reproduce any of them exactly with
+`node ../_shared/harness/src/palette.mjs --seed <n>`.
+
+| seed | scheme | primary H | accent H | neutral C | CTA contrast | CTA chroma | |
+|---|---|---|---|---|---|---|---|
+| **260721** | complementary (+180) | **217** | **37** | 0.059 | **5.86** | 0.1729 | **WINNER** |
+| 274299 | triadic (-120) | 267 | 147 | 0.056 | 5.01 | 0.1539 | |
+| 955554 | analogous (-30) | 161 | 131 | 0.047 | 5.13 | 0.1418 | |
+| 300175 | split-complementary (+150) | 115 | 265 | 0.050 | 5.67 | 0.2049 | |
+| 579843 | complementary (+180) | 69 | 249 | 0.040 | 5.41 | 0.1414 | |
+
+Selection is the rule from OVERRIDE 1 / A-7, applied programmatically: the survivor whose
+**call-now CTA has the highest contrast against its background** wins, ties to the lowest
+seed. 5.86:1 was the highest and there was no tie. The four rejected rolls failed on the
+same gate the survivors passed — every fg/bg pair actually in use at AA, CTA highest
+contrast and highest chroma, semantic hues held, focus ring 3:1, neutral ramp monotonic.
+
+**Identity: teal + rust.** Primary hue 217 (`#1494ae`) with a rust accent at hue 37
+(`#b83704`). This is deliberately distinct from the other sites in the programme — Atlas is
+plum/crimson (seed 500656) and Forge is a green/dark ramp (seed 1005) — so the three do not
+read as one template recoloured.
+
+**Why `masterSeed` moved from 3100 to 3203.** At 3100 the winner was seed 909540: primary
+hue 353, accent hue 323 — a plum/magenta ramp that collides directly with Atlas. Re-rolled
+per instruction. Worth recording, because it is structural rather than bad luck: the
+selection rule maximises white-on-accent contrast, and at a fixed OKLCH L and C the lowest
+relative luminance sits around hue 300-360, so the auto-selector is biased toward
+magenta/red accents. Steering was done on the **masterSeed** only; the selection rule
+itself was not touched.
+
+### Gate result — every pair actually in use
+
+24 pairs, defined in `harness.config.mjs -> pairsInUse` and mirrored by
+`app/globals.css -> @theme`. All 24 PASS. Full table in the Prompt 5 report; the two
+tightest are `input-edge-on-alt` at 4.11:1 (a 3:1 UI pair) and `muted-on-surface` at
+4.58:1 (a 4.5 text pair).
+
+One pair is modelled as a **gradient**, not as two flat rows: the CTA band / hero scrim
+runs `primaryDeep -> accentDeep`, is sampled at 5 interpolated OKLCH points, and is gated
+on the **worst** stop (9.23:1 for `--color-surface`). Flat-modelling a ramp is exactly how
+Atlas shipped a CTA whose label was painted in its own background colour while its audit
+reported 23/23 pairs passing.
+
+One pair was **removed** rather than gated: muted grey on the light alt band. `neutral600`
+on `neutral200` is **4.23:1 in the reference's own ramp**, so no hue rotation can rescue
+it. On the alt band, secondary text is `neutral900` at normal weight and never grey. That
+is a design decision, recorded here so nobody reintroduces it.
+
+### The rule this creates
+
+**Colour divergence from the reference is intentional and is permanently excluded from
+every diff, every threshold, and every future iteration.** Per A-8 the structural
+comparator strips resolved colour, background-colour, border-colour, gradient stops and
+shadow colour before scoring; the non-colour parts of borders and shadows (widths, offsets,
+blur, spread, radii) are kept. Any FIDELITY section that is a solid-colour band would read
+100% divergent forever once recoloured — such a section is measured structurally instead,
+and which treatment it got is written on its row.
+
+Geometry and typography did not move at this turn: the palette was written before any
+component existed, so there is nothing for a recolour to have disturbed.
+
+## KD-08 — Shell structural floors, measured at the merged Prompt 5 turn
+
+The shared shell was built, measured, given its **one** fix attempt (A-2), and floored.
+Colour is excluded from every number below (A-8); the advisory fields `innerCount`,
+`innerRows`, `innerCols` and `position` are reported but do not contribute (A-12).
+
+| section | ref id | 390 | 768 | 1440 | threshold | status |
+|---|---|---|---|---|---|---|
+| `header` | `ac810934` | 4.47 (home) / 7.87 | 8.83 / 11.41 (`/about`) | 6.62 | 5 | floored |
+| `footer-nap` | `e4ad708c` | 13.25 | 13.35 | **13.12** (was 14.54) | 5 | floored |
+| `footer-links` | `c52c188e` | 17.62 | 19.40 | 17.47 | 5 | floored |
+| `callbar` | — | UNPAIRED | UNPAIRED | UNPAIRED | — | NOVEL, no counterpart |
+| `stub` (scaffold) | — | 0 token violations | | | 0 | PASS |
+
+**The one attempt, and what it bought.** The NAP band measured 271px at 1440 against the
+reference's 178px: the section rhythm (`--section-y`, 80px at the desktop tier) is right
+for a content band and far too tall for a three-column footer strip. Pinning
+`[data-section="footer-nap"]` to `--spacing-xl` block padding above 1025 took the band to
+~178px and the deviation from 14.54% to 13.12%. **That was attempt 1 of 1. Floored.**
+
+**Best hypothesis for the residual**, offered so the wave does not re-derive it. Band
+heights are already close — header 178/97/225 against their 177/96/220, footer-links
+129 against 127 at 1440 and 185 against 175 at 390 — and the advisory row on
+`footer-links` reads *"none diverge"*, so the inner grid agrees too. What is left is
+almost entirely **type and rhythm inside the band**: their footer sets Lato at 15px/700
+with 33px and 36px line-heights and their own vertical gaps, ours sets the Prompt 5 scale
+(16px body, 22px `--text-h3-m` headings, 24px line-height, 24px gaps). The information in
+the band is different by decision — one SERVICE_AREA sentence instead of a city list, five
+routes instead of four service pages, no "24/7 Emergency" claim — so closing the type
+metrics would mean fitting our copy to their column, which is the ADAPTED trap
+`process.md` names. **Do not iterate on these three rows.**
+
+The `position ref=static ours=sticky` advisory on the header is `docs/behavior/02` working
+as designed: their header is `fixed`, ours is `sticky` so page height stays comparable.
+Advisory, deliberate, and permanently excluded.
+
+## KD-09 — The contract table the harness parses is a SECOND table
+
+`docs/sections.md` shipped its human tables in the column order
+`route | id | our section | ref page | ref# | class | reason`. The shared harness parses
+`route | ref section id | our section id | CLASS | reason`, and it also needs the
+reference's **section id** (`e4ad708c`), not the ordinal `ref#`.
+
+Measured effect before the fix: **zero rows matched**, so every section defaulted to
+FIDELITY and the diff reported 80 failures, including page-height rows on `/privacy`
+scored against the reference's home page. After appending a machine-readable table in the
+parser's order with the canonical ids filled in: **87 rows, 149 class keys, 62 aliases**,
+and the failure count fell to 50 — almost all of which are page-height rows that exist
+only because the routes are still Prompt 5 stubs.
+
+The two tables must be edited together. This is written here rather than fixed in the
+shared package because the package's format is the one four other sites already use;
+sharing the instrument means this site conforms to it (A-11).
+
+Two mappings are genuinely absent rather than wrong, and are floors for the wave:
+
+- `/services::faq` is relocated from the reference's **home** page. The harness pairs
+  within a route, so it will report UNPAIRED forever. Measure it by hand against home
+  `090e14dc-frequently-asked-questions` or floor it; do not chase it.
+- `/privacy` has no reference page at all, so its page-height row is meaningless. Every
+  `/privacy` section is NOVEL and measured once by token conformance (A-9).

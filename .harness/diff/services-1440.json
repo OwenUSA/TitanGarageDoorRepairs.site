@@ -1,0 +1,45 @@
+[
+ {
+  "route": "/services",
+  "bp": 1440,
+  "section": "hero",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
+  "value": 100,
+  "threshold": 5,
+  "status": "FAIL",
+  "note": "not built"
+ },
+ {
+  "route": "/services",
+  "bp": 1440,
+  "section": "list",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
+  "value": 100,
+  "threshold": 5,
+  "status": "FAIL",
+  "note": "not built"
+ },
+ {
+  "route": "/services",
+  "bp": 1440,
+  "section": "faq",
+  "class": "ADAPTED",
+  "metric": "token violations",
+  "value": "section not rendered",
+  "threshold": 0,
+  "status": "FAIL"
+ },
+ {
+  "route": "/services",
+  "bp": 1440,
+  "section": "cta-band",
+  "class": "FIDELITY",
+  "metric": "divergent px %",
+  "value": 100,
+  "threshold": 2,
+  "status": "FAIL",
+  "note": "missing capture on one side"
+ }
+]

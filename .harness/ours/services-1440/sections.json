@@ -1,0 +1,60 @@
+{
+ "side": "ours",
+ "route": "/services",
+ "bp": 1440,
+ "url": "http://localhost:3100/services",
+ "status": 200,
+ "profile": {
+  "url": "http://localhost:3100/services",
+  "title": "Titan Garage Door Repairs",
+  "height": 900,
+  "viewport": {
+   "w": 1440,
+   "h": 900
+  },
+  "sectionCount": 0,
+  "cssBreakpoints": [
+   "(width >= 40rem)",
+   "(width >= 48rem)",
+   "(width >= 64rem)",
+   "(width >= 80rem)",
+   "(width >= 96rem)"
+  ],
+  "ruleCount": 111,
+  "sheetsBlocked": 0,
+  "fonts": [
+   "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+  ],
+  "fontFaces": [
+   "__nextjs-Geist :: url(\"/__nextjs_font/geist-latin-ext.woff2\") format(\"woff2\")",
+   "\"__nextjs-Geist Mono\" :: url(\"/__nextjs_font/geist-mono-latin-ext.woff2\") format(\"woff2\")",
+   "__nextjs-Geist :: url(\"/__nextjs_font/geist-latin.woff2\") format(\"woff2\")",
+   "\"__nextjs-Geist Mono\" :: url(\"/__nextjs_font/geist-mono-latin.woff2\") format(\"woff2\")"
+  ],
+  "motion": {
+   "animatedElements": 0,
+   "scrollLinkedLibs": false,
+   "intersectionObserver": false,
+   "scrollListeners": false,
+   "rafLoops": false,
+   "libs": []
+  },
+  "state": {
+   "navToggle": 0,
+   "forms": [],
+   "accordions": 0,
+   "tabs": 0,
+   "carousels": 0,
+   "telLinks": 0,
+   "mailto": 0,
+   "iframes": [],
+   "sticky": []
+  },
+  "lists": [],
+  "images": [],
+  "auth": false,
+  "geo": false,
+  "fetchAfterLoad": false
+ },
+ "sections": []
+}

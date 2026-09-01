@@ -1,0 +1,126 @@
+{
+ "generated": "2026-09-01T07:18:00.780Z",
+ "side": "ours",
+ "results": [
+  {
+   "side": "ours",
+   "route": "/",
+   "bp": 390,
+   "status": 200,
+   "height": 844,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/",
+   "bp": 768,
+   "status": 200,
+   "height": 1024,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/",
+   "bp": 1440,
+   "status": 200,
+   "height": 900,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/about",
+   "bp": 390,
+   "status": 200,
+   "height": 844,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/about",
+   "bp": 768,
+   "status": 200,
+   "height": 1024,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/about",
+   "bp": 1440,
+   "status": 200,
+   "height": 900,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/services",
+   "bp": 768,
+   "status": 200,
+   "height": 1024,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/services",
+   "bp": 390,
+   "status": 200,
+   "height": 844,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/services",
+   "bp": 1440,
+   "status": 200,
+   "height": 900,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/contact",
+   "bp": 390,
+   "status": 200,
+   "height": 844,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/contact",
+   "bp": 768,
+   "status": 200,
+   "height": 1024,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/contact",
+   "bp": 1440,
+   "status": 200,
+   "height": 900,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/privacy",
+   "bp": 768,
+   "status": 200,
+   "height": 1024,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/privacy",
+   "bp": 390,
+   "status": 200,
+   "height": 844,
+   "shots": 0
+  },
+  {
+   "side": "ours",
+   "route": "/privacy",
+   "bp": 1440,
+   "status": 200,
+   "height": 900,
+   "shots": 0
+  }
+ ]
+}

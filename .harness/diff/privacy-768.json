@@ -1,0 +1,32 @@
+[
+ {
+  "route": "/privacy",
+  "bp": 768,
+  "section": "title",
+  "class": "NOVEL",
+  "metric": "token violations",
+  "value": "section not rendered",
+  "threshold": 0,
+  "status": "FAIL"
+ },
+ {
+  "route": "/privacy",
+  "bp": 768,
+  "section": "body",
+  "class": "NOVEL",
+  "metric": "token violations",
+  "value": "section not rendered",
+  "threshold": 0,
+  "status": "FAIL"
+ },
+ {
+  "route": "/privacy",
+  "bp": 768,
+  "section": "contact",
+  "class": "NOVEL",
+  "metric": "token violations",
+  "value": "section not rendered",
+  "threshold": 0,
+  "status": "FAIL"
+ }
+]

@@ -1,0 +1,111 @@
+[
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "hero",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
+  "value": 100,
+  "threshold": 5,
+  "status": "FAIL",
+  "note": "not built"
+ },
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "trust-row",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
+  "value": 100,
+  "threshold": 5,
+  "status": "FAIL",
+  "note": "not built"
+ },
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "svc-a",
+  "class": "FIDELITY",
+  "metric": "divergent px %",
+  "value": 100,
+  "threshold": 2,
+  "status": "FAIL",
+  "note": "missing capture on one side"
+ },
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "svc-b",
+  "class": "FIDELITY",
+  "metric": "divergent px %",
+  "value": 100,
+  "threshold": 2,
+  "status": "FAIL",
+  "note": "missing capture on one side"
+ },
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "svc-c",
+  "class": "FIDELITY",
+  "metric": "divergent px %",
+  "value": 100,
+  "threshold": 2,
+  "status": "FAIL",
+  "note": "missing capture on one side"
+ },
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "intro",
+  "class": "FIDELITY",
+  "metric": "divergent px %",
+  "value": 100,
+  "threshold": 2,
+  "status": "FAIL",
+  "note": "missing capture on one side"
+ },
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "projects",
+  "class": "FIDELITY",
+  "metric": "divergent px %",
+  "value": 100,
+  "threshold": 2,
+  "status": "FAIL",
+  "note": "missing capture on one side"
+ },
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "testimonials",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
+  "value": 100,
+  "threshold": 5,
+  "status": "FAIL",
+  "note": "not built"
+ },
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "map",
+  "class": "NOVEL",
+  "metric": "token violations",
+  "value": "section not rendered",
+  "threshold": 0,
+  "status": "FAIL"
+ },
+ {
+  "route": "/",
+  "bp": 768,
+  "section": "cta-band",
+  "class": "FIDELITY",
+  "metric": "divergent px %",
+  "value": 100,
+  "threshold": 2,
+  "status": "FAIL",
+  "note": "missing capture on one side"
+ }
+]

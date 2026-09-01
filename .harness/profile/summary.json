@@ -1,0 +1,230 @@
+{
+ "generated": "2026-09-01T07:11:10.288Z",
+ "reference": "https://www.nextlevelok.com",
+ "results": [
+  {
+   "refPath": "/",
+   "bp": 430,
+   "status": 200,
+   "height": 9493,
+   "sections": 26,
+   "blocks": 22
+  },
+  {
+   "refPath": "/",
+   "bp": 390,
+   "status": 200,
+   "height": 9503,
+   "sections": 26,
+   "blocks": 22
+  },
+  {
+   "refPath": "/",
+   "bp": 768,
+   "status": 200,
+   "height": 7524,
+   "sections": 26,
+   "blocks": 20
+  },
+  {
+   "refPath": "/",
+   "bp": 1440,
+   "status": 200,
+   "height": 7442,
+   "sections": 26,
+   "blocks": 21
+  },
+  {
+   "refPath": "/about",
+   "bp": 390,
+   "status": 200,
+   "height": 4651,
+   "sections": 18,
+   "blocks": 14
+  },
+  {
+   "refPath": "/about",
+   "bp": 430,
+   "status": 200,
+   "height": 4621,
+   "sections": 18,
+   "blocks": 14
+  },
+  {
+   "refPath": "/about",
+   "bp": 768,
+   "status": 200,
+   "height": 3632,
+   "sections": 18,
+   "blocks": 13
+  },
+  {
+   "refPath": "/about",
+   "bp": 1440,
+   "status": 200,
+   "height": 2989,
+   "sections": 18,
+   "blocks": 14
+  },
+  {
+   "refPath": "/roof-replacement",
+   "bp": 430,
+   "status": 200,
+   "height": 9022,
+   "sections": 17,
+   "blocks": 14
+  },
+  {
+   "refPath": "/roof-replacement",
+   "bp": 390,
+   "status": 200,
+   "height": 9485,
+   "sections": 17,
+   "blocks": 14
+  },
+  {
+   "refPath": "/roof-replacement",
+   "bp": 768,
+   "status": 200,
+   "height": 7972,
+   "sections": 17,
+   "blocks": 13
+  },
+  {
+   "refPath": "/roof-replacement",
+   "bp": 1440,
+   "status": 200,
+   "height": 5118,
+   "sections": 17,
+   "blocks": 13
+  },
+  {
+   "refPath": "/contact",
+   "bp": 430,
+   "status": 200,
+   "height": 3171,
+   "sections": 20,
+   "blocks": 15
+  },
+  {
+   "refPath": "/contact",
+   "bp": 390,
+   "status": 200,
+   "height": 3192,
+   "sections": 20,
+   "blocks": 15
+  },
+  {
+   "refPath": "/contact",
+   "bp": 768,
+   "status": 200,
+   "height": 3370,
+   "sections": 20,
+   "blocks": 14
+  },
+  {
+   "refPath": "/contact",
+   "bp": 1440,
+   "status": 200,
+   "height": 2206,
+   "sections": 20,
+   "blocks": 14
+  },
+  {
+   "refPath": "/faqs",
+   "bp": 390,
+   "status": 200,
+   "height": 2863,
+   "sections": 17,
+   "blocks": 14
+  },
+  {
+   "refPath": "/faqs",
+   "bp": 430,
+   "status": 200,
+   "height": 2776,
+   "sections": 17,
+   "blocks": 14
+  },
+  {
+   "refPath": "/faqs",
+   "bp": 768,
+   "status": 200,
+   "height": 2772,
+   "sections": 17,
+   "blocks": 13
+  },
+  {
+   "refPath": "/faqs",
+   "bp": 1440,
+   "status": 200,
+   "height": 1995,
+   "sections": 17,
+   "blocks": 13
+  },
+  {
+   "refPath": "/reviews",
+   "bp": 430,
+   "status": 200,
+   "height": 4189,
+   "sections": 17,
+   "blocks": 14
+  },
+  {
+   "refPath": "/reviews",
+   "bp": 390,
+   "status": 200,
+   "height": 4379,
+   "sections": 17,
+   "blocks": 14
+  },
+  {
+   "refPath": "/reviews",
+   "bp": 768,
+   "status": 200,
+   "height": 3745,
+   "sections": 17,
+   "blocks": 13
+  },
+  {
+   "refPath": "/reviews",
+   "bp": 1440,
+   "status": 200,
+   "height": 2746,
+   "sections": 17,
+   "blocks": 13
+  },
+  {
+   "refPath": "/serving-area",
+   "bp": 390,
+   "status": 200,
+   "height": 9611,
+   "sections": 20,
+   "blocks": 18
+  },
+  {
+   "refPath": "/serving-area",
+   "bp": 430,
+   "status": 200,
+   "height": 9594,
+   "sections": 20,
+   "blocks": 18
+  },
+  {
+   "refPath": "/serving-area",
+   "bp": 768,
+   "status": 200,
+   "height": 6998,
+   "sections": 20,
+   "blocks": 16
+  },
+  {
+   "refPath": "/serving-area",
+   "bp": 1440,
+   "status": 200,
+   "height": 6338,
+   "sections": 20,
+   "blocks": 16
+  }
+ ]
+}

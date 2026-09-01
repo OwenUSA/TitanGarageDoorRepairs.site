@@ -1,0 +1,120 @@
+{
+ "generated": "2026-09-01T07:17:35.323Z",
+ "side": "ref",
+ "results": [
+  {
+   "side": "ref",
+   "route": "/",
+   "bp": 390,
+   "status": 200,
+   "height": 9503,
+   "shots": 14
+  },
+  {
+   "side": "ref",
+   "route": "/",
+   "bp": 768,
+   "status": 200,
+   "height": 7524,
+   "shots": 14
+  },
+  {
+   "side": "ref",
+   "route": "/about",
+   "bp": 390,
+   "status": 200,
+   "height": 4651,
+   "shots": 6
+  },
+  {
+   "side": "ref",
+   "route": "/",
+   "bp": 1440,
+   "status": 200,
+   "height": 7442,
+   "shots": 15
+  },
+  {
+   "side": "ref",
+   "route": "/about",
+   "bp": 768,
+   "status": 200,
+   "height": 3632,
+   "shots": 6
+  },
+  {
+   "side": "ref",
+   "route": "/about",
+   "bp": 1440,
+   "status": 200,
+   "height": 2989,
+   "shots": 7
+  },
+  {
+   "side": "ref",
+   "route": "/services",
+   "bp": 390,
+   "status": 200,
+   "height": 9485,
+   "shots": 6
+  },
+  {
+   "side": "ref",
+   "route": "/services",
+   "bp": 768,
+   "status": 200,
+   "height": 7972,
+   "shots": 6
+  },
+  {
+   "side": "ref",
+   "route": "/services",
+   "bp": 1440,
+   "status": 200,
+   "height": 5118,
+   "shots": 6
+  },
+  {
+   "side": "ref",
+   "route": "/contact",
+   "bp": 390,
+   "status": 200,
+   "height": 3192,
+   "shots": 7
+  },
+  {
+   "side": "ref",
+   "route": "/contact",
+   "bp": 768,
+   "status": 200,
+   "height": 3370,
+   "shots": 7
+  },
+  {
+   "side": "ref",
+   "route": "/privacy",
+   "bp": 390,
+   "novel": true
+  },
+  {
+   "side": "ref",
+   "route": "/privacy",
+   "bp": 768,
+   "novel": true
+  },
+  {
+   "side": "ref",
+   "route": "/privacy",
+   "bp": 1440,
+   "novel": true
+  },
+  {
+   "side": "ref",
+   "route": "/contact",
+   "bp": 1440,
+   "status": 200,
+   "height": 2206,
+   "shots": 7
+  }
+ ]
+}

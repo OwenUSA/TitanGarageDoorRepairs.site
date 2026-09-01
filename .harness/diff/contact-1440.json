@@ -1,0 +1,56 @@
+[
+ {
+  "route": "/contact",
+  "bp": 1440,
+  "section": "title",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
+  "value": 100,
+  "threshold": 5,
+  "status": "FAIL",
+  "note": "not built"
+ },
+ {
+  "route": "/contact",
+  "bp": 1440,
+  "section": "form",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
+  "value": 100,
+  "threshold": 5,
+  "status": "FAIL",
+  "note": "not built"
+ },
+ {
+  "route": "/contact",
+  "bp": 1440,
+  "section": "nap-card",
+  "class": "NOVEL",
+  "metric": "token violations",
+  "value": "section not rendered",
+  "threshold": 0,
+  "status": "FAIL"
+ },
+ {
+  "route": "/contact",
+  "bp": 1440,
+  "section": "map",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
+  "value": 100,
+  "threshold": 5,
+  "status": "FAIL",
+  "note": "not built"
+ },
+ {
+  "route": "/contact",
+  "bp": 1440,
+  "section": "cta-band",
+  "class": "FIDELITY",
+  "metric": "divergent px %",
+  "value": 100,
+  "threshold": 2,
+  "status": "FAIL",
+  "note": "missing capture on one side"
+ }
+]

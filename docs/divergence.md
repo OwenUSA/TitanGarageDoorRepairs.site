@@ -1,34 +1,34 @@
 # Divergence table
 
-Generated 2026-09-01T07:21:39.703Z by `harness/diff.mjs`. Ranked by divergence, worst first.
+Generated 2026-09-01T14:19:18.802Z by `harness/diff.mjs`. Ranked by divergence, worst first.
 Thresholds: FIDELITY < 2% divergent pixel area, ADAPTED < 5% structural deviation, NOVEL = 0 token violations.
 
 | route | section | breakpoint | class | metric | value | threshold | status |
 |---|---|---|---|---|---|---|---|
 | / | hero | 390 | ADAPTED | struct dev % | 100 | 5 | FAIL |
 | / | trust-row | 390 | ADAPTED | struct dev % | 100 | 5 | FAIL |
-| / | svc-a | 390 | FIDELITY | divergent px % | 100 | 2 | FAIL |
-| / | svc-b | 390 | FIDELITY | divergent px % | 100 | 2 | FAIL |
-| / | svc-c | 390 | FIDELITY | divergent px % | 100 | 2 | FAIL |
-| / | intro | 390 | FIDELITY | divergent px % | 100 | 2 | FAIL |
+| / | svc-a | 390 | ADAPTED | struct dev % | 100 | 5 | FAIL |
+| / | svc-b | 390 | ADAPTED | struct dev % | 100 | 5 | FAIL |
+| / | svc-c | 390 | ADAPTED | struct dev % | 100 | 5 | FAIL |
+| / | intro | 390 | ADAPTED | struct dev % | 100 | 5 | FAIL |
 | / | projects | 390 | FIDELITY | divergent px % | 100 | 2 | FAIL |
 | / | testimonials | 390 | ADAPTED | struct dev % | 100 | 5 | FAIL |
 | / | cta-band | 390 | FIDELITY | divergent px % | 100 | 2 | FAIL |
 | / | hero | 768 | ADAPTED | struct dev % | 100 | 5 | FAIL |
 | / | trust-row | 768 | ADAPTED | struct dev % | 100 | 5 | FAIL |
-| / | svc-a | 768 | FIDELITY | divergent px % | 100 | 2 | FAIL |
-| / | svc-b | 768 | FIDELITY | divergent px % | 100 | 2 | FAIL |
-| / | svc-c | 768 | FIDELITY | divergent px % | 100 | 2 | FAIL |
-| / | intro | 768 | FIDELITY | divergent px % | 100 | 2 | FAIL |
+| / | svc-a | 768 | ADAPTED | struct dev % | 100 | 5 | FAIL |
+| / | svc-b | 768 | ADAPTED | struct dev % | 100 | 5 | FAIL |
+| / | svc-c | 768 | ADAPTED | struct dev % | 100 | 5 | FAIL |
+| / | intro | 768 | ADAPTED | struct dev % | 100 | 5 | FAIL |
 | / | projects | 768 | FIDELITY | divergent px % | 100 | 2 | FAIL |
 | / | testimonials | 768 | ADAPTED | struct dev % | 100 | 5 | FAIL |
 | / | cta-band | 768 | FIDELITY | divergent px % | 100 | 2 | FAIL |
 | / | hero | 1440 | ADAPTED | struct dev % | 100 | 5 | FAIL |
 | / | trust-row | 1440 | ADAPTED | struct dev % | 100 | 5 | FAIL |
-| / | svc-a | 1440 | FIDELITY | divergent px % | 100 | 2 | FAIL |
-| / | svc-b | 1440 | FIDELITY | divergent px % | 100 | 2 | FAIL |
-| / | svc-c | 1440 | FIDELITY | divergent px % | 100 | 2 | FAIL |
-| / | intro | 1440 | FIDELITY | divergent px % | 100 | 2 | FAIL |
+| / | svc-a | 1440 | ADAPTED | struct dev % | 100 | 5 | FAIL |
+| / | svc-b | 1440 | ADAPTED | struct dev % | 100 | 5 | FAIL |
+| / | svc-c | 1440 | ADAPTED | struct dev % | 100 | 5 | FAIL |
+| / | intro | 1440 | ADAPTED | struct dev % | 100 | 5 | FAIL |
 | / | projects | 1440 | FIDELITY | divergent px % | 100 | 2 | FAIL |
 | / | testimonials | 1440 | ADAPTED | struct dev % | 100 | 5 | FAIL |
 | / | cta-band | 1440 | FIDELITY | divergent px % | 100 | 2 | FAIL |

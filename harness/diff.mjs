@@ -31,7 +31,9 @@ export function loadClasses(file = 'docs/sections.md') {
     if (!line.trim().startsWith('|')) continue;
     const c = line.split('|').map((s) => s.trim());
     if (c.length < 7) continue;
-    const [, route, id, , , refIdx, klass] = c;
+    const [, route, id, , , refIdx, rawClass] = c;
+    // sections.md marks reclassified rows with **bold**; strip emphasis before matching.
+    const klass = (rawClass || '').replace(/\*/g, '').trim();
     if (!/^(FIDELITY|ADAPTED|NOVEL|DELETED)$/.test(klass)) continue;
     (out[route] ||= []).push({ id, refIdx: refIdx === '—' || refIdx === '' ? null : Number(refIdx), class: klass });
   }

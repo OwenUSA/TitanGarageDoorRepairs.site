@@ -1,0 +1,540 @@
+{
+ "route": "/about",
+ "refPath": "/about",
+ "sections": [
+  {
+   "i": 2,
+   "headings": [],
+   "paras": [
+    "Serving the greater state of",
+    "Oklahoma",
+    "Call or Text",
+    "(405) 252-9734"
+   ],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Replacement",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor",
+    "Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair",
+    "Chimney Flashing Repair",
+    "Emergency Roof Repair",
+    "Leak Detection Services",
+    "Roof Coating Services",
+    "Roof Moss Removal",
+    "Storm Damage Repair",
+    "Valley Repair",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area",
+    "Home",
+    "Services",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area"
+   ],
+   "ctas": [
+    "5.0(6 Ratings & Reviews)",
+    "Request Information",
+    "(405) 252-9734",
+    "Home",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services",
+    "Exterior Doors",
+    "Gable Vent Installation"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 1672,
+    "paras": [
+     28,
+     8,
+     12,
+     14
+    ],
+    "items": 53
+   },
+   "body": "Serving the greater state of Oklahoma Call or Text (405) 252-9734 Home Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area Home Services Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area"
+  },
+  {
+   "i": 4,
+   "headings": [],
+   "paras": [],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Replacement",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor",
+    "Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair",
+    "Chimney Flashing Repair",
+    "Emergency Roof Repair",
+    "Leak Detection Services",
+    "Roof Coating Services",
+    "Roof Moss Removal",
+    "Storm Damage Repair",
+    "Valley Repair",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area"
+   ],
+   "ctas": [
+    "Home",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 1460,
+    "paras": [],
+    "items": 43
+   },
+   "body": "Home Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area"
+  },
+  {
+   "i": 6,
+   "headings": [
+    {
+     "tag": "H2",
+     "text": "About",
+     "chars": 5
+    },
+    {
+     "tag": "H4",
+     "text": "Next Level Roofing",
+     "chars": 18
+    }
+   ],
+   "paras": [],
+   "items": [],
+   "ctas": [],
+   "chars": {
+    "headings": 23,
+    "body": 0,
+    "paras": [],
+    "items": 0
+   },
+   "body": ""
+  },
+  {
+   "i": 8,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "About Next Level Roofing",
+     "chars": 24
+    }
+   ],
+   "paras": [
+    "At Next Level Roofing, we've established ourselves as Oklahoma's most trusted roofing professionals, delivering exceptional roof installation and repair services. As the proud recipients of the 2025 Evergreen Award for Best Roofing Company in Oklahoma, our family-owned and locally operated business brings generations of expertise to every project we undertake. We understand that roofing emergencies don't follow a 9-to-5 schedule, which is why we offer 24/7 emergency services to address urgent issues before they escalate into costly disasters.",
+    "Communication is the foundation of our client relationships, and our bilingual team is fluent in both English and Spanish, ensuring clear understanding and expectations throughout your roofing project. As a locally owned business, we take immense pride in serving our Oklahoma neighbors with the highest standards of integrity and workmanship, treating each home as if it were our own. When you choose Next Level Roofing, you're not just getting a contractor—you're partnering with a dedicated team committed to elevating your roofing experience to the next level of excellence. Contact us today."
+   ],
+   "items": [],
+   "ctas": [
+    "Contact us today"
+   ],
+   "chars": {
+    "headings": 24,
+    "body": 1145,
+    "paras": [
+     548,
+     596
+    ],
+    "items": 0
+   },
+   "body": "At Next Level Roofing, we've established ourselves as Oklahoma's most trusted roofing professionals, delivering exceptional roof installation and repair services. As the proud recipients of the 2025 Evergreen Award for Best Roofing Company in Oklahoma, our family-owned and locally operated business brings generations of expertise to every project we undertake. We understand that roofing emergencies don't follow a 9-to-5 schedule, which is why we offer 24/7 emergency services to address urgent issues before they escalate into costly disasters. Communication is the foundation of our client relationships, and our bilingual team is fluent in both English and Spanish, ensuring clear understanding and expectations throughout your roofing project. As a locally owned business, we take immense pride in serving our Oklahoma neighbors with the highest standards of integrity and workmanship, treating each home as if it were our own. When you choose Next Level Roofing, you're not just getting a contractor—you're partnering with a dedicated team committed to elevating your roofing experience to the next level of excellence. Contact us today."
+  },
+  {
+   "i": 9,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "About",
+     "chars": 5
+    },
+    {
+     "tag": "H3",
+     "text": "Year Established",
+     "chars": 16
+    },
+    {
+     "tag": "H3",
+     "text": "Products",
+     "chars": 8
+    },
+    {
+     "tag": "H3",
+     "text": "Services",
+     "chars": 8
+    },
+    {
+     "tag": "H3",
+     "text": "Associations",
+     "chars": 12
+    },
+    {
+     "tag": "H3",
+     "text": "Brands",
+     "chars": 6
+    },
+    {
+     "tag": "H3",
+     "text": "Pickup and Delivery",
+     "chars": 19
+    },
+    {
+     "tag": "H3",
+     "text": "License Information",
+     "chars": 19
+    },
+    {
+     "tag": "H3",
+     "text": "Specialties",
+     "chars": 11
+    },
+    {
+     "tag": "H3",
+     "text": "Payment Options",
+     "chars": 15
+    },
+    {
+     "tag": "H3",
+     "text": "Languages",
+     "chars": 9
+    },
+    {
+     "tag": "H3",
+     "text": "Good to Know",
+     "chars": 12
+    }
+   ],
+   "paras": [
+    "Next Level Roofing provides roofing services to the state of Oklahoma.",
+    "2013"
+   ],
+   "items": [
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing Services",
+    "Chimney Flashing Repairs",
+    "Emergency Roof Repairs",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Leak Detection Services",
+    "Metal Roof Installation",
+    "Roof Coating Services",
+    "Roof Deck Installation",
+    "Roof Deck Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Moss Removal",
+    "Roof Replacements",
+    "Roof Tear-Offs",
+    "Roof Ventilation Services",
+    "Roof Waterproofing Services",
+    "Siding Services",
+    "Skylight Installation",
+    "Skylight Repair",
+    "Slate Roof Installation",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Storm Damage Repairs",
+    "TPO Roof Installation",
+    "Valley Repairs",
+    "Window Services",
+    "Tamko Pro Platinum",
+    "National Roofing Contractors Association (NRCA)",
+    "Better Business Bureau",
+    "Tamko",
+    "Kingspan Roofing and Waterproofing",
+    "Elevate",
+    "Versico",
+    "CertainTeed",
+    "License Number: 8000-2107",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing Services",
+    "Chimney Flashing Repairs",
+    "Emergency Roof Repairs",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Leak Detection Services",
+    "Metal Roof Installation",
+    "Roof Coating Services",
+    "Roof Deck Installation",
+    "Roof Deck Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Moss Removal",
+    "Roof Replacements",
+    "Roof Tear-Offs",
+    "Roof Ventilation Services",
+    "Roof Waterproofing Services",
+    "Siding Services",
+    "Skylight Installation",
+    "Skylight Repair",
+    "Slate Roof Installation",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Storm Damage Repairs",
+    "TPO Roof Installation",
+    "Valley Repairs",
+    "Window Services",
+    "American Express",
+    "Cash",
+    "Check",
+    "Discover",
+    "Financing",
+    "Invoice",
+    "MasterCard",
+    "Visa",
+    "English",
+    "Spanish"
+   ],
+   "ctas": [],
+   "chars": {
+    "headings": 140,
+    "body": 1671,
+    "paras": [
+     70,
+     4
+    ],
+    "items": 83
+   },
+   "body": "Next Level Roofing provides roofing services to the state of Oklahoma. 2013 Asphalt Shingle Installation Built-Up Roofing Services Chimney Flashing Repairs Emergency Roof Repairs Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Leak Detection Services Metal Roof Installation Roof Coating Services Roof Deck Installation Roof Deck Repair Roof Inspection Services Roof Maintenance Services Roof Moss Removal Roof Replacements Roof Tear-Offs Roof Ventilation Services Roof Waterproofing Services Siding Services Skylight Installation Skylight Repair Slate Roof Installation Soffit Installation Soffit Repair Storm Damage Repairs TPO Roof Installation Valley Repairs Window Services Tamko Pro Platinum National Roofing Contractors Association (NRCA) Better Business Bureau Tamko Kingspan Roofing and Waterproofing Elevate Versico CertainTeed License Number: 8000-2107 Asphalt Shingle Installation Built-Up Roofing Services Chimney Flashing Repairs Emergency Roof Repairs Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Leak Detection Services Metal Roof Installation Roof Coating Services Roof Deck Installation Roof Deck Repair Roof Inspection Services Roof Maintenance Services Roof Moss Removal Roof Replacements Roof Tear-Offs Roof Ventilation Services Roof Waterproofing Services Siding Services Skylight Installation Skylight Repair Slate Roof Installation Soffit Installation Soffit Repair Storm Damage Repairs TPO Roof Installation Valley Repairs Window Services American Express Cash Check Discover Financing Invoice MasterCard Visa English Spanish"
+  },
+  {
+   "i": 11,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "Learn more about",
+     "chars": 16
+    },
+    {
+     "tag": "H3",
+     "text": "Next Level Roofing",
+     "chars": 18
+    }
+   ],
+   "paras": [
+    "Serving Oklahoma, Next Level Roofing specializes in roof installatoin, repair, maintenance, and gutter services. 24/7 emergency service. Financing options. Warranties available. Call today."
+   ],
+   "items": [],
+   "ctas": [
+    "Watch Video"
+   ],
+   "chars": {
+    "headings": 34,
+    "body": 189,
+    "paras": [
+     189
+    ],
+    "items": 0
+   },
+   "body": "Serving Oklahoma, Next Level Roofing specializes in roof installatoin, repair, maintenance, and gutter services. 24/7 emergency service. Financing options. Warranties available. Call today."
+  },
+  {
+   "i": 12,
+   "headings": [],
+   "paras": [
+    "Oklahoma",
+    "and surrounding areas",
+    "(405) 252-9734",
+    "24/7 Emergency Service Available"
+   ],
+   "items": [],
+   "ctas": [
+    "and surrounding areas",
+    "(405) 252-9734",
+    "Send a Message",
+    "Free Quotes in 60 Seconds!"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 78,
+    "paras": [
+     8,
+     21,
+     14,
+     32
+    ],
+    "items": 0
+   },
+   "body": "Oklahoma and surrounding areas (405) 252-9734 24/7 Emergency Service Available"
+  },
+  {
+   "i": 13,
+   "headings": [],
+   "paras": [],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation",
+    "Roof Replacement",
+    "Metal Roofers"
+   ],
+   "ctas": [
+    "Home",
+    "Roof Replacement",
+    "Metal Roofers"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 80,
+    "paras": [],
+    "items": 4
+   },
+   "body": "Home Residential and Commercial Roof Installation Roof Replacement Metal Roofers"
+  },
+  {
+   "i": 14,
+   "headings": [],
+   "paras": [],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Replacement",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor",
+    "Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair",
+    "Chimney Flashing Repair",
+    "Emergency Roof Repair",
+    "Leak Detection Services",
+    "Roof Coating Services",
+    "Roof Moss Removal",
+    "Storm Damage Repair",
+    "Valley Repair",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area"
+   ],
+   "ctas": [
+    "Home",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 1460,
+    "paras": [],
+    "items": 43
+   },
+   "body": "Home Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area"
+  }
+ ]
+}

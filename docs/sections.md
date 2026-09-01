@@ -12,10 +12,14 @@ Classes:
 - **NOVEL** — no counterpart. Token conformance, `0` violations.
 - **DELETED** — removed per D-02 or D-01. Not built, not measured.
 
-**Draft status.** This is the Prompt 1 draft. Prompt 3 writes the copy and then moves
-every section whose *information content* changed from FIDELITY to ADAPTED, in this file,
-with the reason. Expect the FIDELITY count to fall. Do not grind a diff on a section whose
-residual is words.
+**Status: reclassified by Prompt 3 (copy shipped).** The copy in `content/copy.ts` is
+written and gated, so every section whose *information content* changed has been moved
+FIDELITY -> ADAPTED below, with the reason on the row. **Nine sections moved.** Two
+FIDELITY sections survive, and they survive only because their content really is
+structurally equivalent — a link list and a repeated CTA band.
+
+Do not grind a pixel diff on an ADAPTED row. If a FIDELITY row will not close and the
+residual is words, the class is wrong: move it here first, then re-measure structurally.
 
 Row format (do not reorder columns — the parser depends on them):
 
@@ -29,7 +33,7 @@ Row format (do not reorder columns — the parser depends on them):
 | shell | drawer | Mobile hamburger drawer | / | — | ADAPTED | Off-canvas right panel, 265px, overlay behind. Ours holds five links, theirs holds a nested tree. Spec in `docs/behavior/`. |
 | shell | callbar | Mobile sticky call bar | / | — | NOVEL | They have a fixed bottom bar; ours is a dedicated `tel:` bar per D-04. Different element, different purpose — measured on tokens. |
 | shell | footer-nap | Footer NAP: name, address, phone, hours, SERVICE_AREA sentence | / | 20 | ADAPTED | Their column is a serving-area list plus "24/7 Emergency". Ours is one SERVICE_AREA sentence (D-02) and 7:00–19:00 seven days (D-06). |
-| shell | footer-links | Footer site links | / | 21 | FIDELITY | Link list, same structure and count band. Reclassify if Prompt 3's labels change the line count. |
+| shell | footer-links | Footer site links | / | 21 | **ADAPTED** | *Was FIDELITY.* Their four links are service pages; ours are the five fixed routes (D-01), one of which is Privacy, which they do not have. Different item count and different destinations = different information (-8.8%). |
 
 ## `/` — home
 
@@ -51,14 +55,14 @@ mobile sticky call bar.
 |---|---|---|---|---|---|---|
 | / | hero | Hero: H1, lede, tel CTA + callback CTA, full-bleed image | / | 7 | ADAPTED | Proposition category changes from speed/emergency to "a real person answers the phone" (Prompt 3 item 3). Same box, same CTA pair, same ±10% copy volume. |
 | / | trust-row | Why choose us — claim chips | / | 9 | ADAPTED | Their six chips are 24/7 emergency, financing, military discount. Every one is an invented fact for us, so ours are `TODO(fact):` chips at the same dimensions (D-14). Also moved up one slot. |
-| / | svc-a | Service feature A — image + heading + copy + CTA | / | 10 | FIDELITY | Image-left feature block, identical structure and copy volume. Garage-door subject, garage-door words, same slots. |
-| / | svc-b | Service feature B — image right | / | 11 | FIDELITY | Mirror of A. |
-| / | svc-c | Service feature C — image left | / | 12 | FIDELITY | Mirror of A. |
-| / | intro | Intro copy band — H2 + two paragraphs | / | 8 | FIDELITY | Same purpose, same block volume; moved from slot 2 to slot 6. Position is not a class change; content equivalence is. |
-| / | projects | Recent work — 8-image grid | / | 14 | FIDELITY | Same 8-item count and grid geometry. Placeholder-blocked until Prompt 10 — measured with the placeholder area excluded, and it is a known floor, not a fixable divergence. |
+| / | svc-a | Service feature A — image + heading + copy + CTA | / | 10 | **ADAPTED** | *Was FIDELITY.* Prompt 3 item 4: their block is named for a product line ("Residential and Commercial Roof Installation"); ours is named for a symptom ("It will not close, or it bounces straight back up"). The heading answers a different question, so the information changed, not just the wording. Structure and volume are unchanged (+8.9%). |
+| / | svc-b | Service feature B — image right | / | 11 | **ADAPTED** | *Was FIDELITY.* Same reason as svc-a — regrouped by symptom (+3.0%). |
+| / | svc-c | Service feature C — image left | / | 12 | **ADAPTED** | *Was FIDELITY.* Same reason as svc-a — regrouped by symptom (-9.5%). |
+| / | intro | Intro copy band — H2 + two paragraphs | / | 8 | **ADAPTED** | *Was FIDELITY.* Their two paragraphs are an awards-and-credentials pitch. Ours carries the proposition — who answers the phone and what happens on the call — and every award claim is gone under D-14. Different information, same volume (-7.5%). |
+| / | projects | Recent work — 8-image grid | / | 14 | FIDELITY | **Held.** The section is a heading plus an 8-item grid; the item count, grid geometry, and copy volume are all equivalent (-8.8%, 31 vs 34 chars). Placeholder-blocked until Prompt 10 — measured with the placeholder area excluded, KD-03. |
 | / | testimonials | Testimonials | / | 15 | ADAPTED | `[TESTIMONIAL PLACEHOLDER]` blocks at realistic length, no names, no stars, no `Review`/`AggregateRating` JSON-LD (D-13). Their block carries real quotes and a review CTA. |
 | / | map | Service-area map, zoom ~13, directions link | — | — | NOVEL | Required by D-08, no counterpart on their home page. Coords-only keyless embed (D-07). Token conformance only. |
-| / | cta-band | "Learn more about" CTA band | / | 19 | FIDELITY | Repeated band, same structure, our copy. |
+| / | cta-band | "Learn more about" CTA band | / | 19 | FIDELITY | **Held.** Two short headings plus one paragraph and a CTA, repeated identically on every route. Same structure, same volume (-3.4%), no information claim in it beyond the business name. |
 | / | discounts | *(reference section)* | / | 13 | DELETED | Invents credentials, discounts, and "24/7 emergency" (D-06, D-14). |
 | / | blog | *(reference section)* | / | 17 | DELETED | No blog route (D-01). |
 | / | logos | *(reference section)* | / | 18 | DELETED | Eleven third-party brand marks (D-09). |
@@ -73,7 +77,7 @@ Reference tail (logo strip, CTA band, footer) is shared; only the page body diff
 | /about | story | Story: copy + photo slot | /about | 8 | ADAPTED | No founding year, no headcount, no certifications — `TODO(fact):` for each (D-17), placeholder photo per `assets/INVENTORY.md`. Their block is a company history. |
 | /about | what-we-do | What we handle — list block | /about | 9 | ADAPTED | Their 83-item list is their full service tree. Ours is the eight garage-door services, grouped by symptom per Prompt 3 item 4. Different item count is a deliberate information change. |
 | /about | credentials | Credentials / team — placeholder chips | — | — | NOVEL | Replaces the dropped logo strip. Every claim is `TODO(fact):` at the right dimensions. |
-| /about | cta-band | CTA band | /about | 11 | FIDELITY | Shared band. |
+| /about | cta-band | CTA band | /about | 11 | FIDELITY | **Held.** Shared band, identical to the home instance. |
 | /about | logos | *(reference section)* | /about | 10 | DELETED | Third-party marks (D-09). |
 
 ## `/services`
@@ -85,8 +89,8 @@ per-service routes (D-01); the eight services live in-page with anchors.
 |---|---|---|---|---|---|---|
 | /services | hero | Services hero + anchor row | /roof-replacement | 6 | ADAPTED | Theirs embeds a 5-field lead form with an email field in the hero. Ours drops the form (D-03/D-05) and carries an anchor row to the eight services instead. |
 | /services | list | Eight service blocks, in-page anchors | /roof-replacement | 8 | ADAPTED | Grouped by symptom, not by door type or system (Prompt 3 item 4). No prices (D-12). Each block links `tel:` and `/contact`, never a per-service route. |
-| /services | faq | FAQ accordion, 8 items | / | 16 | ADAPTED | Relocated from their home page (structural move #3). Generic garage-door technical content only — nothing about response time, pricing, warranty, or credentials. |
-| /services | cta-band | CTA band | /roof-replacement | 10 | FIDELITY | Shared band. |
+| /services | faq | FAQ accordion, 8 items | / (relocated) | 16 | ADAPTED | Relocated from their home page (structural move #3). Generic garage-door technical content only — nothing about response time, pricing, warranty, or credentials. |
+| /services | cta-band | CTA band | /roof-replacement | 10 | FIDELITY | **Held.** Shared band. |
 | /services | logos | *(reference section)* | /roof-replacement | 9 | DELETED | Third-party marks (D-09). |
 
 ## `/contact`
@@ -97,7 +101,7 @@ per-service routes (D-01); the eight services live in-page with anchors.
 | /contact | form | Callback form: name, phone, service, callback window, message | /contact | 9 | ADAPTED | Theirs has an email field and reCAPTCHA. Ours has neither (D-03, D-15), has no backend, and shows a "we'll call you back" state (D-05). Same field count band, different fields. |
 | /contact | nap-card | Phone card + hours block | /contact | — | NOVEL | Split out of their footer into a page-level card. Token conformance. |
 | /contact | map | Map, zoom ~15, beside the form, directions link | /contact | 7 | ADAPTED | They embed Mapbox/OpenStreetMap at 300px. Ours is a keyless Google coords embed (D-07), lazy, titled, aspect-ratio wrapped. Same slot, different provider — structural metrics only. |
-| /contact | cta-band | CTA band | /contact | 13 | FIDELITY | Shared band. |
+| /contact | cta-band | CTA band | /contact | 13 | FIDELITY | **Held.** Shared band. |
 | /contact | logos | *(reference section)* | /contact | 12 | DELETED | Third-party marks (D-09). |
 
 ## `/privacy`

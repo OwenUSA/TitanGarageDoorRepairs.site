@@ -25,45 +25,45 @@
   "route": "/",
   "bp": 1440,
   "section": "svc-a",
-  "class": "FIDELITY",
-  "metric": "divergent px %",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
   "value": 100,
-  "threshold": 2,
+  "threshold": 5,
   "status": "FAIL",
-  "note": "missing capture on one side"
+  "note": "not built"
  },
  {
   "route": "/",
   "bp": 1440,
   "section": "svc-b",
-  "class": "FIDELITY",
-  "metric": "divergent px %",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
   "value": 100,
-  "threshold": 2,
+  "threshold": 5,
   "status": "FAIL",
-  "note": "missing capture on one side"
+  "note": "not built"
  },
  {
   "route": "/",
   "bp": 1440,
   "section": "svc-c",
-  "class": "FIDELITY",
-  "metric": "divergent px %",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
   "value": 100,
-  "threshold": 2,
+  "threshold": 5,
   "status": "FAIL",
-  "note": "missing capture on one side"
+  "note": "not built"
  },
  {
   "route": "/",
   "bp": 1440,
   "section": "intro",
-  "class": "FIDELITY",
-  "metric": "divergent px %",
+  "class": "ADAPTED",
+  "metric": "struct dev %",
   "value": 100,
-  "threshold": 2,
+  "threshold": 5,
   "status": "FAIL",
-  "note": "missing capture on one side"
+  "note": "not built"
  },
  {
   "route": "/",

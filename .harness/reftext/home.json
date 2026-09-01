@@ -1,0 +1,769 @@
+{
+ "route": "/",
+ "refPath": "/",
+ "sections": [
+  {
+   "i": 2,
+   "headings": [],
+   "paras": [
+    "Serving the greater state of",
+    "Oklahoma",
+    "Call or Text",
+    "(405) 252-9734"
+   ],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Replacement",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor",
+    "Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair",
+    "Chimney Flashing Repair",
+    "Emergency Roof Repair",
+    "Leak Detection Services",
+    "Roof Coating Services",
+    "Roof Moss Removal",
+    "Storm Damage Repair",
+    "Valley Repair",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area",
+    "Home",
+    "Services",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area"
+   ],
+   "ctas": [
+    "5.0(6 Ratings & Reviews)",
+    "Request Information",
+    "(405) 252-9734",
+    "Home",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services",
+    "Exterior Doors",
+    "Gable Vent Installation"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 1672,
+    "paras": [
+     28,
+     8,
+     12,
+     14
+    ],
+    "items": 53
+   },
+   "body": "Serving the greater state of Oklahoma Call or Text (405) 252-9734 Home Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area Home Services Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area"
+  },
+  {
+   "i": 4,
+   "headings": [],
+   "paras": [],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Replacement",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor",
+    "Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair",
+    "Chimney Flashing Repair",
+    "Emergency Roof Repair",
+    "Leak Detection Services",
+    "Roof Coating Services",
+    "Roof Moss Removal",
+    "Storm Damage Repair",
+    "Valley Repair",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area"
+   ],
+   "ctas": [
+    "Home",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 1460,
+    "paras": [],
+    "items": 43
+   },
+   "body": "Home Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area"
+  },
+  {
+   "i": 6,
+   "headings": [
+    {
+     "tag": "H2",
+     "text": "Recent Blog Posts",
+     "chars": 17
+    },
+    {
+     "tag": "H3",
+     "text": "The Unseen Merits of Metal Roofing",
+     "chars": 34
+    },
+    {
+     "tag": "H3",
+     "text": "Slash Your Summer Cooling Bills With a Metal Roof",
+     "chars": 49
+    },
+    {
+     "tag": "H3",
+     "text": "5 Reasons Why Metal Roofing Could Be the Right Choice",
+     "chars": 53
+    },
+    {
+     "tag": "H3",
+     "text": "4 Exterior Home Upgrades That Boast the Highest Homeowner Satisfaction",
+     "chars": 70
+    },
+    {
+     "tag": "H3",
+     "text": "The 100-Year Roof: Why Upgrading to Metal Is the Ultimate Long-Term Investment",
+     "chars": 78
+    }
+   ],
+   "paras": [],
+   "items": [],
+   "ctas": [
+    "The Unseen Merits of Metal Roofing",
+    "Read more →"
+   ],
+   "chars": {
+    "headings": 301,
+    "body": 0,
+    "paras": [],
+    "items": 0
+   },
+   "body": ""
+  },
+  {
+   "i": 7,
+   "headings": [
+    {
+     "tag": "H1",
+     "text": "Roofing Done Right",
+     "chars": 18
+    },
+    {
+     "tag": "H2",
+     "text": "Oklahoma",
+     "chars": 8
+    },
+    {
+     "tag": "H3",
+     "text": "Hero Request Form",
+     "chars": 17
+    }
+   ],
+   "paras": [
+    "24/7 Emergency Service",
+    "Financing Options",
+    "Military, Veteran, Senior, & First Responder Discounts",
+    "Thank you for contacting us.",
+    "We will get back to you as soon as possible."
+   ],
+   "items": [],
+   "ctas": [
+    "(405) 252-9734"
+   ],
+   "chars": {
+    "headings": 43,
+    "body": 169,
+    "paras": [
+     22,
+     17,
+     54,
+     28,
+     44
+    ],
+    "items": 0
+   },
+   "body": "24/7 Emergency Service Financing Options Military, Veteran, Senior, & First Responder Discounts Thank you for contacting us. We will get back to you as soon as possible."
+  },
+  {
+   "i": 8,
+   "headings": [
+    {
+     "tag": "H2",
+     "text": "Elevate Your Roof with Next Level Excellence",
+     "chars": 44
+    }
+   ],
+   "paras": [
+    "Hey there, Oklahoma! If you're searching for roofing that truly stands out, look no further. Next Level Roofing isn’t just another contractor—we’re your neighbors, your friends, and your trusted roofing experts. Since 2013, we’ve been climbing ladders, battling the elements, and transforming homes across the Sooner State. What sets us apart? It’s simple: we’re passionate about what we do, and we excel at it. With more than two decades of experience and a third-generation roofer leading the way, roofing runs in our blood. We proudly hold the title of Elevate master contractor, representing the only one in Oklahoma for the past four years, and we’ve earned a golden tier with Kingspan for our commitment to quality. Get in touch with us for your commercial and residential roofing needs.",
+    "But hey, don't just take our word for it. Our trophy case is getting pretty crowded – we're talking Best Roofing Company in Oklahoma for the 2025 Evergreen Awards, folks! And it's not just about the accolades. We're proud members of the National Roofing Contractors Association, because we believe in setting the bar high. Whether you're dealing with a leaky roof at 3 AM (yep, we've got 24/7 emergency services) or planning a full-scale roof makeover, we've got you covered. Literally. And the cherry on top? We're fluent in both English and Spanish, because we believe great service should never get lost in translation. Ready to take your roof to the next level? Contact us and let's make some roofing magic happen!"
+   ],
+   "items": [],
+   "ctas": [
+    "Contact us"
+   ],
+   "chars": {
+    "headings": 44,
+    "body": 1512,
+    "paras": [
+     793,
+     718
+    ],
+    "items": 0
+   },
+   "body": "Hey there, Oklahoma! If you're searching for roofing that truly stands out, look no further. Next Level Roofing isn’t just another contractor—we’re your neighbors, your friends, and your trusted roofing experts. Since 2013, we’ve been climbing ladders, battling the elements, and transforming homes across the Sooner State. What sets us apart? It’s simple: we’re passionate about what we do, and we excel at it. With more than two decades of experience and a third-generation roofer leading the way, roofing runs in our blood. We proudly hold the title of Elevate master contractor, representing the only one in Oklahoma for the past four years, and we’ve earned a golden tier with Kingspan for our commitment to quality. Get in touch with us for your commercial and residential roofing needs. But hey, don't just take our word for it. Our trophy case is getting pretty crowded – we're talking Best Roofing Company in Oklahoma for the 2025 Evergreen Awards, folks! And it's not just about the accolades. We're proud members of the National Roofing Contractors Association, because we believe in setting the bar high. Whether you're dealing with a leaky roof at 3 AM (yep, we've got 24/7 emergency services) or planning a full-scale roof makeover, we've got you covered. Literally. And the cherry on top? We're fluent in both English and Spanish, because we believe great service should never get lost in translation. Ready to take your roof to the next level? Contact us and let's make some roofing magic happen!"
+  },
+  {
+   "i": 9,
+   "headings": [
+    {
+     "tag": "H2",
+     "text": "Why Choose Us",
+     "chars": 13
+    }
+   ],
+   "paras": [
+    "24/7 Emergency Service",
+    "Financing Available",
+    "We Price Match",
+    "Since 2013",
+    "Tamko Pro Platinum Roofer",
+    "Warranties Available"
+   ],
+   "items": [],
+   "ctas": [],
+   "chars": {
+    "headings": 13,
+    "body": 115,
+    "paras": [
+     22,
+     19,
+     14,
+     10,
+     25,
+     20
+    ],
+    "items": 0
+   },
+   "body": "24/7 Emergency Service Financing Available We Price Match Since 2013 Tamko Pro Platinum Roofer Warranties Available"
+  },
+  {
+   "i": 10,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "Residential and Commercial Roof Installation",
+     "chars": 44
+    }
+   ],
+   "paras": [
+    "When it comes to roof installation, we don't mess around. We're talking seamless workmanship that'll make your neighbors green with envy. As the only master contractor for the Elevate product line in Oklahoma, we bring you cutting-edge materials and techniques that'll keep your home and business snug and dry for years to come. And because we're all about that local love, we're proud supporters of made-in-Oklahoma products."
+   ],
+   "items": [],
+   "ctas": [
+    "Learn More"
+   ],
+   "chars": {
+    "headings": 44,
+    "body": 426,
+    "paras": [
+     426
+    ],
+    "items": 0
+   },
+   "body": "When it comes to roof installation, we don't mess around. We're talking seamless workmanship that'll make your neighbors green with envy. As the only master contractor for the Elevate product line in Oklahoma, we bring you cutting-edge materials and techniques that'll keep your home and business snug and dry for years to come. And because we're all about that local love, we're proud supporters of made-in-Oklahoma products."
+  },
+  {
+   "i": 11,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "Specialized Exterior Services",
+     "chars": 29
+    }
+   ],
+   "paras": [
+    "Need something a little out of the ordinary? That's where we shine. Our specialized commercial and residential exterior services cater to all sorts of unique needs. We're Tamko Pro Platinum roofers, which means we've got the skills to handle even the most challenging projects. And don't sweat about the cost—we offer financing options, and we'll even price match with written quotes from other licensed, reputable competitors. It's all part of our commitment to premium customer service."
+   ],
+   "items": [],
+   "ctas": [
+    "Learn More"
+   ],
+   "chars": {
+    "headings": 29,
+    "body": 488,
+    "paras": [
+     488
+    ],
+    "items": 0
+   },
+   "body": "Need something a little out of the ordinary? That's where we shine. Our specialized commercial and residential exterior services cater to all sorts of unique needs. We're Tamko Pro Platinum roofers, which means we've got the skills to handle even the most challenging projects. And don't sweat about the cost—we offer financing options, and we'll even price match with written quotes from other licensed, reputable competitors. It's all part of our commitment to premium customer service."
+  },
+  {
+   "i": 12,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "Specialty Roof Repairs",
+     "chars": 22
+    }
+   ],
+   "paras": [
+    "Uh-oh, got a roofing emergency? No worries—we've got your back 24/7. Our commercial and residential specialty roof repairs are quick, efficient, and thorough. We work with all major insurance companies to make the process as smooth as possible. Plus, we offer free estimates within 24 hours, because we know that when your roof's in trouble, you need solutions fast. And for your peace of mind, we're licensed, bonded, and insured, with warranties available on our work."
+   ],
+   "items": [],
+   "ctas": [
+    "Learn More"
+   ],
+   "chars": {
+    "headings": 22,
+    "body": 470,
+    "paras": [
+     470
+    ],
+    "items": 0
+   },
+   "body": "Uh-oh, got a roofing emergency? No worries—we've got your back 24/7. Our commercial and residential specialty roof repairs are quick, efficient, and thorough. We work with all major insurance companies to make the process as smooth as possible. Plus, we offer free estimates within 24 hours, because we know that when your roof's in trouble, you need solutions fast. And for your peace of mind, we're licensed, bonded, and insured, with warranties available on our work."
+  },
+  {
+   "i": 13,
+   "headings": [],
+   "paras": [
+    "Active Military, Veterans, Senior Citizen, and First Responder Discounts",
+    "Next Level Roofing provides a 10% discount to active military, veterans, senior citizens, and first responders.",
+    "Contact Next Level Roofing today to claim your discount and get your project started.",
+    "Not valid with any other offers or promotions. Restrictions apply.",
+    "Must mention this coupon at the time of scheduling."
+   ],
+   "items": [],
+   "ctas": [
+    "(405) 252-9734"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 389,
+    "paras": [
+     72,
+     111,
+     85,
+     66,
+     51
+    ],
+    "items": 0
+   },
+   "body": "Active Military, Veterans, Senior Citizen, and First Responder Discounts Next Level Roofing provides a 10% discount to active military, veterans, senior citizens, and first responders. Contact Next Level Roofing today to claim your discount and get your project started. Not valid with any other offers or promotions. Restrictions apply. Must mention this coupon at the time of scheduling."
+  },
+  {
+   "i": 14,
+   "headings": [
+    {
+     "tag": "H2",
+     "text": "Recent Projects",
+     "chars": 15
+    }
+   ],
+   "paras": [],
+   "items": [],
+   "ctas": [
+    "View More Projects"
+   ],
+   "chars": {
+    "headings": 15,
+    "body": 0,
+    "paras": [],
+    "items": 0
+   },
+   "body": ""
+  },
+  {
+   "i": 15,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "Here's what our satisfied customers are saying...",
+     "chars": 49
+    }
+   ],
+   "paras": [
+    "At Next Level Roofing, we take pride in providing exceptional roofing, siding, window, door, and gutter services to our customers. We would be grateful if you could share your thoughts about our business with others. Your feedback helps us improve and helps others make informed decisions. Please take a moment to leave a review of Next Level Roofing and let others know what you think."
+   ],
+   "items": [],
+   "ctas": [
+    "leave a review",
+    "read more",
+    "Read More Reviews"
+   ],
+   "chars": {
+    "headings": 49,
+    "body": 386,
+    "paras": [
+     386
+    ],
+    "items": 0
+   },
+   "body": "At Next Level Roofing, we take pride in providing exceptional roofing, siding, window, door, and gutter services to our customers. We would be grateful if you could share your thoughts about our business with others. Your feedback helps us improve and helps others make informed decisions. Please take a moment to leave a review of Next Level Roofing and let others know what you think."
+  },
+  {
+   "i": 16,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "Frequently Asked Questions",
+     "chars": 26
+    },
+    {
+     "tag": "H3",
+     "text": "How long has Next Level Roofing been in business?",
+     "chars": 49
+    },
+    {
+     "tag": "H3",
+     "text": "What awards and certifications has Next Level Roofing earned?",
+     "chars": 61
+    },
+    {
+     "tag": "H3",
+     "text": "When should I consider a full roof replacement?",
+     "chars": 47
+    },
+    {
+     "tag": "H3",
+     "text": "Do you work with insurance companies on roofing claims?",
+     "chars": 55
+    },
+    {
+     "tag": "H3",
+     "text": "Do you offer discounts for military, veterans, or seniors?",
+     "chars": 58
+    },
+    {
+     "tag": "H3",
+     "text": "Do you price match competitor quotes?",
+     "chars": 37
+    },
+    {
+     "tag": "H3",
+     "text": "Do you offer services in Spanish?",
+     "chars": 33
+    },
+    {
+     "tag": "H3",
+     "text": "Are warranties available on your roofing work?",
+     "chars": 46
+    }
+   ],
+   "paras": [
+    "Next Level Roofing has been serving Oklahoma homeowners and businesses since 2013, backed by more than two decades of combined roofing experience and a third-generation roofer leading the team. That depth of knowledge and family commitment to the craft is something you will not find at every local roofer in Edmond, OK, and it directly influences the quality and reliability we deliver on every project we take on.",
+    "Next Level Roofing has earned the title of Best Roofing Company in Oklahoma for the 2025 Evergreen Awards, holds a golden tier status with Kingspan, and is the only Elevate master contractor in Oklahoma for the past four years. We are also a Tamko Pro Platinum roofer and a proud member of the National Roofing Contractors Association. For anyone searching for a decorated local roofer in Edmond, OK, those credentials reflect a consistent standard of excellence that sets us apart from the competition.",
+    "A roof replacement is typically the right call when your roof has sustained extensive storm damage, is nearing the end of its expected lifespan, or has widespread issues that repairs can no longer adequately address. Next Level Roofing provides free estimates within 24 hours so you can get a clear, honest assessment of your roof's condition without delay. As an experienced local roofer in Edmond, OK, our team will walk you through your options and help you make the most informed decision for your home or business.",
+    "Yes. Next Level Roofing works with all major insurance companies to make the claims process as smooth and straightforward as possible for our customers. Navigating an insurance claim after storm or weather damage can be stressful, and having an experienced local roofer in Edmond, OK handle that process alongside your repair or replacement removes a significant burden from your plate. Our team is familiar with what insurers require and will work to ensure your claim is handled efficiently.",
+    "Yes. Next Level Roofing is proud to offer a 10 percent discount to active military personnel, veterans, senior citizens, and first responders as a genuine expression of appreciation for their service and contributions to our community. We believe that every local roofer in Edmond, OK should give back to the people who give so much, and this discount is one meaningful way we do that. Just mention your eligibility when you reach out, and we will make sure you receive the savings you deserve.",
+    "Yes. Next Level Roofing will price-match written quotes from other licensed, reputable competitors because we believe quality roofing should be accessible without requiring you to sacrifice on craftsmanship or service. If you have received a written estimate elsewhere, bring it to us, and we will do our best to match it. Choosing a competitive local roofer in Edmond, OK should never mean settling for less, and our price match policy ensures you get both fair pricing and exceptional results.",
+    "Yes. Next Level Roofing provides service in both English and Spanish because we believe exceptional roofing should never be limited by a language barrier. As a welcoming and inclusive local roofer in Edmond, OK, we want every client to feel fully informed and comfortable throughout every stage of their project, from the initial estimate to the final inspection.",
+    "Yes. Next Level Roofing offers warranties on our work, providing an added layer of confidence that your roof is built to last and that we stand behind the results we deliver. When choosing a local roofer in Edmond, OK, having warranty coverage and verified licensing in place is one of the clearest signs that a contractor takes their work and their customers seriously."
+   ],
+   "items": [
+    "How long has Next Level Roofing been in business?Next Level Roofing has been serving Oklahoma homeowners and businesses since 2013, backed by more than two decades of combined roofing experience and a third-generation roofer leading the team. That depth of knowledge and family commitment to the craft is something you will not find at every local roofer in Edmond, OK, and it directly influences the quality and reliability we deliver on every project we take on.",
+    "What awards and certifications has Next Level Roofing earned?Next Level Roofing has earned the title of Best Roofing Company in Oklahoma for the 2025 Evergreen Awards, holds a golden tier status with Kingspan, and is the only Elevate master contractor in Oklahoma for the past four years. We are also a Tamko Pro Platinum roofer and a proud member of the National Roofing Contractors Association. For anyone searching for a decorated local roofer in Edmond, OK, those credentials reflect a consistent standard of excellence that sets us apart from the competition.",
+    "When should I consider a full roof replacement?A roof replacement is typically the right call when your roof has sustained extensive storm damage, is nearing the end of its expected lifespan, or has widespread issues that repairs can no longer adequately address. Next Level Roofing provides free estimates within 24 hours so you can get a clear, honest assessment of your roof's condition without delay. As an experienced local roofer in Edmond, OK, our team will walk you through your options and help you make the most informed decision for your home or business.",
+    "Do you work with insurance companies on roofing claims?Yes. Next Level Roofing works with all major insurance companies to make the claims process as smooth and straightforward as possible for our customers. Navigating an insurance claim after storm or weather damage can be stressful, and having an experienced local roofer in Edmond, OK handle that process alongside your repair or replacement removes a significant burden from your plate. Our team is familiar with what insurers require and will work to ensure your claim is handled efficiently.",
+    "Do you offer discounts for military, veterans, or seniors?Yes. Next Level Roofing is proud to offer a 10 percent discount to active military personnel, veterans, senior citizens, and first responders as a genuine expression of appreciation for their service and contributions to our community. We believe that every local roofer in Edmond, OK should give back to the people who give so much, and this discount is one meaningful way we do that. Just mention your eligibility when you reach out, and we will make sure you receive the savings you deserve.",
+    "Do you price match competitor quotes?Yes. Next Level Roofing will price-match written quotes from other licensed, reputable competitors because we believe quality roofing should be accessible without requiring you to sacrifice on craftsmanship or service. If you have received a written estimate elsewhere, bring it to us, and we will do our best to match it. Choosing a competitive local roofer in Edmond, OK should never mean settling for less, and our price match policy ensures you get both fair pricing and exceptional results.",
+    "Do you offer services in Spanish?Yes. Next Level Roofing provides service in both English and Spanish because we believe exceptional roofing should never be limited by a language barrier. As a welcoming and inclusive local roofer in Edmond, OK, we want every client to feel fully informed and comfortable throughout every stage of their project, from the initial estimate to the final inspection.",
+    "Are warranties available on your roofing work?Yes. Next Level Roofing offers warranties on our work, providing an added layer of confidence that your roof is built to last and that we stand behind the results we deliver. When choosing a local roofer in Edmond, OK, having warranty coverage and verified licensing in place is one of the clearest signs that a contractor takes their work and their customers seriously."
+   ],
+   "ctas": [
+    "local roofer in Edmond, OK"
+   ],
+   "chars": {
+    "headings": 412,
+    "body": 7705,
+    "paras": [
+     415,
+     503,
+     519,
+     493,
+     494,
+     495,
+     363,
+     370
+    ],
+    "items": 8
+   },
+   "body": "Next Level Roofing has been serving Oklahoma homeowners and businesses since 2013, backed by more than two decades of combined roofing experience and a third-generation roofer leading the team. That depth of knowledge and family commitment to the craft is something you will not find at every local roofer in Edmond, OK, and it directly influences the quality and reliability we deliver on every project we take on. Next Level Roofing has earned the title of Best Roofing Company in Oklahoma for the 2025 Evergreen Awards, holds a golden tier status with Kingspan, and is the only Elevate master contractor in Oklahoma for the past four years. We are also a Tamko Pro Platinum roofer and a proud member of the National Roofing Contractors Association. For anyone searching for a decorated local roofer in Edmond, OK, those credentials reflect a consistent standard of excellence that sets us apart from the competition. A roof replacement is typically the right call when your roof has sustained extensive storm damage, is nearing the end of its expected lifespan, or has widespread issues that repairs can no longer adequately address. Next Level Roofing provides free estimates within 24 hours so you can get a clear, honest assessment of your roof's condition without delay. As an experienced local roofer in Edmond, OK, our team will walk you through your options and help you make the most informed decision for your home or business. Yes. Next Level Roofing works with all major insurance companies to make the claims process as smooth and straightforward as possible for our customers. Navigating an insurance claim after storm or weather damage can be stressful, and having an experienced local roofer in Edmond, OK handle that process alongside your repair or replacement removes a significant burden from your plate. Our team is familiar with what insurers require and will work to ensure your claim is handled efficiently. Yes. Next Level Roofing is proud to offer a 10 percent discount to active military personnel, veterans, senior citizens, and first responders as a genuine expression of appreciation for their service and contributions to our community. We believe that every local roofer in Edmond, OK should give back to the people who give so much, and this discount is one meaningful way we do that. Just mention your eligibility when you reach out, and we will make sure you receive the savings you deserve. Yes. Next Level Roofing will price-match written quotes from other licensed, reputable competitors because we believe quality roofing should be accessible without requiring you to sacrifice on craftsmanship or service. If you have received a written estimate elsewhere, bring it to us, and we will do our best to match it. Choosing a competitive local roofer in Edmond, OK should never mean settling for less, and our price match policy ensures you get both fair pricing and exceptional results. Yes. Next Level Roofing provides service in both English and Spanish because we believe exceptional roofing should never be limited by a language barrier. As a welcoming and inclusive local roofer in Edmond, OK, we want every client to feel fully informed and comfortable throughout every stage of their project, from the initial estimate to the final inspection. Yes. Next Level Roofing offers warranties on our work, providing an added layer of confidence that your roof is built to last and that we stand behind the results we deliver. When choosing a local roofer in Edmond, OK, having warranty coverage and verified licensing in place is one of the clearest signs that a contractor takes their work and their customers seriously. How long has Next Level Roofing been in business?Next Level Roofing has been serving Oklahoma homeowners and businesses since 2013, backed by more than two decades of combined roofing experience and a third-generation roofer leading the team. That depth of knowledge and family commitment to the craft is something you will not find at every local roofer in Edmond, OK, and it directly influences the quality and reliability we deliver on every project we take on. What awards and certifications has Next Level Roofing earned?Next Level Roofing has earned the title of Best Roofing Company in Oklahoma for the 2025 Evergreen Awards, holds a golden tier status with Kingspan, and is the only Elevate master contractor in Oklahoma for the past four years. We are also a Tamko Pro Platinum roofer and a proud member of the National Roofing Contractors Association. For anyone searching for a decorated local roofer in Edmond, OK, those credentials reflect a consistent standard of excellence that sets us apart from the competition. When should I consider a full roof replacement?A roof replacement is typically the right call when your roof has sustained extensive storm damage, is nearing the end of its expected lifespan, or has widespread issues that repairs can no longer adequately address. Next Level Roofing provides free estimates within 24 hours so you can get a clear, honest assessment of your roof's condition without delay. As an experienced local roofer in Edmond, OK, our team will walk you through your options and help you make the most informed decision for your home or business. Do you work with insurance companies on roofing claims?Yes. Next Level Roofing works with all major insurance companies to make the claims process as smooth and straightforward as possible for our customers. Navigating an insurance claim after storm or weather damage can be stressful, and having an experienced local roofer in Edmond, OK handle that process alongside your repair or replacement removes a significant burden from your plate. Our team is familiar with what insurers require and will work to ensure your claim is handled efficiently. Do you offer discounts for military, veterans, or seniors?Yes. Next Level Roofing is proud to offer a 10 percent discount to active military personnel, veterans, senior citizens, and first responders as a genuine expression of appreciation for their service and contributions to our community. We believe that every local roofer in Edmond, OK should give back to the people who give so much, and this discount is one meaningful way we do that. Just mention your eligibility when you reach out, and we will make sure you receive the savings you deserve. Do you price match competitor quotes?Yes. Next Level Roofing will price-match written quotes from other licensed, reputable competitors because we believe quality roofing should be accessible without requiring you to sacrifice on craftsmanship or service. If you have received a written estimate elsewhere, bring it to us, and we will do our best to match it. Choosing a competitive local roofer in Edmond, OK should never mean settling for less, and our price match policy ensures you get both fair pricing and exceptional results. Do you offer services in Spanish?Yes. Next Level Roofing provides service in both English and Spanish because we believe exceptional roofing should never be limited by a language barrier. As a welcoming and inclusive local roofer in Edmond, OK, we want every client to feel fully informed and comfortable throughout every stage of their project, from the initial estimate to the final inspection. Are warranties available on your roofing work?Yes. Next Level Roofing offers warranties on our work, providing an added layer of confidence that your roof is built to last and that we stand behind the results we deliver. When choosing a local roofer in Edmond, OK, having warranty coverage and verified licensing in place is one of the clearest signs that a contractor takes their work and their customers seriously."
+  },
+  {
+   "i": 17,
+   "headings": [
+    {
+     "tag": "H2",
+     "text": "Recent Blog Posts",
+     "chars": 17
+    },
+    {
+     "tag": "H3",
+     "text": "The Unseen Merits of Metal Roofing",
+     "chars": 34
+    },
+    {
+     "tag": "H3",
+     "text": "Slash Your Summer Cooling Bills With a Metal Roof",
+     "chars": 49
+    },
+    {
+     "tag": "H3",
+     "text": "5 Reasons Why Metal Roofing Could Be the Right Choice",
+     "chars": 53
+    },
+    {
+     "tag": "H3",
+     "text": "4 Exterior Home Upgrades That Boast the Highest Homeowner Satisfaction",
+     "chars": 70
+    },
+    {
+     "tag": "H3",
+     "text": "The 100-Year Roof: Why Upgrading to Metal Is the Ultimate Long-Term Investment",
+     "chars": 78
+    }
+   ],
+   "paras": [],
+   "items": [],
+   "ctas": [
+    "The Unseen Merits of Metal Roofing",
+    "Read more →"
+   ],
+   "chars": {
+    "headings": 301,
+    "body": 0,
+    "paras": [],
+    "items": 0
+   },
+   "body": ""
+  },
+  {
+   "i": 19,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "Learn more about",
+     "chars": 16
+    },
+    {
+     "tag": "H3",
+     "text": "Next Level Roofing",
+     "chars": 18
+    }
+   ],
+   "paras": [
+    "Serving Oklahoma, Next Level Roofing specializes in roof installatoin, repair, maintenance, and gutter services. 24/7 emergency service. Financing options. Warranties available. Call today."
+   ],
+   "items": [],
+   "ctas": [
+    "Watch Video"
+   ],
+   "chars": {
+    "headings": 34,
+    "body": 189,
+    "paras": [
+     189
+    ],
+    "items": 0
+   },
+   "body": "Serving Oklahoma, Next Level Roofing specializes in roof installatoin, repair, maintenance, and gutter services. 24/7 emergency service. Financing options. Warranties available. Call today."
+  },
+  {
+   "i": 20,
+   "headings": [],
+   "paras": [
+    "Oklahoma",
+    "and surrounding areas",
+    "(405) 252-9734",
+    "24/7 Emergency Service Available"
+   ],
+   "items": [],
+   "ctas": [
+    "and surrounding areas",
+    "(405) 252-9734",
+    "Send a Message",
+    "Free Quotes in 60 Seconds!"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 78,
+    "paras": [
+     8,
+     21,
+     14,
+     32
+    ],
+    "items": 0
+   },
+   "body": "Oklahoma and surrounding areas (405) 252-9734 24/7 Emergency Service Available"
+  },
+  {
+   "i": 21,
+   "headings": [],
+   "paras": [],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation",
+    "Roof Replacement",
+    "Metal Roofers"
+   ],
+   "ctas": [
+    "Home",
+    "Roof Replacement",
+    "Metal Roofers"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 80,
+    "paras": [],
+    "items": 4
+   },
+   "body": "Home Residential and Commercial Roof Installation Roof Replacement Metal Roofers"
+  },
+  {
+   "i": 22,
+   "headings": [],
+   "paras": [],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Replacement",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor",
+    "Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair",
+    "Chimney Flashing Repair",
+    "Emergency Roof Repair",
+    "Leak Detection Services",
+    "Roof Coating Services",
+    "Roof Moss Removal",
+    "Storm Damage Repair",
+    "Valley Repair",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area"
+   ],
+   "ctas": [
+    "Home",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 1460,
+    "paras": [],
+    "items": 43
+   },
+   "body": "Home Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area"
+  }
+ ]
+}

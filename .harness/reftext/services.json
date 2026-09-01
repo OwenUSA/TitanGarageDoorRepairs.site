@@ -1,0 +1,583 @@
+{
+ "route": "/services",
+ "refPath": "/roof-replacement",
+ "sections": [
+  {
+   "i": 2,
+   "headings": [],
+   "paras": [
+    "Serving the greater state of",
+    "Oklahoma",
+    "Call or Text",
+    "(405) 252-9734"
+   ],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Replacement",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor",
+    "Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair",
+    "Chimney Flashing Repair",
+    "Emergency Roof Repair",
+    "Leak Detection Services",
+    "Roof Coating Services",
+    "Roof Moss Removal",
+    "Storm Damage Repair",
+    "Valley Repair",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area",
+    "Home",
+    "Services",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area"
+   ],
+   "ctas": [
+    "5.0(6 Ratings & Reviews)",
+    "Request Information",
+    "(405) 252-9734",
+    "Home",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services",
+    "Exterior Doors",
+    "Gable Vent Installation"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 1672,
+    "paras": [
+     28,
+     8,
+     12,
+     14
+    ],
+    "items": 53
+   },
+   "body": "Serving the greater state of Oklahoma Call or Text (405) 252-9734 Home Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area Home Services Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area"
+  },
+  {
+   "i": 4,
+   "headings": [],
+   "paras": [],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Replacement",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor",
+    "Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair",
+    "Chimney Flashing Repair",
+    "Emergency Roof Repair",
+    "Leak Detection Services",
+    "Roof Coating Services",
+    "Roof Moss Removal",
+    "Storm Damage Repair",
+    "Valley Repair",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area"
+   ],
+   "ctas": [
+    "Home",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 1460,
+    "paras": [],
+    "items": 43
+   },
+   "body": "Home Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area"
+  },
+  {
+   "i": 6,
+   "headings": [
+    {
+     "tag": "H1",
+     "text": "Roof Replacement",
+     "chars": 16
+    },
+    {
+     "tag": "H2",
+     "text": "Norman, OK",
+     "chars": 10
+    },
+    {
+     "tag": "H3",
+     "text": "Hero Request Form",
+     "chars": 17
+    }
+   ],
+   "paras": [
+    "24/7 Emergency Service",
+    "Financing Options",
+    "Military, Veteran, Senior, & First Responder Discounts",
+    "Thank you for contacting us.",
+    "We will get back to you as soon as possible."
+   ],
+   "items": [],
+   "ctas": [
+    "(405) 252-9734"
+   ],
+   "chars": {
+    "headings": 43,
+    "body": 169,
+    "paras": [
+     22,
+     17,
+     54,
+     28,
+     44
+    ],
+    "items": 0
+   },
+   "body": "24/7 Emergency Service Financing Options Military, Veteran, Senior, & First Responder Discounts Thank you for contacting us. We will get back to you as soon as possible."
+  },
+  {
+   "i": 8,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "Transform Your Property with a New Roof Today!",
+     "chars": 46
+    },
+    {
+     "tag": "H3",
+     "text": "Your Roof: More Than Just Shingles and Nails",
+     "chars": 44
+    },
+    {
+     "tag": "H3",
+     "text": "Why Choose Next Level Roofing",
+     "chars": 29
+    },
+    {
+     "tag": "H3",
+     "text": "Expert Roofing Replacement in Norman, OK and Surrounding Areas",
+     "chars": 62
+    },
+    {
+     "tag": "H3",
+     "text": "Choosing the Right Materials for Your Roof Replacement",
+     "chars": 54
+    },
+    {
+     "tag": "H3",
+     "text": "Emergency Roof Repair When You Cannot Wait",
+     "chars": 42
+    },
+    {
+     "tag": "H3",
+     "text": "Proudly Serving Norman and the Surrounding Oklahoma Communities",
+     "chars": 63
+    },
+    {
+     "tag": "H3",
+     "text": "Contact Us",
+     "chars": 10
+    },
+    {
+     "tag": "H3",
+     "text": "Title or Question",
+     "chars": 17
+    },
+    {
+     "tag": "H3",
+     "text": "Title or Question",
+     "chars": 17
+    },
+    {
+     "tag": "H3",
+     "text": "Title or Question",
+     "chars": 17
+    },
+    {
+     "tag": "H3",
+     "text": "How long does a typical roof replacement take?",
+     "chars": 46
+    },
+    {
+     "tag": "H3",
+     "text": "What types of roofing materials do you offer for replacement?",
+     "chars": 61
+    },
+    {
+     "tag": "H3",
+     "text": "Do you provide warranties on roof replacements?",
+     "chars": 47
+    },
+    {
+     "tag": "H2",
+     "text": "Gallery Heading H2",
+     "chars": 18
+    },
+    {
+     "tag": "H3",
+     "text": "Reviews",
+     "chars": 7
+    },
+    {
+     "tag": "H3",
+     "text": "Related Services",
+     "chars": 16
+    }
+   ],
+   "paras": [
+    "When it comes to protecting your property, nothing's more crucial than a sturdy, reliable roof. At Next Level Roofing, we're all about elevating your roofing experience. We offer top-tier roof replacement services that'll have your neighbors green with envy. Our services include:",
+    "Ready to give your home the crown it deserves? Reach out to us and let's get started on your roof replacement journey!",
+    "A new roof isn't just about keeping the rain out. It's an investment in your home's future, and here's why you might need one:",
+    "Don't wait for a rainy day to discover your roof's shortcomings. A timely replacement can save you from costly repairs down the line and provide peace of mind for years to come.",
+    "When it comes to roof replacement, we're not just another contractor - we're your roofing partners. Here's what sets us apart:",
+    "With Next Level Roofing, you're not just getting a new roof - you're getting a roofing experience that's a cut above the rest. We're committed to delivering excellence from the first nail to the final inspection.",
+    "Next Level Roofing has been delivering high-quality roofing replacement in Norman, OK and throughout the greater Oklahoma City area since 2013. Our team approaches every replacement project with the same commitment to craftsmanship and customer satisfaction that has earned us a Tamko Pro Platinum roofer status and our position as the exclusive master contractor for the Elevate product line in Oklahoma. When you choose Next Level Roofing, you are working with a team that has the credentials, the experience, and the product access to give your home the best possible roof at a competitive price.",
+    "Every roofing replacement in Norman, OK that we complete starts with a thorough inspection and an honest assessment of your roof's condition. We walk you through our findings clearly, explain your material options, and provide a detailed estimate before any work begins. Our price match guarantee means you never have to worry about overpaying, and our comprehensive warranties give you lasting confidence in the investment you are making in your home.",
+    "Selecting the right roofing material is one of the most important decisions you will make during the process for roofing replacement in Norman, OK process. Different materials offer different combinations of durability, energy efficiency, aesthetics, and cost, and the right choice depends on your home's design, your budget, and your long-term goals as a homeowner. Next Level Roofing carries a full range of options and takes the time to help every client understand the pros and cons of each before making a final decision.",
+    "Oklahoma weather can be severe and unpredictable, and storm damage does not wait for a convenient time to appear. Next Level Roofing offers 24-hour emergency roof repair services for homeowners who need immediate attention after hail, high winds, or fallen debris compromise their roof's integrity. While a full roofing replacement in Norman, OK may ultimately be the right solution after significant storm damage, our emergency repair team can respond quickly to stabilize your roof, prevent further water intrusion, and protect your home's interior while a complete replacement is planned and scheduled.",
+    "We also work with all major insurance companies to help homeowners navigate the claims process after storm damage. Our team documents damage thoroughly, communicates directly with adjusters, and works to ensure you receive the coverage you are entitled to for your roofing replacement in Norman, OK so the financial side of the process is as straightforward as possible.",
+    "Next Level Roofing is proud to be the roofing contractor that Norman area homeowners call for dependable roofing replacement in Norman, OK and beyond. We are supporters of made in Oklahoma products, and as a locally rooted business we are deeply committed to the communities we serve. Discounts are available for active military, veterans, senior citizens, and first responders, because the people who give the most to our community deserve to keep more of their money.",
+    "Your dream roof is just a conversation away. Whether you're ready to start your roof replacement project or just have some questions, we're here to help. Our team of roofing wizards is standing by, ready to work their magic on your home.",
+    "Don't let a subpar roof rain on your parade. Contact us today and let's take your roof to the next level!",
+    "Active Military, Veterans, Senior Citizen, and First Responder Discounts",
+    "Next Level Roofing provides a 10% discount to active military, veterans, senior citizens, and first responders.",
+    "Contact Next Level Roofing today to claim your discount and get your project started.",
+    "Not valid with any other offers or promotions. Restrictions apply.",
+    "Must mention this coupon at the time of scheduling.",
+    "Financing Available for Your Project",
+    "Don't let budget concerns delay your roof replacement, repair, or other exterior project. We offer flexible financing options to help customers.",
+    "Contact Next Level Roofing today to learn about our financing plans."
+   ],
+   "items": [
+    "Asphalt shingle replacement",
+    "Metal roof installation",
+    "Tile roof upgrades",
+    "Flat roof overhauls",
+    "Eco-friendly roofing options",
+    "Aging roof showing signs of wear and tear",
+    "Storm damage compromising your home's integrity",
+    "Desire to boost your property's curb appeal and value",
+    "Energy efficiency concerns with your current roof",
+    "Persistent leaks or moisture issues",
+    "24/7 emergency services for those unexpected roofing crises",
+    "Customer service that goes above and beyond",
+    "We'll match prices with written quotes from licensed competitors",
+    "Supporters of made in Oklahoma products",
+    "Quality craftsmanship guaranteed on every project",
+    "Seamless workmanship that stands the test of time",
+    "Serving Oklahoma since 2013",
+    "Tamko Pro Platinum roofer status",
+    "Exclusive master contractor for Elevate product line in Oklahoma",
+    "Comprehensive warranties available",
+    "We work with all major insurance companies",
+    "Asphalt shingles for a cost effective, widely available solution with proven durability",
+    "Metal roofing for exceptional longevity, energy efficiency, and storm resistance",
+    "Tile roofing for a distinctive appearance and excellent performance in varying climates",
+    "Flat roof systems for low slope applications on residential and commercial properties",
+    "Eco-friendly roofing options for homeowners focused on sustainability and energy savings",
+    "Bullet text",
+    "Bullet text",
+    "Bullet text",
+    "Bullet text",
+    "Bullet text",
+    "Bullet text",
+    "Bullet text",
+    "Bullet text",
+    "Bullet text",
+    "Bullet text",
+    "Title or QuestionDescribe the item or answer the question so that site visitors who are interested get more information. You can emphasize this text with bullets, italics or bold, and add links.",
+    "Title or QuestionDescribe the item or answer the question so that site visitors who are interested get more information. You can emphasize this text with bullets, italics or bold, and add links.",
+    "Title or QuestionDescribe the item or answer the question so that site visitors who are interested get more information. You can emphasize this text with bullets, italics or bold, and add links.",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor"
+   ],
+   "ctas": [
+    "Reach out to us",
+    "roofing replacement in Norman, OK",
+    "Contact us",
+    "(405) 252-9734",
+    "Button",
+    "read more",
+    "Read More Reviews",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation"
+   ],
+   "chars": {
+    "headings": 596,
+    "body": 7422,
+    "paras": [
+     280,
+     118,
+     126,
+     177,
+     126,
+     212,
+     599,
+     452,
+     526,
+     605,
+     370,
+     469,
+     237,
+     105,
+     72,
+     111,
+     85,
+     66,
+     51,
+     36,
+     144,
+     68
+    ],
+    "items": 57
+   },
+   "body": "When it comes to protecting your property, nothing's more crucial than a sturdy, reliable roof. At Next Level Roofing, we're all about elevating your roofing experience. We offer top-tier roof replacement services that'll have your neighbors green with envy. Our services include: Ready to give your home the crown it deserves? Reach out to us and let's get started on your roof replacement journey! A new roof isn't just about keeping the rain out. It's an investment in your home's future, and here's why you might need one: Don't wait for a rainy day to discover your roof's shortcomings. A timely replacement can save you from costly repairs down the line and provide peace of mind for years to come. When it comes to roof replacement, we're not just another contractor - we're your roofing partners. Here's what sets us apart: With Next Level Roofing, you're not just getting a new roof - you're getting a roofing experience that's a cut above the rest. We're committed to delivering excellence from the first nail to the final inspection. Next Level Roofing has been delivering high-quality roofing replacement in Norman, OK and throughout the greater Oklahoma City area since 2013. Our team approaches every replacement project with the same commitment to craftsmanship and customer satisfaction that has earned us a Tamko Pro Platinum roofer status and our position as the exclusive master contractor for the Elevate product line in Oklahoma. When you choose Next Level Roofing, you are working with a team that has the credentials, the experience, and the product access to give your home the best possible roof at a competitive price. Every roofing replacement in Norman, OK that we complete starts with a thorough inspection and an honest assessment of your roof's condition. We walk you through our findings clearly, explain your material options, and provide a detailed estimate before any work begins. Our price match guarantee means you never have to worry about overpaying, and our comprehensive warranties give you lasting confidence in the investment you are making in your home. Selecting the right roofing material is one of the most important decisions you will make during the process for roofing replacement in Norman, OK process. Different materials offer different combinations of durability, energy efficiency, aesthetics, and cost, and the right choice depends on your home's design, your budget, and your long-term goals as a homeowner. Next Level Roofing carries a full range of options and takes the time to help every client understand the pros and cons of each before making a final decision. Oklahoma weather can be severe and unpredictable, and storm damage does not wait for a convenient time to appear. Next Level Roofing offers 24-hour emergency roof repair services for homeowners who need immediate attention after hail, high winds, or fallen debris compromise their roof's integrity. While a full roofing replacement in Norman, OK may ultimately be the right solution after significant storm damage, our emergency repair team can respond quickly to stabilize your roof, prevent further water intrusion, and protect your home's interior while a complete replacement is planned and scheduled. We also work with all major insurance companies to help homeowners navigate the claims process after storm damage. Our team documents damage thoroughly, communicates directly with adjusters, and works to ensure you receive the coverage you are entitled to for your roofing replacement in Norman, OK so the financial side of the process is as straightforward as possible. Next Level Roofing is proud to be the roofing contractor that Norman area homeowners call for dependable roofing replacement in Norman, OK and beyond. We are supporters of made in Oklahoma products, and as a locally rooted business we are deeply committed to the communities we serve. Discounts are available for active military, veterans, senior citizens, and first responders, because the people who give the most to our community deserve to keep more of their money. Your dream roof is just a conversation away. Whether you're ready to start your roof replacement project or just have some questions, we're here to help. Our team of roofing wizards is standing by, ready to work their magic on your home. Don't let a subpar roof rain on your parade. Contact us today and let's take your roof to the next level! Active Military, Veterans, Senior Citizen, and First Responder Discounts Next Level Roofing provides a 10% discount to active military, veterans, senior citizens, and first responders. Contact Next Level Roofing today to claim your discount and get your project started. Not valid with any other offers or promotions. Restrictions apply. Must mention this coupon at the time of scheduling. Financing Available for Your Project Don't let budget concerns delay your roof replacement, repair, or other exterior project. We offer flexible financing options to help customers. Contact Next Level Roofing today to learn about our financing plans. Asphalt shingle replacement Metal roof installation Tile roof upgrades Flat roof overhauls Eco-friendly roofing options Aging roof showing signs of wear and tear Storm damage compromising your home's integrity Desire to boost your property's curb appeal and value Energy efficiency concerns with your current roof Persistent leaks or moisture issues 24/7 emergency services for those unexpected roofing crises Customer service that goes above and beyond We'll match prices with written quotes from licensed competitors Supporters of made in Oklahoma products Quality craftsmanship guaranteed on every project Seamless workmanship that stands the test of time Serving Oklahoma since 2013 Tamko Pro Platinum roofer status Exclusive master contractor for Elevate product line in Oklahoma Comprehensive warranties available We work with all major insurance companies Asphalt shingles for a cost effective, widely available solution with proven durability Metal roofing for exceptional longevity, energy efficiency, and storm resistance Tile roofing for a distinctive appearance and excellent performance in varying climates Flat roof systems for low slope applications on residential and commercial properties Eco-friendly roofing options for homeowners focused on sustainability and energy savings Bullet text Bullet text Bullet text Bullet text Bullet text Bullet text Bullet text Bullet text Bullet text Bullet text Title or QuestionDescribe the item or answer the question so that site visitors who are interested get more information. You can emphasize this text with bullets, italics or bold, and add links. Title or QuestionDescribe the item or answer the question so that site visitors who are interested get more information. You can emphasize this text with bullets, italics or bold, and add links. Title or QuestionDescribe the item or answer the question so that site visitors who are interested get more information. You can emphasize this text with bullets, italics or bold, and add links. Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor"
+  },
+  {
+   "i": 10,
+   "headings": [
+    {
+     "tag": "H3",
+     "text": "Learn more about",
+     "chars": 16
+    },
+    {
+     "tag": "H3",
+     "text": "Next Level Roofing",
+     "chars": 18
+    }
+   ],
+   "paras": [
+    "Serving Oklahoma, Next Level Roofing specializes in roof installatoin, repair, maintenance, and gutter services. 24/7 emergency service. Financing options. Warranties available. Call today."
+   ],
+   "items": [],
+   "ctas": [
+    "Watch Video"
+   ],
+   "chars": {
+    "headings": 34,
+    "body": 189,
+    "paras": [
+     189
+    ],
+    "items": 0
+   },
+   "body": "Serving Oklahoma, Next Level Roofing specializes in roof installatoin, repair, maintenance, and gutter services. 24/7 emergency service. Financing options. Warranties available. Call today."
+  },
+  {
+   "i": 11,
+   "headings": [],
+   "paras": [
+    "Oklahoma",
+    "and surrounding areas",
+    "(405) 252-9734",
+    "24/7 Emergency Service Available"
+   ],
+   "items": [],
+   "ctas": [
+    "and surrounding areas",
+    "(405) 252-9734",
+    "Send a Message",
+    "Free Quotes in 60 Seconds!"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 78,
+    "paras": [
+     8,
+     21,
+     14,
+     32
+    ],
+    "items": 0
+   },
+   "body": "Oklahoma and surrounding areas (405) 252-9734 24/7 Emergency Service Available"
+  },
+  {
+   "i": 12,
+   "headings": [],
+   "paras": [],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation",
+    "Roof Replacement",
+    "Metal Roofers"
+   ],
+   "ctas": [
+    "Home",
+    "Roof Replacement",
+    "Metal Roofers"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 80,
+    "paras": [],
+    "items": 4
+   },
+   "body": "Home Residential and Commercial Roof Installation Roof Replacement Metal Roofers"
+  },
+  {
+   "i": 13,
+   "headings": [],
+   "paras": [],
+   "items": [
+    "Home",
+    "Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation",
+    "Gutter Repair",
+    "Roof Decking Installation",
+    "Roof Decking Repair",
+    "Roof Inspection Services",
+    "Roof Maintenance Services",
+    "Roof Replacement",
+    "Roof Tear-Off",
+    "Roof Ventilation Services",
+    "Roof Waterproofing",
+    "Siding Contractors",
+    "Skylight Installation & Repairs",
+    "Soffit Installation",
+    "Soffit Repair",
+    "Window Contractor",
+    "Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair",
+    "Chimney Flashing Repair",
+    "Emergency Roof Repair",
+    "Leak Detection Services",
+    "Roof Coating Services",
+    "Roof Moss Removal",
+    "Storm Damage Repair",
+    "Valley Repair",
+    "Project Gallery",
+    "About Reviews Blog FAQs",
+    "Reviews",
+    "Blog",
+    "FAQs",
+    "Contact Request Information Serving Area",
+    "Request Information",
+    "Serving Area"
+   ],
+   "ctas": [
+    "Home",
+    "Asphalt Shingle Installation",
+    "Built-Up Roofing",
+    "Metal Roofers",
+    "Slate Roofers",
+    "TPO Roofers",
+    "Specialized Exterior Services",
+    "Exterior Doors",
+    "Gable Vent Installation",
+    "Gable Vent Repair",
+    "Gutter Cleaning",
+    "Gutter Installation"
+   ],
+   "chars": {
+    "headings": 0,
+    "body": 1460,
+    "paras": [],
+    "items": 43
+   },
+   "body": "Home Residential and Commercial Roof Installation Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Asphalt Shingle Installation Built-Up Roofing Metal Roofers Slate Roofers TPO Roofers Specialized Exterior Services Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Exterior Doors Gable Vent Installation Gable Vent Repair Gutter Cleaning Gutter Installation Gutter Repair Roof Decking Installation Roof Decking Repair Roof Inspection Services Roof Maintenance Services Roof Replacement Roof Tear-Off Roof Ventilation Services Roof Waterproofing Siding Contractors Skylight Installation & Repairs Soffit Installation Soffit Repair Window Contractor Specialty Roof Repairs Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Chimney Flashing Repair Emergency Roof Repair Leak Detection Services Roof Coating Services Roof Moss Removal Storm Damage Repair Valley Repair Project Gallery About Reviews Blog FAQs Reviews Blog FAQs Contact Request Information Serving Area Request Information Serving Area"
+  }
+ ]
+}

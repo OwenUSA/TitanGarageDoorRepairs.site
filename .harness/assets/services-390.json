@@ -1,0 +1,584 @@
+{
+ "route": "/services",
+ "bp": 390,
+ "url": "https://www.nextlevelok.com/roof-replacement",
+ "slots": [
+  {
+   "kind": "img",
+   "n": 0,
+   "section": 0,
+   "rect": {
+    "x": 100,
+    "y": 39,
+    "w": 190,
+    "h": 76
+   },
+   "visible": true,
+   "currentSrc": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance1-1920w.webp",
+   "srcset": "",
+   "sizes": "",
+   "natural": {
+    "w": 512,
+    "h": 205
+   },
+   "fit": "cover",
+   "pos": "50% 50%",
+   "loading": "auto",
+   "alt": "Next Level Roofing- logo",
+   "radius": "0px",
+   "id": "img0",
+   "dominant": {
+    "hex": "#163e5e",
+    "rgb": [
+     22,
+     62,
+     94
+    ]
+   }
+  },
+  {
+   "kind": "img",
+   "n": 3,
+   "section": 8,
+   "rect": {
+    "x": 87,
+    "y": 5167,
+    "w": 216,
+    "h": 86
+   },
+   "visible": true,
+   "currentSrc": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance1-1920w.webp",
+   "srcset": "",
+   "sizes": "",
+   "natural": {
+    "w": 512,
+    "h": 205
+   },
+   "fit": "cover",
+   "pos": "50% 50%",
+   "loading": "auto",
+   "alt": "Next Level Roofing",
+   "radius": "0px",
+   "id": "img3",
+   "dominant": {
+    "hex": "#b8d1e7",
+    "rgb": [
+     184,
+     209,
+     231
+    ]
+   }
+  },
+  {
+   "kind": "img",
+   "n": 12,
+   "section": 8,
+   "rect": {
+    "x": 131,
+    "y": 6525,
+    "w": 128,
+    "h": 51
+   },
+   "visible": true,
+   "currentSrc": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance1-1920w.webp",
+   "srcset": "",
+   "sizes": "",
+   "natural": {
+    "w": 512,
+    "h": 205
+   },
+   "fit": "cover",
+   "pos": "50% 50%",
+   "loading": "auto",
+   "alt": "Next Level Roofing",
+   "radius": "0px",
+   "id": "img12",
+   "dominant": {
+    "hex": "#b8d1e7",
+    "rgb": [
+     184,
+     209,
+     231
+    ]
+   }
+  },
+  {
+   "kind": "css",
+   "prop": "backgroundImage",
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/next-level-roofing-roof-replacement-hero-1-ref5429282-1920w.png",
+   "section": 6,
+   "rect": {
+    "x": 0,
+    "y": 177,
+    "w": 390,
+    "h": 758
+   },
+   "size": "cover",
+   "pos": "50% 100%",
+   "repeat": "no-repeat",
+   "tag": "DIV",
+   "cls": "flex-element grid",
+   "id": "css0",
+   "dominant": {
+    "hex": "#b09494",
+    "rgb": [
+     176,
+     148,
+     148
+    ]
+   }
+  },
+  {
+   "kind": "css",
+   "prop": "backgroundImage",
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/video-next-level-roofing-1920w.jpg",
+   "section": 10,
+   "rect": {
+    "x": 16,
+    "y": 8452,
+    "w": 359,
+    "h": 298
+   },
+   "size": "cover",
+   "pos": "50% 50%",
+   "repeat": "no-repeat",
+   "tag": "DIV",
+   "cls": "flex-element group",
+   "id": "css1",
+   "dominant": {
+    "hex": "#796e5f",
+    "rgb": [
+     121,
+     110,
+     95
+    ]
+   }
+  },
+  {
+   "kind": "css",
+   "prop": "backgroundImage",
+   "url": "",
+   "section": 10,
+   "rect": {
+    "x": 85,
+    "y": 8502,
+    "w": 220,
+    "h": 174
+   },
+   "size": "cover",
+   "pos": "50% 50%",
+   "repeat": "no-repeat",
+   "tag": "DIV",
+   "cls": "vidWrapper",
+   "id": "css2",
+   "dominant": {
+    "hex": "#7a716e",
+    "rgb": [
+     122,
+     113,
+     110
+    ]
+   }
+  },
+  {
+   "kind": "css",
+   "prop": "backgroundImage",
+   "url": "",
+   "section": 16,
+   "rect": {
+    "x": 0,
+    "y": 8641,
+    "w": 390,
+    "h": 80
+   },
+   "size": "cover",
+   "pos": "50% 50%",
+   "repeat": "no-repeat",
+   "tag": "DIV",
+   "cls": "flex-element grid",
+   "id": "css3",
+   "dominant": {
+    "hex": "#5f544d",
+    "rgb": [
+     95,
+     84,
+     77
+    ]
+   }
+  }
+ ],
+ "svgs": [
+  {
+   "kind": "svg",
+   "n": 0,
+   "section": 0,
+   "rect": {
+    "x": 348,
+    "y": 62,
+    "w": 30,
+    "h": 30
+   },
+   "stroke": "none",
+   "strokeWidth": "1px",
+   "viewBox": "0 0 100 100",
+   "childTags": [
+    "path"
+   ]
+  },
+  {
+   "kind": "svg",
+   "n": 1,
+   "section": 3,
+   "rect": {
+    "x": 609,
+    "y": 30,
+    "w": 30,
+    "h": 30
+   },
+   "stroke": "none",
+   "strokeWidth": "1px",
+   "viewBox": "0 0 100 100",
+   "childTags": [
+    "path"
+   ]
+  },
+  {
+   "kind": "svg",
+   "n": 2,
+   "section": 10,
+   "rect": {
+    "x": 145,
+    "y": 8554,
+    "w": 100,
+    "h": 100
+   },
+   "stroke": "none",
+   "strokeWidth": "1px",
+   "viewBox": "0 0 100 100",
+   "childTags": [
+    "path"
+   ]
+  },
+  {
+   "kind": "svg",
+   "n": 3,
+   "section": 14,
+   "rect": {
+    "x": 79,
+    "y": 9358,
+    "w": 16,
+    "h": 16
+   },
+   "stroke": "none",
+   "strokeWidth": "1px",
+   "viewBox": "0 0 16 16",
+   "childTags": [
+    "path"
+   ]
+  },
+  {
+   "kind": "svg",
+   "n": 4,
+   "section": 14,
+   "rect": {
+    "x": 241,
+    "y": 9358,
+    "w": 16,
+    "h": 16
+   },
+   "stroke": "none",
+   "strokeWidth": "1px",
+   "viewBox": "0 0 16 16",
+   "childTags": [
+    "path"
+   ]
+  },
+  {
+   "kind": "svg",
+   "n": 5,
+   "section": 15,
+   "rect": {
+    "x": 307,
+    "y": 777,
+    "w": 39,
+    "h": 39
+   },
+   "stroke": "none",
+   "strokeWidth": "1px",
+   "viewBox": "0 0 100 100",
+   "childTags": [
+    "title",
+    "path"
+   ]
+  }
+ ],
+ "iconFontEls": 30,
+ "sources": [],
+ "links": [
+  {
+   "rel": "icon",
+   "as": null,
+   "href": "https://cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/site_favicon_16_1785786534406.ico",
+   "type": "image/x-icon"
+  },
+  {
+   "rel": "preconnect",
+   "as": null,
+   "href": "https://le-cdn.hibuwebsites.com/",
+   "type": ""
+  },
+  {
+   "rel": "preconnect",
+   "as": null,
+   "href": "https://cdn.hibuwebsites.com/",
+   "type": ""
+  },
+  {
+   "rel": "preconnect",
+   "as": null,
+   "href": "https://static-res-cdn.websites.hibu.com/",
+   "type": ""
+  },
+  {
+   "rel": "preconnect",
+   "as": null,
+   "href": "https://cdn.hibuwebsites.com/",
+   "type": ""
+  }
+ ],
+ "fontFaces": [
+  {
+   "family": "Lato Fallback",
+   "weight": "",
+   "style": "",
+   "display": "",
+   "src": "local(\"Arial\")"
+  },
+  {
+   "family": "Poppins Fallback",
+   "weight": "",
+   "style": "",
+   "display": "",
+   "src": "local(\"Arial\")"
+  },
+  {
+   "family": "Kumbh Sans Fallback",
+   "weight": "",
+   "style": "",
+   "display": "",
+   "src": "local(\"Arial\")"
+  },
+  {
+   "family": "Mohave Fallback",
+   "weight": "",
+   "style": "",
+   "display": "",
+   "src": "local(\"Arial\")"
+  },
+  {
+   "family": "Questrial Fallback",
+   "weight": "",
+   "style": "",
+   "display": "",
+   "src": "local(\"Arial\")"
+  }
+ ],
+ "network": [
+  {
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance1-1920w.webp",
+   "ct": "image/webp",
+   "status": 200,
+   "bytes": 21046,
+   "from": "image"
+  },
+  {
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/next-level-roofing-roof-replacement-hero-1-ref5429282-1920w.png",
+   "ct": "image/webp",
+   "status": 200,
+   "bytes": 102050,
+   "from": "image"
+  },
+  {
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance1+%281%29-640w.webp",
+   "ct": "image/webp",
+   "status": 200,
+   "bytes": 17298,
+   "from": "image"
+  },
+  {
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance4-640w.webp",
+   "ct": "image/webp",
+   "status": 200,
+   "bytes": 32980,
+   "from": "image"
+  },
+  {
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance2-640w.webp",
+   "ct": "image/webp",
+   "status": 200,
+   "bytes": 34204,
+   "from": "image"
+  },
+  {
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance2+%282%29-640w.webp",
+   "ct": "image/webp",
+   "status": 200,
+   "bytes": 17630,
+   "from": "image"
+  },
+  {
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance5-640w.webp",
+   "ct": "image/webp",
+   "status": 200,
+   "bytes": 52706,
+   "from": "image"
+  },
+  {
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/gallery-superior-plumbing-maintenance3-640w.webp",
+   "ct": "image/webp",
+   "status": 200,
+   "bytes": 27540,
+   "from": "image"
+  },
+  {
+   "url": "https://le-cdn.hibuwebsites.com/0d9493381fd14385a624bd947dece3de/dms3rep/multi/opt/video-next-level-roofing-1920w.jpg",
+   "ct": "image/webp",
+   "status": 200,
+   "bytes": 231946,
+   "from": "image"
+  },
+  {
+   "url": "https://cdn.hibuwebsites.com/fonts/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecg.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 7884,
+   "from": "font"
+  },
+  {
+   "url": "https://cdn.hibuwebsites.com/fonts/s/bevietnam/v10/FBVwdDflz-iPfoPuIC2iKh0C_UBFJg.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 17988,
+   "from": "font"
+  },
+  {
+   "url": "https://cdn.hibuwebsites.com/fonts/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 23040,
+   "from": "font"
+  },
+  {
+   "url": "https://cdn.hibuwebsites.com/fonts/s/mohave/v13/7cHpv4ksjJunKqM_DMs5.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 17960,
+   "from": "font"
+  },
+  {
+   "url": "https://cdn.hibuwebsites.com/fonts/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 23580,
+   "from": "font"
+  },
+  {
+   "url": "https://cdn.hibuwebsites.com/fonts/s/lato/v25/S6u8w4BMUTPHjxsAXC-q.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 24408,
+   "from": "font"
+  },
+  {
+   "url": "https://cdn.hibuwebsites.com/fonts/s/kumbhsans/v27/c4mw1n92AsfhuCq6tVsaoIx1LQICk0boNoq0ShNPVo0.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 29424,
+   "from": "font"
+  },
+  {
+   "url": "https://d32hwlnfiv2gyn.cloudfront.net/i?e=pv&page=Roofing%20Replacement%20Norman%2C%20OK%20%7C%20Next%20Level%20Roofing&dtm=1788247518304&tid=982520&vp=390x844&ds=390x8003&vid=1&duid=f9e5bd8e64b72cfb&p=web&tv=js-2.0.0&fp=1125871610&aid=0d9493381fd14385a624bd947dece3de&lang=es-VE&cs=UTF-8&tz=America%2FSanto_Domingo&tna=cf&res=390x844&cd=24&cookie=1&url=https%3A%2F%2Fwww.nextlevelok.com%2Froof-replacement",
+   "ct": "image/gif",
+   "status": 200,
+   "bytes": 37,
+   "from": "image"
+  },
+  {
+   "url": "https://metrics.yellowbook.com/b/ss/yelldudalive/1/JS-1.6.1/s81159203509406?AQB=1&pccr=true&vidn=354B3EF02DAF8AB9-40001017408826DB&ndh=1&pf=1&t=1%2F8%2F2026%203%3A25%3A18%202%20240&fid=2FFC85E50E8CCFB0-0E12AA6A658CE8EB&ce=UTF-8&ns=yellowbook&pageName=https%3A%2F%2Fwww.nextlevelok.com%2Froof-replacement&g=https%3A%2F%2Fwww.nextlevelok.com%2Froof-replacement&events=event1&c1=WBS-PRO-01&c2=7113047618&v2=700066935&c3=US&c4=web&c5=700066935&v10=1&v11=web&v49=OMT_1&s=390x844&c=24&j=1.6&v=N&k=Y&bw=390&bh=844&AQE=1",
+   "ct": "image/gif;charset=utf-8",
+   "status": 200,
+   "bytes": 43,
+   "from": "image"
+  },
+  {
+   "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+   "ct": "image/png",
+   "status": 200,
+   "bytes": 2228,
+   "from": "image"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 40128,
+   "from": "font"
+  },
+  {
+   "url": "https://cdn.hibuwebsites.com/fonts/s/lato/v25/S6u9w4BMUTPHh50XSwiPGQ.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 22504,
+   "from": "font"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Gayo.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 46752,
+   "from": "font"
+  },
+  {
+   "url": "https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1",
+   "ct": "font/ttf",
+   "status": 200,
+   "bytes": 110019,
+   "from": "font"
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+   "ct": "font/woff2",
+   "status": 200,
+   "bytes": 40128,
+   "from": "font"
+  },
+  {
+   "url": "https://www.gstatic.com/recaptcha/api2/audio_2x.png",
+   "ct": "image/png",
+   "status": 200,
+   "bytes": 530,
+   "from": "image"
+  },
+  {
+   "url": "https://www.gstatic.com/recaptcha/api2/refresh_2x.png",
+   "ct": "image/png",
+   "status": 200,
+   "bytes": 600,
+   "from": "image"
+  },
+  {
+   "url": "https://www.gstatic.com/recaptcha/api2/info_2x.png",
+   "ct": "image/png",
+   "status": 200,
+   "bytes": 665,
+   "from": "image"
+  },
+  {
+   "url": "https://www.google.com/recaptcha/api2/payload?p=06AFcWeA7ItNhg63Cmjv8vwRLa3RCy10nSH5xkzIspE6EUO6_RKpOkT8oV9ukI-TfLBQ7KOW84yoe54lDBbGMgkmqNjOY6pWLRxIaig99elCyKpo3rTzYwNMwPQdUsCN8Kta09wCVDz38hHT19fvSgkpOOlQ2X04g9AR9hHUtZv_vM_TBt3J5h9oNJANx8ta_J9zvF76yEKjhH&k=6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME",
+   "ct": "image/jpeg",
+   "status": 200,
+   "bytes": 0,
+   "from": "image"
+  }
+ ]
+}

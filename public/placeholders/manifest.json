@@ -1,0 +1,1014 @@
+[
+ {
+  "id": "logo-header",
+  "route": "all",
+  "section": "header",
+  "dims": {
+   "390": [
+    190,
+    76
+   ],
+   "768": [
+    180,
+    72
+   ],
+   "1440": [
+    250,
+    100
+   ]
+  },
+  "fit": "contain",
+  "dominant": "#3c5b76",
+  "note": "wordmark; set in Mohave until a file is handed over",
+  "aspect": {
+   "390": 2.5,
+   "768": 2.5,
+   "1440": 2.5
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/logo-header.svg"
+  ]
+ },
+ {
+  "id": "logo-footer",
+  "route": "all",
+  "section": "footer-nap",
+  "dims": {
+   "390": [
+    198,
+    79
+   ],
+   "768": [
+    188,
+    75
+   ],
+   "1440": [
+    171,
+    68
+   ]
+  },
+  "fit": "contain",
+  "dominant": "#3c5b76",
+  "aspect": {
+   "390": 2.51,
+   "768": 2.51,
+   "1440": 2.51
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/logo-footer.svg"
+  ]
+ },
+ {
+  "id": "favicon",
+  "route": "all",
+  "section": "head",
+  "dims": {
+   "390": [
+    32,
+    32
+   ],
+   "768": [
+    32,
+    32
+   ],
+   "1440": [
+    32,
+    32
+   ]
+  },
+  "fit": "contain",
+  "dominant": "#3c5b76",
+  "aspect": {
+   "390": 1,
+   "768": 1,
+   "1440": 1
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/favicon.svg"
+  ]
+ },
+ {
+  "id": "home-hero-bg",
+  "route": "/",
+  "section": "hero",
+  "dims": {
+   "390": [
+    390,
+    1000
+   ],
+   "768": [
+    768,
+    1004
+   ],
+   "1440": [
+    1440,
+    820
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#69666b",
+  "note": "aspect changes 0.39 / 0.76 / 1.76 — needs a portrait crop",
+  "aspect": {
+   "390": 0.39,
+   "768": 0.76,
+   "1440": 1.76
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-hero-bg.svg",
+   "/placeholders/home-hero-bg-m.svg"
+  ]
+ },
+ {
+  "id": "home-trust-img",
+  "route": "/",
+  "section": "trust-row",
+  "dims": {
+   "390": [
+    311,
+    227
+   ],
+   "768": [
+    311,
+    227
+   ],
+   "1440": [
+    360,
+    223
+   ]
+  },
+  "fit": "cover",
+  "radius": 30,
+  "dominant": "#8c8c88",
+  "aspect": {
+   "390": 1.37,
+   "768": 1.37,
+   "1440": 1.61
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-trust-img.svg",
+   "/placeholders/home-trust-img-m.svg"
+  ]
+ },
+ {
+  "id": "home-svc-a-img",
+  "route": "/",
+  "section": "svc-a",
+  "dims": {
+   "390": [
+    327,
+    236
+   ],
+   "768": [
+    337,
+    243
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#7d8380",
+  "aspect": {
+   "390": 1.39,
+   "768": 1.39,
+   "1440": 1.65
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-svc-a-img.svg",
+   "/placeholders/home-svc-a-img-m.svg"
+  ]
+ },
+ {
+  "id": "home-svc-b-img",
+  "route": "/",
+  "section": "svc-b",
+  "dims": {
+   "390": [
+    327,
+    218
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#9c9e89",
+  "aspect": {
+   "390": 1.5,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/home-svc-b-img.svg"
+  ]
+ },
+ {
+  "id": "home-svc-c-img",
+  "route": "/",
+  "section": "svc-c",
+  "dims": {
+   "390": [
+    327,
+    217
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#9c938d",
+  "aspect": {
+   "390": 1.51,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/home-svc-c-img.svg"
+  ]
+ },
+ {
+  "id": "home-project-1",
+  "route": "/",
+  "section": "projects",
+  "dims": {
+   "390": [
+    252,
+    200
+   ],
+   "768": [
+    194,
+    200
+   ],
+   "1440": [
+    378,
+    300
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#6d6e6e",
+  "aspect": {
+   "390": 1.26,
+   "768": 0.97,
+   "1440": 1.26
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-project-1.svg",
+   "/placeholders/home-project-1-m.svg"
+  ]
+ },
+ {
+  "id": "home-project-2",
+  "route": "/",
+  "section": "projects",
+  "dims": {
+   "390": [
+    252,
+    200
+   ],
+   "768": [
+    194,
+    200
+   ],
+   "1440": [
+    378,
+    300
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#9e9996",
+  "aspect": {
+   "390": 1.26,
+   "768": 0.97,
+   "1440": 1.26
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-project-2.svg",
+   "/placeholders/home-project-2-m.svg"
+  ]
+ },
+ {
+  "id": "home-project-3",
+  "route": "/",
+  "section": "projects",
+  "dims": {
+   "390": [
+    252,
+    200
+   ],
+   "768": [
+    194,
+    200
+   ],
+   "1440": [
+    378,
+    300
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#b8b8b7",
+  "aspect": {
+   "390": 1.26,
+   "768": 0.97,
+   "1440": 1.26
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-project-3.svg",
+   "/placeholders/home-project-3-m.svg"
+  ]
+ },
+ {
+  "id": "home-project-4",
+  "route": "/",
+  "section": "projects",
+  "dims": {
+   "390": [
+    252,
+    200
+   ],
+   "768": [
+    194,
+    200
+   ],
+   "1440": [
+    378,
+    300
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#8f8f8e",
+  "aspect": {
+   "390": 1.26,
+   "768": 0.97,
+   "1440": 1.26
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-project-4.svg",
+   "/placeholders/home-project-4-m.svg"
+  ]
+ },
+ {
+  "id": "home-project-5",
+  "route": "/",
+  "section": "projects",
+  "dims": {
+   "390": [
+    252,
+    200
+   ],
+   "768": [
+    194,
+    200
+   ],
+   "1440": [
+    378,
+    300
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#7f8285",
+  "note": "dominant inherited from the sampled four; slider items 5–8 render off-screen",
+  "aspect": {
+   "390": 1.26,
+   "768": 0.97,
+   "1440": 1.26
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-project-5.svg",
+   "/placeholders/home-project-5-m.svg"
+  ]
+ },
+ {
+  "id": "home-project-6",
+  "route": "/",
+  "section": "projects",
+  "dims": {
+   "390": [
+    252,
+    200
+   ],
+   "768": [
+    194,
+    200
+   ],
+   "1440": [
+    378,
+    300
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#8a8781",
+  "note": "dominant inherited from the sampled four; slider items 5–8 render off-screen",
+  "aspect": {
+   "390": 1.26,
+   "768": 0.97,
+   "1440": 1.26
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-project-6.svg",
+   "/placeholders/home-project-6-m.svg"
+  ]
+ },
+ {
+  "id": "home-project-7",
+  "route": "/",
+  "section": "projects",
+  "dims": {
+   "390": [
+    252,
+    200
+   ],
+   "768": [
+    194,
+    200
+   ],
+   "1440": [
+    378,
+    300
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#6d6e6e",
+  "note": "dominant inherited from the sampled four; slider items 5–8 render off-screen",
+  "aspect": {
+   "390": 1.26,
+   "768": 0.97,
+   "1440": 1.26
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-project-7.svg",
+   "/placeholders/home-project-7-m.svg"
+  ]
+ },
+ {
+  "id": "home-project-8",
+  "route": "/",
+  "section": "projects",
+  "dims": {
+   "390": [
+    252,
+    200
+   ],
+   "768": [
+    194,
+    200
+   ],
+   "1440": [
+    378,
+    300
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#9e9996",
+  "note": "dominant inherited from the sampled four; slider items 5–8 render off-screen",
+  "aspect": {
+   "390": 1.26,
+   "768": 0.97,
+   "1440": 1.26
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-project-8.svg",
+   "/placeholders/home-project-8-m.svg"
+  ]
+ },
+ {
+  "id": "home-cta-media",
+  "route": "all",
+  "section": "cta-band",
+  "dims": {
+   "390": [
+    359,
+    298
+   ],
+   "768": [
+    339,
+    298
+   ],
+   "1440": [
+    636,
+    298
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#6f655a",
+  "note": "reference mounts a video here; poster image only, no video in this build",
+  "aspect": {
+   "390": 1.2,
+   "768": 1.14,
+   "1440": 2.13
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-cta-media.svg",
+   "/placeholders/home-cta-media-m.svg"
+  ]
+ },
+ {
+  "id": "about-story-img",
+  "route": "/about",
+  "section": "story",
+  "dims": {
+   "390": [
+    359,
+    192
+   ],
+   "768": [
+    707,
+    378
+   ],
+   "1440": [
+    395,
+    211
+   ]
+  },
+  "fit": "contain",
+  "dominant": "#cadded",
+  "note": "reference renders its own logo in this slot; ours is a photo slot",
+  "aspect": {
+   "390": 1.87,
+   "768": 1.87,
+   "1440": 1.87
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/about-story-img.svg"
+  ]
+ },
+ {
+  "id": "about-credentials-1",
+  "route": "/about",
+  "section": "credentials",
+  "dims": {
+   "390": [
+    179,
+    100
+   ],
+   "768": [
+    147,
+    147
+   ],
+   "1440": [
+    265,
+    100
+   ]
+  },
+  "fit": "contain",
+  "dominant": "#e8eaee",
+  "note": "TODO(fact) chip at badge-strip dimensions",
+  "aspect": {
+   "390": 1.79,
+   "768": 1,
+   "1440": 2.65
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/about-credentials-1.svg",
+   "/placeholders/about-credentials-1-m.svg"
+  ]
+ },
+ {
+  "id": "about-credentials-2",
+  "route": "/about",
+  "section": "credentials",
+  "dims": {
+   "390": [
+    179,
+    100
+   ],
+   "768": [
+    147,
+    147
+   ],
+   "1440": [
+    265,
+    100
+   ]
+  },
+  "fit": "contain",
+  "dominant": "#e8eaee",
+  "note": "TODO(fact) chip",
+  "aspect": {
+   "390": 1.79,
+   "768": 1,
+   "1440": 2.65
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/about-credentials-2.svg",
+   "/placeholders/about-credentials-2-m.svg"
+  ]
+ },
+ {
+  "id": "about-credentials-3",
+  "route": "/about",
+  "section": "credentials",
+  "dims": {
+   "390": [
+    179,
+    100
+   ],
+   "768": [
+    147,
+    147
+   ],
+   "1440": [
+    265,
+    100
+   ]
+  },
+  "fit": "contain",
+  "dominant": "#e8eaee",
+  "note": "TODO(fact) chip",
+  "aspect": {
+   "390": 1.79,
+   "768": 1,
+   "1440": 2.65
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/about-credentials-3.svg",
+   "/placeholders/about-credentials-3-m.svg"
+  ]
+ },
+ {
+  "id": "services-hero-bg",
+  "route": "/services",
+  "section": "hero",
+  "dims": {
+   "390": [
+    390,
+    758
+   ],
+   "768": [
+    768,
+    846
+   ],
+   "1440": [
+    1440,
+    676
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#86716b",
+  "note": "aspect changes 0.51 / 0.91 / 2.13 — needs a portrait crop",
+  "aspect": {
+   "390": 0.51,
+   "768": 0.91,
+   "1440": 2.13
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/services-hero-bg.svg",
+   "/placeholders/services-hero-bg-m.svg"
+  ]
+ },
+ {
+  "id": "services-item-1",
+  "route": "/services",
+  "section": "list",
+  "dims": {
+   "390": [
+    327,
+    218
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#8b8b87",
+  "note": "OURS-NEW: inherits the home service-feature block geometry from the section vocabulary",
+  "aspect": {
+   "390": 1.5,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/services-item-1.svg"
+  ]
+ },
+ {
+  "id": "services-item-2",
+  "route": "/services",
+  "section": "list",
+  "dims": {
+   "390": [
+    327,
+    218
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#8b8b87",
+  "note": "OURS-NEW: inherits the home service-feature block geometry from the section vocabulary",
+  "aspect": {
+   "390": 1.5,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/services-item-2.svg"
+  ]
+ },
+ {
+  "id": "services-item-3",
+  "route": "/services",
+  "section": "list",
+  "dims": {
+   "390": [
+    327,
+    218
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#8b8b87",
+  "note": "OURS-NEW: inherits the home service-feature block geometry from the section vocabulary",
+  "aspect": {
+   "390": 1.5,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/services-item-3.svg"
+  ]
+ },
+ {
+  "id": "services-item-4",
+  "route": "/services",
+  "section": "list",
+  "dims": {
+   "390": [
+    327,
+    218
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#8b8b87",
+  "note": "OURS-NEW: inherits the home service-feature block geometry from the section vocabulary",
+  "aspect": {
+   "390": 1.5,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/services-item-4.svg"
+  ]
+ },
+ {
+  "id": "services-item-5",
+  "route": "/services",
+  "section": "list",
+  "dims": {
+   "390": [
+    327,
+    218
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#8b8b87",
+  "note": "OURS-NEW: inherits the home service-feature block geometry from the section vocabulary",
+  "aspect": {
+   "390": 1.5,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/services-item-5.svg"
+  ]
+ },
+ {
+  "id": "services-item-6",
+  "route": "/services",
+  "section": "list",
+  "dims": {
+   "390": [
+    327,
+    218
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#8b8b87",
+  "note": "OURS-NEW: inherits the home service-feature block geometry from the section vocabulary",
+  "aspect": {
+   "390": 1.5,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/services-item-6.svg"
+  ]
+ },
+ {
+  "id": "services-item-7",
+  "route": "/services",
+  "section": "list",
+  "dims": {
+   "390": [
+    327,
+    218
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#8b8b87",
+  "note": "OURS-NEW: inherits the home service-feature block geometry from the section vocabulary",
+  "aspect": {
+   "390": 1.5,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/services-item-7.svg"
+  ]
+ },
+ {
+  "id": "services-item-8",
+  "route": "/services",
+  "section": "list",
+  "dims": {
+   "390": [
+    327,
+    218
+   ],
+   "768": [
+    337,
+    224
+   ],
+   "1440": [
+    659,
+    400
+   ]
+  },
+  "fit": "cover",
+  "radius": 25,
+  "dominant": "#8b8b87",
+  "note": "OURS-NEW: inherits the home service-feature block geometry from the section vocabulary",
+  "aspect": {
+   "390": 1.5,
+   "768": 1.5,
+   "1440": 1.65
+  },
+  "aspectChanges": false,
+  "files": [
+   "/placeholders/services-item-8.svg"
+  ]
+ },
+ {
+  "id": "contact-map-poster",
+  "route": "/contact",
+  "section": "map",
+  "dims": {
+   "390": [
+    359,
+    300
+   ],
+   "768": [
+    707,
+    300
+   ],
+   "1440": [
+    636,
+    300
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#dfe3d8",
+  "note": "OURS-NEW: static poster behind the lazy map iframe",
+  "aspect": {
+   "390": 1.2,
+   "768": 2.36,
+   "1440": 2.12
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/contact-map-poster.svg",
+   "/placeholders/contact-map-poster-m.svg"
+  ]
+ },
+ {
+  "id": "home-map-poster",
+  "route": "/",
+  "section": "map",
+  "dims": {
+   "390": [
+    359,
+    300
+   ],
+   "768": [
+    707,
+    300
+   ],
+   "1440": [
+    1325,
+    360
+   ]
+  },
+  "fit": "cover",
+  "dominant": "#dfe3d8",
+  "note": "OURS-NEW: required by D-08",
+  "aspect": {
+   "390": 1.2,
+   "768": 2.36,
+   "1440": 3.68
+  },
+  "aspectChanges": true,
+  "files": [
+   "/placeholders/home-map-poster.svg",
+   "/placeholders/home-map-poster-m.svg"
+  ]
+ }
+]

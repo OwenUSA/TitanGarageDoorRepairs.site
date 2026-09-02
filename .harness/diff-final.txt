@@ -1,0 +1,31 @@
+{"pass":"diff / @390","rows":13,"fails":2}
+{"pass":"diff / @768","rows":13,"fails":2}
+{"pass":"diff / @1440","rows":23,"fails":3}
+{"pass":"diff /about @390","rows":8,"fails":4}
+{"pass":"diff /about @768","rows":7,"fails":3}
+{"pass":"diff /about @1440","rows":16,"fails":2}
+{"pass":"diff /services @390","rows":7,"fails":3}
+{"pass":"diff /services @768","rows":7,"fails":3}
+{"pass":"diff /services @1440","rows":15,"fails":3}
+{"pass":"diff /contact @390","rows":8,"fails":3}
+{"pass":"diff /contact @768","rows":8,"fails":3}
+{"pass":"diff /contact @1440","rows":16,"fails":3}
+{"pass":"diff /privacy @390","rows":22,"fails":3}
+{"pass":"diff /privacy @768","rows":21,"fails":3}
+{"pass":"diff /privacy @1440","rows":26,"fails":2}
+
+--- TOP 10 (ranked, worst first) ---
+route | section | bp | class | metric | value | threshold | status | advisory
+------|---------|----|-------|--------|-------|-----------|--------|---------
+/privacy | (page) | 768 | PAGE | height delta % | 62.56 | 5 | FAIL | -
+/privacy | (page) | 390 | PAGE | height delta % | 60.11 | 5 | FAIL | -
+/privacy | (page) | 1440 | PAGE | height delta % | 59.92 | 5 | FAIL | -
+/services | (page) | 1440 | PAGE | height delta % | 25.38 | 5 | FAIL | -
+/contact | (page) | 768 | PAGE | height delta % | 20.56 | 5 | FAIL | -
+/services | (page) | 390 | PAGE | height delta % | 14.92 | 5 | FAIL | -
+/ | (page) | 390 | PAGE | height delta % | 12.34 | 5 | FAIL | -
+/contact | (page) | 390 | PAGE | height delta % | 12.09 | 5 | FAIL | -
+/about | s13-c52c188e | 390 | ADAPTED | structural deviation % | 11.72 | 5 | FAIL | advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=4 (75%), innerCount ref=2 ours=4 (50%)
+/services | s12-c52c188e | 390 | ADAPTED | structural deviation % | 11.72 | 5 | FAIL | advisory: innerCols ref=1 ours=2 (50%), innerRows ref=1 ours=4 (75%), innerCount ref=2 ours=4 (50%)
+
+DIFF DONE 210 rows -> docs/divergence.md

@@ -56,6 +56,36 @@ export default {
   trigramMax: 0.15,
   lengthTolerance: 0.1,
 
+  // Rows where a +/-10% char-count comparison against the reference band is
+  // MEANINGLESS BY DECISION, not by sloppy copywriting. Each one names the
+  // decision-register rule that removed the text. An exempt row reports EXEMPT
+  // and never PASS -- the point is that it was never measured, not that it won.
+  // Anything NOT listed here is measured, and a miss is reported as (LEN).
+  lengthExempt: {
+    '/::footer-nap':
+      'D-02 replaces their serving-area city list with one SERVICE_AREA sentence, and D-06 removes their "24/7 Emergency" line.',
+    '/::footer-links':
+      'D-01 fixes us at five routes; their column links four service pages. Different item count by decision.',
+    '/::hero':
+      'Their hero band carries an inline 5-field email request form (Name/Phone/Email/Services + two submit-state messages) plus a 24/7 + financing + discounts claim strip. D-03 removes the form, D-14 removes every claim.',
+    '/::trust-row':
+      'D-14. Their six chips are 24/7 emergency, financing, price match, "Since 2013", a manufacturer certification and warranties -- six invented facts for us. Ours are TODO(fact) chips at the same dimensions.',
+    '/::projects':
+      'Their band text is a serialised image-slider widget payload plus per-project captions naming real jobs. D-09 and D-13. Ours is an image slider with no captions.',
+    '/::testimonials':
+      'D-13. Three literal [TESTIMONIAL PLACEHOLDER] blocks where they carry real customer quotes.',
+    '/about::what-we-do':
+      'D-01. Eight garage-door services against their 83-item service tree.',
+    '/services::hero':
+      'Same inline email request form as the home hero, plus the same claim strip. D-03, D-05, D-14.',
+    '/services::list':
+      'D-12 and D-14 remove prices, warranty terms and credential claims from every one of the eight blocks.',
+    '/contact::form':
+      'D-03 removes the email field, D-15 removes reCAPTCHA and its legal text, D-05 removes the backend submit-state copy.',
+    '/contact::map':
+      'The entire text of their band is the 41-character Mapbox/OpenStreetMap attribution. Ours is a keyless Google coords embed with a titled iframe and a directions link (D-07, D-08). Not a comparable string.',
+  },
+
   // masterSeed is set when the palette is generated (merged prompt 5+9). Each site MUST
   // use a different seed -- the palette is one of the things that makes these sites
   // genuinely different rather than one template recoloured.

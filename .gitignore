@@ -1,6 +1,11 @@
 node_modules/
 .next/
-reference/
+reference/*
+# ...EXCEPT the raw archive. Three sibling sites in this programme lost their
+# reference to a bot wall mid-build and can never be re-measured against it.
+# An ignored directory dies to the first `git clean -xdf`, so this one is tracked.
+!reference/raw/
+!reference/raw/**
 *.tsbuildinfo
 next-env.d.ts
 
@@ -8,3 +13,4 @@ next-env.d.ts
 .harness/**/*.png
 .harness/devserver.log
 .harness/prodserver.log
+.harness/server.log

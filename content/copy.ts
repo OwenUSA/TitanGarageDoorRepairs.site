@@ -9,11 +9,15 @@
  *   - No invented facts. Credentials, years, team size, warranty terms, response times
  *     and review counts are TODO(fact) and listed in docs/facts-needed.md.
  *   - No email anywhere. No prices. "Free estimate" is allowed; numbers are not.
- *   - Business facts come from lib/business.ts at render time, never hard-coded here,
- *     except where the phone string is part of a written sentence.
+ *   - Business facts come from lib/business.ts at render time, never hard-coded here.
+ *     Where a phone number is part of a written sentence it is INTERPOLATED from
+ *     business.phoneDisplay -- the Prompt 11 NAP gate found three literal copies of
+ *     it in this file, and a literal is a second source of truth waiting to drift.
  *
  * Gate: `node scripts/similarity.mjs` — zero shared 5-grams, trigram Jaccard <= 0.15.
  */
+
+import { business } from '@/lib/business';
 
 export type Route = '/' | '/about' | '/services' | '/contact' | '/privacy';
 
@@ -57,10 +61,11 @@ export const callBar = {
   sub: 'A technician answers',
 } as const;
 
+/* Labels only. The phone number and the hours string are NAP facts and live in
+ * lib/business.ts, which is their single source; a second copy here is what put
+ * two different dashes into one footer. Removed at the Prompt 11 NAP gate. */
 export const footerNap = {
   callHeading: 'Call us',
-  phoneNote: '(405) 555-0142',
-  hours: 'Open 7 days, 7:00 AM - 7:00 PM',
   areaHeading: 'Where we go',
   area: 'Serving the Oklahoma City metro and the surrounding communities.',
 } as const;
@@ -84,7 +89,7 @@ export const homeHero = {
     'Seven days a week',
     'Straight answers about what your door actually needs',
   ],
-  callCta: 'Call (405) 555-0142',
+  callCta: `Call ${business.phoneDisplay}`,
   secondaryCta: 'Ask for a callback',
   note: 'Free estimate on every visit',
 } as const;
@@ -210,7 +215,7 @@ export const servicesHero = {
     'Homes and businesses',
     'The same technician quotes it and fixes it',
   ],
-  callCta: 'Call (405) 555-0142',
+  callCta: `Call ${business.phoneDisplay}`,
   secondaryCta: 'Jump to the list',
 } as const;
 
@@ -377,7 +382,7 @@ export const contactForm = {
   },
   placeholders: {
     name: 'First and last',
-    phone: '(405) 555-0142',
+    phone: business.phoneDisplay,
     message: 'Noises, when it started, whether it still moves',
   },
   serviceOptions: [
@@ -498,38 +503,115 @@ export const meta: Readonly<Record<Route, Meta>> = {
 /* ========================================================================== */
 
 export const sections: readonly SectionCopy[] = [
+  /* `ref` is the section index in the SHARED harness's segmentation of the
+   * reference page (`.harness/refcopy.json`, written by
+   * ../_shared/harness/src/refcopy.mjs) -- NOT the ordinal in the human table
+   * in docs/sections.md. The two segmentations differ, which is the KD-09
+   * defect class: the shared instrument has one numbering and this site
+   * conforms to it. Repointed at the merged Prompt 10+11 turn; the copy itself
+   * was not touched. Verified row by row against the heading and char count of
+   * the reference band each one names. */
+
   { id: 'header', route: '/', ref: null, copy: nav },
   { id: 'callbar', route: '/', ref: null, copy: callBar },
-  { id: 'footer-nap', route: '/', ref: 20, copy: footerNap },
-  { id: 'footer-links', route: '/', ref: 21, copy: footerLinks },
+  { id: 'footer-nap', route: '/', ref: 19, copy: footerNap },
+  { id: 'footer-links', route: '/', ref: 20, copy: footerLinks },
 
-  { id: 'hero', route: '/', ref: 7, copy: homeHero },
-  { id: 'trust-row', route: '/', ref: 9, copy: homeTrust },
-  { id: 'svc-a', route: '/', ref: 10, copy: homeServices.a },
-  { id: 'svc-b', route: '/', ref: 11, copy: homeServices.b },
-  { id: 'svc-c', route: '/', ref: 12, copy: homeServices.c },
-  { id: 'intro', route: '/', ref: 8, copy: homeIntro },
-  { id: 'projects', route: '/', ref: 14, copy: homeProjects },
-  { id: 'testimonials', route: '/', ref: 15, copy: homeTestimonials },
+  { id: 'hero', route: '/', ref: 1, copy: homeHero },
+  { id: 'trust-row', route: '/', ref: 7, copy: homeTrust },
+  { id: 'svc-a', route: '/', ref: 8, copy: homeServices.a },
+  { id: 'svc-b', route: '/', ref: 9, copy: homeServices.b },
+  { id: 'svc-c', route: '/', ref: 10, copy: homeServices.c },
+  { id: 'intro', route: '/', ref: 6, copy: homeIntro },
+  { id: 'projects', route: '/', ref: 12, copy: homeProjects },
+  { id: 'testimonials', route: '/', ref: 13, copy: homeTestimonials },
   { id: 'map', route: '/', ref: null, copy: homeMap },
-  { id: 'cta-band', route: '/', ref: 19, copy: ctaBand },
+  { id: 'cta-band', route: '/', ref: 18, copy: ctaBand },
 
-  { id: 'title', route: '/about', ref: 6, copy: aboutTitle },
-  { id: 'story', route: '/about', ref: 8, copy: aboutStory },
-  { id: 'what-we-do', route: '/about', ref: 9, copy: aboutWhatWeDo },
+  { id: 'title', route: '/about', ref: 4, copy: aboutTitle },
+  { id: 'story', route: '/about', ref: 6, copy: aboutStory },
+  { id: 'what-we-do', route: '/about', ref: 8, copy: aboutWhatWeDo },
   { id: 'credentials', route: '/about', ref: null, copy: aboutCredentials },
 
-  { id: 'hero', route: '/services', ref: 6, copy: servicesHero },
-  { id: 'list', route: '/services', ref: 8, copy: servicesList },
-  { id: 'faq', route: '/services', ref: 16, refRoute: '/', copy: servicesFaq },
+  { id: 'hero', route: '/services', ref: 4, copy: servicesHero },
+  { id: 'list', route: '/services', ref: 7, copy: servicesList },
+  { id: 'faq', route: '/services', ref: 14, refRoute: '/', copy: servicesFaq },
 
-  { id: 'title', route: '/contact', ref: 6, copy: contactTitle },
-  { id: 'form', route: '/contact', ref: 9, copy: contactForm },
+  { id: 'title', route: '/contact', ref: 4, copy: contactTitle },
+  { id: 'form', route: '/contact', ref: 8, copy: contactForm },
   { id: 'nap-card', route: '/contact', ref: null, copy: contactNap },
-  { id: 'map', route: '/contact', ref: null, copy: contactMap },
+  { id: 'map', route: '/contact', ref: 5, copy: contactMap },
 
   { id: 'body', route: '/privacy', ref: null, copy: privacy },
 ];
 
-export const copy = { meta, sections } as const;
+/* --------------------------------------------------------------------------
+ * `routes` — the SHARED harness's view of this file (A-11).
+ *
+ * `../_shared/harness/src/similarity.mjs` reads `copy.routes[route].sections[]`
+ * and expects `refSection` in the contract's `sNN-...` form plus the divergence
+ * class. This file was written to the legacy per-site shape (`sections[]` with a
+ * numeric `ref`), which is the same defect class as KD-09: the shared instrument
+ * has one format and this site conforms to it rather than forking the package.
+ *
+ * This is a projection of the arrays above. It holds no copy of its own — every
+ * string still has exactly one home — so the two cannot drift.
+ * ------------------------------------------------------------------------ */
+
+/** Divergence class per `route::id`, mirroring docs/sections.md. */
+const CLASS_BY_KEY: Readonly<Record<string, 'FIDELITY' | 'ADAPTED' | 'NOVEL'>> = {
+  '/::header': 'ADAPTED',
+  '/::callbar': 'NOVEL',
+  '/::footer-nap': 'ADAPTED',
+  '/::footer-links': 'ADAPTED',
+  '/::hero': 'ADAPTED',
+  '/::trust-row': 'ADAPTED',
+  '/::svc-a': 'ADAPTED',
+  '/::svc-b': 'ADAPTED',
+  '/::svc-c': 'ADAPTED',
+  '/::intro': 'ADAPTED',
+  '/::projects': 'FIDELITY',
+  '/::testimonials': 'ADAPTED',
+  '/::map': 'NOVEL',
+  '/::cta-band': 'FIDELITY',
+  '/about::title': 'ADAPTED',
+  '/about::story': 'ADAPTED',
+  '/about::what-we-do': 'ADAPTED',
+  '/about::credentials': 'NOVEL',
+  '/services::hero': 'ADAPTED',
+  '/services::list': 'ADAPTED',
+  '/services::faq': 'ADAPTED',
+  '/contact::title': 'ADAPTED',
+  '/contact::form': 'ADAPTED',
+  '/contact::nap-card': 'NOVEL',
+  '/contact::map': 'ADAPTED',
+  '/privacy::body': 'NOVEL',
+};
+
+const ROUTE_ORDER: readonly Route[] = ['/', '/about', '/services', '/contact', '/privacy'];
+
+export const routes = Object.fromEntries(
+  ROUTE_ORDER.map((route) => [
+    route,
+    {
+      meta: meta[route],
+      sections: sections
+        .filter((s) => s.route === route)
+        .map((s) => ({
+          id: s.id,
+          // sNN- is the contract's reference-section form; refIdx() parses the digits.
+          refSection: s.ref == null ? null : `s${String(s.ref).padStart(2, '0')}`,
+          cls: CLASS_BY_KEY[`${route}::${s.id}`] ?? 'NOVEL',
+          copy: s.copy,
+        })),
+    },
+  ])
+) as unknown as Readonly<Record<Route, { meta: Meta; sections: readonly {
+  id: string;
+  refSection: string | null;
+  cls: string;
+  copy: CopyNode;
+}[] }>>;
+
+export const copy = { meta, sections, routes } as const;
 export default copy;

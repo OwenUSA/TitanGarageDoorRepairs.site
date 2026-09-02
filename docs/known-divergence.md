@@ -400,3 +400,192 @@ holding in memory.
 Verify before believing any gate: the route's `<title>` **and** a `200` on the stylesheet
 the page actually references. An implausibly small "N scored" (we saw `0 scored, 0 FAIL`
 once) means the page was caught mid-recompile, not that the gate passed.
+
+---
+
+# FINALISED AT THE MERGED PROMPT 10 + 11 ACCEPTANCE SWEEP
+
+Everything below closes the file. The chain ends here; no further iteration is authorised
+on any row in this document.
+
+## KD-15 — the complete list of permanent floors, and what each one is
+
+One table, so the next reader does not have to reconstruct it from fourteen sections. Every
+row is a **decision or a construction limit**, never a defect, and none may be reopened.
+
+| # | floor | where | cause | class |
+|---|---|---|---|---|
+| KD-01 | none — **there is NO font-substitution floor on this build** | all type | Mohave and Lato are both SIL OFL and are TAKEN from their open upstream, not substituted. D-11's rule is conditional on the reference self-hosting a *licensed* face; that condition is not met. Manufacturing a substitution would have invented a permanent floor we do not have to carry, and cost real fidelity on every heading. | not a floor |
+| KD-02 | stroked icons against their filled ones | 5 icon sites | `lucide-react` per the allowlist, matched on size and stroke width, not glyph. Less filled area means a small permanent pixel residual wherever an icon sits. | licensing |
+| KD-03 | 30 REPLACE + 11 OURS-NEW image slots are placeholders | all routes | OVERRIDE 3 — the real files arrive after acceptance. Measured with the placeholder area excluded. | sequencing |
+| KD-04 | the wordmark is type, not a file | header, footer, favicon | No logo asset exists; `TODO(fact): logo asset`. The logo slots cannot close on pixel diff by construction. | missing fact |
+| KD-05 | their third-party runtime, which we do not ship | all routes | reCAPTCHA, chat widget, contact modal, promo bar, partner strip, blog, coupon band, Leaflet embed — all deliberately absent under D-15, D-05, D-03, D-01, D-09 and D-07. Section geometry moves where they sat. | decision |
+| KD-06 | their CTA text colour fails AA and ours does not | CTA anchors | Theirs computes `color: rgb(0,0,238)` on `rgb(197,23,22)`. D-19 forbids cloning it. | accessibility |
+| **KD-07** | **colour, entirely** | **every section, every route, permanently** | The palette is randomised at token-write time from seed **260721**. **Colour divergence from the reference is intentional and is permanently excluded from every diff, every threshold and every future iteration** (A-8). The structural comparator strips resolved colour, background-colour, border-colour, gradient stops and shadow colour before scoring; the non-colour parts of borders and shadows — widths, offsets, blur, spread, radii — are kept. | **excluded by amendment** |
+| KD-08 | `header`, `footer-nap`, `footer-links` structural residuals | shared shell, every route | Type and rhythm inside bands whose *information* differs by decision (D-01, D-02, D-06). One fix attempt spent and recorded. | ADAPTED trap |
+| KD-09 | the harness parses a second, machine-readable table | `docs/sections.md` | The shared package's contract format differs from the human table's column order. Two mappings are genuinely absent: `/services::faq`, relocated cross-page and UNPAIRED forever, and `/privacy`, which has no reference page at all. | instrument |
+| KD-10 | the shared `cta-band` residual — restated below | 4 routes x 3 bp | one field of twenty-three | **D-04** |
+| KD-11 | section padding lives on an inner element | every section | Every reference section computes `padding: 0` on the scored element and puts its rhythm on an inner builder div. Measured, not stylistic. | instrument |
+| KD-12 | `/contact::map` residual — restated below | `/contact` | their embed ships its own controls | construction |
+| KD-13 | `/about::what-we-do` at 390 — restated below | `/about` @390 | mispairing | **unmeasurable** |
+| KD-14 | gates run against `pnpm build` + `pnpm start`, never `next dev` | the harness | `.harness/` sits inside the project root, so the dev watcher recompiles mid-capture. Held at this turn: **all 15 production captures reported `errors: 0`.** | instrument |
+
+### KD-10 restated, because the field IS the number
+
+The shared CTA band **carries one `tel:` link that the reference band does not.** The
+comparator's `buttons` field counts
+`a[href^="tel:"], button, [class*=btn], [class*=button]`. Their
+`9328cbef-learn-more-about` band computes **0** — their two calls to action are plain
+anchors to other pages. Ours is a call band, and **D-04 makes every rendered phone number a
+dialable `tel:` link**, so ours computes **1**.
+
+One field of twenty-three at 100% is **4.35%**, and **that one field is the entire
+residual.** Every other blocking field on the band — box width and height, all four
+paddings, font size, weight, line-height, letter-spacing, family, display, text-align,
+radius, shadow geometry, grid columns, gap, flex direction, text-transform, border style,
+overflow, cards — reads **0** at all three breakpoints on all four routes that render it.
+
+| bp | value | threshold | status |
+|---|---|---|---|
+| 390 | 4.35 | 5 | PASS |
+| 768 | 4.35 | 5 | PASS |
+| 1440 | 4.35 | 5 | PASS |
+
+Removing the `tel:` link would close it and would break D-04. **Do not close it.** Any
+regression on this band shows up as a value *above* 4.35 and nothing else; 4.35 exactly is
+the floor.
+
+### KD-12 restated — `/contact::map`
+
+The band is the embed and nothing else, and its heading was **relocated, not rewritten**,
+into the adjacent NOVEL `nap-card`. Its one fix attempt is spent and recorded above. The
+residual is the `buttons` field with KD-10's sign inverted: the reference band computes 4 at
+390 and 5 at 1440, because their embed ships its own zoom and fullscreen controls as real
+DOM buttons, and ours computes **0**, because a Google `output=embed` iframe keeps its
+controls inside the iframe where the probe cannot reach them. **Unclosable by
+construction.** Final: 4.88 / 4.18 / 4.39 against a threshold of 5, all PASS, with `box.h`
+at 1440 reading **297 against their 300**.
+
+### KD-13 restated — `/about::what-we-do` at 390 is UNMEASURABLE, not divergent
+
+| bp | value | threshold | status |
+|---|---|---|---|
+| 390 | 8.64 | 5 | **unmeasurable — floored** |
+| 768 | — | 5 | UNPAIRED |
+| 1440 | **0.47** | 5 | PASS |
+
+At 1440 the section is essentially exact against `560bf22b-about`. At 390 the harness pairs
+it against `s12-0c6cf26f`, a **26-pixel unnamed reference strip**, and reports
+`box.h ref=26 ours=2031 (98.72%)`. **The same component, the same markup and the same CSS
+score 0.47 at 1440.** A section cannot be 98% wrong at one width and 0.5% wrong at another
+by anything the markup did — the row is unmeasurable at 390, not divergent. Closing it would
+mean shortening a 2031px eight-service list to 26px, destroying real content to satisfy an
+artifact. **Do not reopen.**
+
+## KD-16 — page-height rows are composites of decisions already taken
+
+`diff.mjs` emits a whole-page height row per route per breakpoint. Eight of them exceed 5%,
+and they are **not section defects** — each is the arithmetic sum of bands this chain
+deliberately deleted or added.
+
+| route | 390 | 768 | 1440 | cause |
+|---|---|---|---|---|
+| `/` | 12.34 (8330 vs 9503) | 2.71 | 9.42 | Three home bands deleted: the discounts band (D-14), the blog band (D-01) and the eleven-mark partner strip (D-09). We are *shorter* by roughly what they occupied. |
+| `/about` | 10.54 | 6.86 | **0.23** | At 1440 the page is 2982 against their 2989 — seven pixels. The 390 delta is the same restack that produces KD-13. |
+| `/services` | 14.92 | 6.86 | 25.38 | We are *taller*: eight in-page service blocks grouped by symptom, plus the FAQ relocated from their home page, against their single product page. Structural move 3, taken deliberately in Prompt 3. |
+| `/contact` | 12.09 | 20.56 | 10.52 | Their reCAPTCHA (three iframes plus a badge), their contact modal and their email field are all absent (D-15, D-05, D-03), and our NOVEL `nap-card` band is added. |
+| `/privacy` | 60.11 | 62.56 | 59.92 | **Meaningless.** `/privacy` has no reference page, so the harness falls back to the reference *home* page (refH 7442 / 9503 / 7524). Same artifact as KD-09. |
+
+**No page-height row is actionable.** Closing one would mean re-adding a deleted band or
+padding a page to hit a target height.
+
+## KD-17 — the `/privacy` structural rows are paired against the reference home page
+
+Four rows on `/privacy` — `s14-090e14dc-frequently-asked-questions`,
+`s15-59b59a73-recent-blog-posts`, `s17-6c5257e3` and `s19-e4ad708c` — report FIDELITY
+structural deviations between 5.47 and 10.34. **`/privacy` has no counterpart page.**
+`harness.config.mjs` cannot list it in `routeMap`, so the harness falls back to the
+reference home page and pairs our privacy sections against a FAQ band, a blog band, an 85px
+spacer and their footer NAP.
+
+The rows that actually govern `/privacy` are its **token-conformance rows, and every one
+reads 0 violations** (A-9: NOVEL collapses to a single pass and has no breakpoint
+dimension). Same class as KD-09. **Artifact. Not measured, not measurable, not reopened.**
+
+## KD-18 — two raw colour values live in the token file outside `@theme`, deliberately
+
+The palette-conformance gate found exactly two literal colours in `app/globals.css` outside
+the `@theme static` block, and **zero** anywhere else in `app/`, `components/`, `lib/` or
+`content/`:
+
+- `rgba(0, 0, 0, 0.4)` — the drawer backdrop scrim. This is the **reference's own measured
+  overlay alpha**.
+- `rgba(255, 255, 255, 0.12)` — the `aria-current="page"` highlight on a drawer link,
+  against the dark drawer.
+
+Both are **achromatic alpha overlays, not palette entries**: they carry no hue, they rotate
+with nothing, and promoting them to `@theme` tokens at the final gate would add two entries
+to the set that `diff.mjs` then conforms every computed value against, for no gain.
+Recorded as a named exception rather than minted as tokens.
+
+**The winning seed is 260721.** The five candidate seeds are **260721, 274299, 955554,
+300175 and 579843**, from `masterSeed` **3203** — full table and gate results in KD-07.
+
+## KD-19 — one animation survives `prefers-reduced-motion: reduce`, by specification
+
+The reduced-motion sweep at 1440 found exactly one element still transitioning above 50ms
+under `reducedMotion: reduce`: `.t-backdrop`, at `0.15s linear` on `opacity`.
+
+This is **not a miss.** `docs/behavior/01-mobile-nav-drawer.md` specifies it: under reduced
+motion the panel transform drops to 0.01s, the link stagger and translate are removed
+entirely, and *only the backdrop opacity still transitions, at 0.15s linear* — because a
+hard cut with no opacity change is disorienting, and a 0.01s transform keeps the transition
+events firing so the close-and-cleanup logic is identical in both modes. An opacity
+cross-fade is not motion. Everything else in the document is clamped to 0.01s by the
+blanket rule.
+
+## KD-20 — instrument changes made at this turn, recorded so the next site inherits them
+
+Three, all in service of the acceptance sweep, none of them affecting the product:
+
+1. **`content/copy.ts` gained a `routes` projection.** The shared `similarity.mjs` reads
+   `copy.routes[route].sections[]` with `refSection` in `sNN` form plus a class; this file
+   was written to the legacy per-site shape and crashed the gate. The projection holds no
+   copy of its own — every string still has exactly one home — so the two cannot drift.
+   Same defect class as KD-09.
+2. **Every `ref` index in `content/copy.ts` was repointed** to the shared harness's
+   segmentation of the reference page, verified row by row against each band's heading and
+   character count. The old numbers came from the superseded per-site harness and were
+   pairing the `/about`, `/services` and `/contact` sections against an 86-character button
+   strip — which made the whole length column read as a copywriting failure when it was a
+   pairing failure. **No copy was changed**, only the index each row names.
+3. **One guard added to `../_shared/harness/src/similarity.mjs`**: a route with no reference
+   page — a NOVEL route such as `/privacy` — previously crashed the entire gate on
+   `ref.byRoute[route].map(...)`. It now emits those rows with a null `refChars` instead.
+   `node test/selftest.mjs` in the package reports **13 passed, 0 failed** after the change.
+
+Also at this turn, and not an instrument change: **`reference/raw/` was created** — five
+reference pages, the sitemap and ten stylesheets, saved with one `curl` each while
+`nextlevelok.com` is still reachable. Three sibling sites in this programme lost their
+references to bot walls mid-build and can never be re-measured against them. This one can.
+
+## KD-21 — the NAP defect the acceptance sweep found, and fixed
+
+Recorded because it is the one real defect gate 4 caught, and because the shape of it
+recurs.
+
+The footer rendered **two different hours strings**: `business.hours.display`
+(`Open 7 days, 7:00 AM – 7:00 PM`, en dash) in the header sub-line and the footer NAP block,
+and a second copy in `content/copy.ts` as `footerNap.hours` that had drifted to a **hyphen**.
+`content/copy.ts` also carried **three literal copies of the phone number** — two `callCta`
+strings and a form placeholder.
+
+Two sources for one fact is precisely what the NAP gate exists to catch. Fixed at this turn:
+the hours column now reads `business.hours.display`, the duplicated `footerNap.hours` and
+`footerNap.phoneNote` are deleted, and the remaining phone strings are interpolated from
+`business.phoneDisplay`. **`lib/business.ts` is now the only file in the repository
+containing a NAP literal.** Post-fix sweep, all five routes: exactly one form of the phone,
+one of the address and one of the hours string on each.
+
+Not a floor — a closed defect. Listed here so that a future edit reintroducing a literal is
+recognised as a regression rather than a convenience.

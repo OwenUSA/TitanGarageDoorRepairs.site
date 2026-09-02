@@ -59,7 +59,12 @@ export default function SiteFooter() {
               <Clock size={24} strokeWidth={2} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-4px', marginRight: 8 }} />
               {contactNap.hoursLabel}
             </h2>
-            <p className="t-muted">{footerNap.hours}</p>
+            {/* NAP gate (Prompt 11): hours have ONE source, lib/business.ts.
+                This column previously rendered a second copy from content/copy.ts
+                that had drifted to a hyphen where business.hours.display uses an
+                en dash -- two strings for one fact is the defect the gate exists
+                to catch. */}
+            <p className="t-muted">{business.hours.display}</p>
           </div>
         </div>
       </section>

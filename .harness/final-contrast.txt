@@ -1,0 +1,7 @@
+
+contrast gate -- 1023 scored, 0 FAIL, 0 UNMEASURABLE
+
+route      bp   ratio  need  fg        worst-bg  text
+---------- ---- ------ ----- --------- --------- ------------------------------
+
+PASS -- full result: C:\Users\santi\OneDrive\Documents\web projects\owen\garage-websites\titangaragedoorrepairs.site\.harness\contrast.json

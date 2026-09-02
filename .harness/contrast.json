@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T23:49:16.265Z",
+  "generated": "2026-09-02T01:07:58.954Z",
   "rows": [
     {
       "route": "/",
@@ -2444,7 +2444,7 @@
     {
       "route": "/",
       "bp": 390,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -4764,7 +4764,7 @@
     {
       "route": "/about",
       "bp": 390,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -9444,7 +9444,7 @@
     {
       "route": "/services",
       "bp": 390,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -11644,7 +11644,7 @@
     {
       "route": "/contact",
       "bp": 390,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -13684,7 +13684,7 @@
     {
       "route": "/privacy",
       "bp": 390,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -16604,7 +16604,7 @@
     {
       "route": "/",
       "bp": 768,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -18884,7 +18884,7 @@
     {
       "route": "/about",
       "bp": 768,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -23564,7 +23564,7 @@
     {
       "route": "/services",
       "bp": 768,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -25724,7 +25724,7 @@
     {
       "route": "/contact",
       "bp": 768,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -27724,7 +27724,7 @@
     {
       "route": "/privacy",
       "bp": 768,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -30684,7 +30684,7 @@
     {
       "route": "/",
       "bp": 1440,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -33124,7 +33124,7 @@
     {
       "route": "/about",
       "bp": 1440,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -37964,7 +37964,7 @@
     {
       "route": "/services",
       "bp": 1440,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -40284,7 +40284,7 @@
     {
       "route": "/contact",
       "bp": 1440,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",
@@ -42444,7 +42444,7 @@
     {
       "route": "/privacy",
       "bp": 1440,
-      "text": "Open 7 days, 7:00 AM - 7:00 PM",
+      "text": "Open 7 days, 7:00 AM – 7:00 PM",
       "tag": "P",
       "cls": "t-muted",
       "href": "",

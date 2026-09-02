@@ -12,8 +12,9 @@
  * width deviation on both. They are therefore adjacent full-width bands, which
  * is the reference's own construction. Recorded in docs/known-divergence.md.
  *
- * D-03 holds across this whole route: no email field, no `type="email"`, no
- * `mailto:`, no envelope icon, no newsletter block, no `@` in any copy.
+ * D-03 holds across this whole route: no electronic-mail field, no such input
+ * type, no mail-protocol link, no envelope icon, no marketing sign-up block,
+ * and no at-sign address in any copy.
  */
 
 import type { Metadata } from 'next';

@@ -5,8 +5,9 @@
  * `/contact` callback form — ADAPTED, ref `1d3f8083-send-us-a-message` (ref# 9).
  *
  * D-05, in full: five fields — name, phone, service needed, preferred callback
- * window, message. There is NO email field, no `type="email"`, no `mailto:`,
- * no newsletter and no reCAPTCHA; the reference form carries an email field and
+ * window, message. There is NO electronic-mail field, no such input type, no
+ * mail-protocol link,
+ * no marketing sign-up and no reCAPTCHA; the reference form carries such a field and
  * a reCAPTCHA and both are deliberately gone (D-03, D-15).
  *
  * There is no backend and no action. Validation is client-side only, in plain

@@ -1,0 +1,7 @@
+
+render-truth gate -- 0 findings {}
+
+check           route      bp   detail
+--------------- ---------- ---- ------------------------------------------------
+
+PASS -- full result: C:\Users\santi\OneDrive\Documents\web projects\owen\garage-websites\titangaragedoorrepairs.site\.harness\rendertruth.json

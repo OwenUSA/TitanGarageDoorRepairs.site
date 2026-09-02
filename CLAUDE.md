@@ -461,8 +461,20 @@ about painted pixels:
   scores the **worst sample along the ramp**; reports `UNMEASURABLE` for `url()` or
   translucent overlays rather than assuming white.
 - **`rendertruth.mjs`** — pixel-level. Screenshots each text box and measures the contrast
-  between its dominant painted tones; checks that the `tel:` CTA leads the page on painted
-  contrast; enforces WCAG 2.5.8 tap targets at the smallest breakpoint.
+  between its dominant painted tones; enforces WCAG 2.5.8 tap targets at the smallest
+  breakpoint; and checks CTA salience as **chroma dominance** — no other action on the page
+  may be more saturated than the call CTA.
+
+  That last check was specified wrongly three times before it worked, and the history is
+  worth keeping because each version failed differently. Ranking the CTA by painted
+  contrast against all text is unsatisfiable (near-black copy on white is ~18:1 and no
+  brand colour beats it — one site washed out its headings trying, and the regression had
+  to be reverted). Ranking the best `tel:` element against all interactive elements is
+  vacuous (a plain footer phone number at ~21:1 tops it, so the real button never has to
+  win — Atlas's invisible CTA never fired this check once). Ranking among "buttons" fails
+  on bordered nav links at 21:1 beating a saturated fill at 7.4:1. Painted contrast is
+  simply not a proxy for visual prominence; chroma is. Legibility of the CTA is covered by
+  the text-legibility check, which is what actually caught Atlas.
 
 **Why these exist.** Atlas completed this entire chain and shipped with its primary call
 CTA invisible — label painted in *exactly* its own background colour, 1:1 — on all five
@@ -486,3 +498,36 @@ Chased class-by-class this recurred three times in Forge's shell alone and would
 recurred again in section builds. `min-height` is inert on a purely inline box, so tel
 links inside prose keep their natural metrics and the type scale the diff measures is
 untouched.
+
+### A-15 — the reference is SAVED LOCALLY; structural measurement is available here
+
+Three of the five sites that ran before this one lost their reference mid-build: the live
+site began answering every request — headless, headed, normal desktop UA — with a bot
+challenge (`<title>One moment, please...</title>`). Two of them had kept no local copy, so
+structural comparison became permanently impossible and every structural row on those sites
+now reports `BLOCKED/no-reference` forever.
+
+**That will not happen here.** A complete local copy of all five reference pages was saved
+before any build work started, and is in `reference/raw/`:
+
+```
+home.html  about.html  services.html  contact.html  privacy.html
+```
+
+Rules that follow from this:
+
+- **Profile and capture the LOCAL COPY, not the live site.** Serve `reference/raw/` over
+  HTTP at the same paths `harness.config.mjs`'s `routeMap` uses, and point
+  `referenceOrigin` at that server. Capturing the live site invites a mid-run wall and
+  makes every number irreproducible.
+- **Never delete `reference/raw/`.** It is the only thing standing between this site and
+  the permanent measurement loss two of its siblings suffered. It is gitignored because it
+  is someone else's markup — do not commit it, and do not lose it either.
+- Stylesheets and images still load from the reference's own CDN, which is generally not
+  challenged, so layout resolves correctly from the saved HTML.
+- Structural rows here carry REAL numbers against `STRUCT_THRESHOLD`. This site does not
+  get the `BLOCKED/no-reference` exemption, and must not claim it.
+
+The cheap preventative, stated once for anyone repeating this process: **save every
+reference page at Prompt 1, while the site is still reachable.** It costs one `curl` per
+page and it is the difference between a measurable clone and an unmeasurable one.

@@ -844,6 +844,13 @@ a[href^="tel:"] {
   overflow: hidden;
   border-radius: var(--radius-10);
   background: var(--color-neutral-200);
+  /* The home instance sits on t-band--alt, which resolves to this exact same
+     neutral-200 token -- once the poster fades out on iframe load, the box
+     was disappearing into its own band with no visible edge at all (visual
+     sweep finding: same defect class as an invisible CTA, just a container
+     instead of text). A border keeps it legible on any band regardless of
+     which neutral the surrounding section happens to use. */
+  border: 1px solid var(--color-border-strong);
 }
 @media (min-width: 768px) {
   .t-map {

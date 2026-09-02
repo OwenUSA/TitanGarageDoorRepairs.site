@@ -148,9 +148,16 @@ export default function SiteHeader() {
         <header className="t-header" data-section="header">
           <div className="t-container t-header__inner">
             <Link href="/" className="t-logo" aria-label={`${business.name}, home`}>
-              {/* KD-04 — the wordmark is type set in Mohave until a logo asset
-                  is handed over. TODO(fact): logo asset. */}
-              <span className="t-logo__mark">{business.name}</span>
+              {/* KD-04 closed — the supplied logo lockup replaces the Mohave
+                  wordmark. `alt` is empty because the Link already carries the
+                  accessible name; a second one would double-announce it. */}
+              <img
+                className="t-logo__img"
+                src="/placeholders/logo-header.png"
+                alt=""
+                width={250}
+                height={72}
+              />
               <span className="t-logo__sub">{business.hours.display}</span>
             </Link>
 

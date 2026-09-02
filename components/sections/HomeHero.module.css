@@ -18,14 +18,14 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url('/placeholders/home-hero-bg-m.svg');
+  background-image: url('/placeholders/home-hero-bg-m.jpg');
   background-size: cover;
   background-position: 50% 0%;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .bg {
-    background-image: url('/placeholders/home-hero-bg.svg');
+    background-image: url('/placeholders/home-hero-bg.jpg');
   }
 }
 

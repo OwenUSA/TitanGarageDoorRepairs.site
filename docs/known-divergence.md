@@ -78,7 +78,14 @@ placeholder area excluded and report it as a floor, never as a fixable divergenc
 | `/services` | list | `services-item-1..8` |
 | `/contact` | map | `contact-map-poster` |
 
-## KD-04 — The wordmark is type, not a file
+## KD-04 — CLOSED. A logo file was handed back (asset drop-in, OVERRIDE 3)
+
+The owner supplied a logo. `logo-header.png` / `logo-footer.png` / `favicon.png`
+are now real assets and the header renders the lockup instead of Mohave type.
+See `assets/INVENTORY.md` § "Asset drop-in". The original text of this entry
+is kept below for the record.
+
+### (superseded) The wordmark is type, not a file
 
 No logo asset exists. Until one is handed over, the wordmark is **set in Mohave** at the
 measured slot dimensions (250×100 @1440, 180×72 @768, 190×76 @390, ar 2.50). Logged as
@@ -418,7 +425,7 @@ row is a **decision or a construction limit**, never a defect, and none may be r
 | KD-01 | none — **there is NO font-substitution floor on this build** | all type | Mohave and Lato are both SIL OFL and are TAKEN from their open upstream, not substituted. D-11's rule is conditional on the reference self-hosting a *licensed* face; that condition is not met. Manufacturing a substitution would have invented a permanent floor we do not have to carry, and cost real fidelity on every heading. | not a floor |
 | KD-02 | stroked icons against their filled ones | 5 icon sites | `lucide-react` per the allowlist, matched on size and stroke width, not glyph. Less filled area means a small permanent pixel residual wherever an icon sits. | licensing |
 | KD-03 | 30 REPLACE + 11 OURS-NEW image slots are placeholders | all routes | OVERRIDE 3 — the real files arrive after acceptance. Measured with the placeholder area excluded. | sequencing |
-| KD-04 | the wordmark is type, not a file | header, footer, favicon | No logo asset exists; `TODO(fact): logo asset`. The logo slots cannot close on pixel diff by construction. | missing fact |
+| KD-04 | ~~the wordmark is type, not a file~~ **CLOSED** | header, footer, favicon | Logo supplied and dropped in; header/footer/favicon now ship the real lockup. | resolved |
 | KD-05 | their third-party runtime, which we do not ship | all routes | reCAPTCHA, chat widget, contact modal, promo bar, partner strip, blog, coupon band, Leaflet embed — all deliberately absent under D-15, D-05, D-03, D-01, D-09 and D-07. Section geometry moves where they sat. | decision |
 | KD-06 | their CTA text colour fails AA and ours does not | CTA anchors | Theirs computes `color: rgb(0,0,238)` on `rgb(197,23,22)`. D-19 forbids cloning it. | accessibility |
 | **KD-07** | **colour, entirely** | **every section, every route, permanently** | The palette is randomised at token-write time from seed **260721**. **Colour divergence from the reference is intentional and is permanently excluded from every diff, every threshold and every future iteration** (A-8). The structural comparator strips resolved colour, background-colour, border-colour, gradient stops and shadow colour before scoring; the non-colour parts of borders and shadows — widths, offsets, blur, spread, radii — are kept. | **excluded by amendment** |

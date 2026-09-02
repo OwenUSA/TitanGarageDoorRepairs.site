@@ -39,7 +39,7 @@ faces the public, and they are listed again in `docs/PRE-LAUNCH.md`:
 
 | # | TODO(fact) | where it surfaces |
 |---|---|---|
-| — | `TODO(fact): logo asset` (already open as KD-04) | `components/SiteHeader.tsx` — the wordmark is type set in Mohave at the measured slot dimensions until a file is handed over |
+| — | ~~`TODO(fact): logo asset`~~ **SUPPLIED** | Logo handed back and dropped in: `public/placeholders/logo-header.png`, `logo-footer.png`, `favicon.png`. KD-04 closed. |
 
 No other fact was needed to build the shell. Every value it renders — name, phone, address,
 coordinates, hours, service area — comes from `lib/business.ts` and is in CONSTANTS.
@@ -63,7 +63,7 @@ a legal problem, not a content gap (D-13, D-14, D-17).
 | 9 | `TODO(fact): insurance carrier` | `/about` | `credentials` | badge chip, `about-credentials-2` |
 | 10 | `TODO(fact): certifications` | `/about` | `credentials` | badge chip, `about-credentials-3` |
 
-Still open from earlier turns: `TODO(fact): logo asset` (KD-04).
+Still open from earlier turns: none — `TODO(fact): logo asset` (KD-04) was closed by the asset drop-in.
 
 **Deliberately still absent, and not to be invented to close a metric:** years in business,
 jobs completed, review counts, star ratings, named customers or quotes (the home

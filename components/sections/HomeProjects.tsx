@@ -44,11 +44,11 @@ export default function HomeProjects() {
                 <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcSet={`/placeholders/home-project-${n}.svg`}
+                    srcSet={`/placeholders/home-project-${n}.jpg`}
                   />
                   <img
                     className={styles.shot}
-                    src={`/placeholders/home-project-${n}-m.svg`}
+                    src={`/placeholders/home-project-${n}-m.jpg`}
                     alt="Completed garage door repair"
                     width={378}
                     height={300}

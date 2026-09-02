@@ -549,6 +549,22 @@ a[href^="tel:"] {
   color: var(--color-primary-deep);
   line-height: normal;
 }
+/* Logo lockup. `contain` inside the INVENTORY slot box (190x76 -> 250x100) so
+   the mark never distorts and the header height stays where the profile put it.
+   `.t-logo__mark` is kept for the text fallback used by /about's story slot. */
+.t-logo__img {
+  display: block;
+  width: auto;
+  height: 52px;
+  max-width: 190px;
+  object-fit: contain;
+}
+@media (min-width: 1025px) {
+  .t-logo__img {
+    height: 68px;
+    max-width: 250px;
+  }
+}
 .t-logo__mark {
   font-size: var(--text-h3-m);
   font-weight: var(--font-weight-bold);
@@ -755,6 +771,20 @@ a[href^="tel:"] {
    content band and far too tall for a three-column footer strip. Pinned to the
    reference's own band height at the desktop tier; 390 (393 vs 413) and 768
    (287 vs 309) were already inside a band's width of theirs and are untouched. */
+.t-footer__logo {
+  display: block;
+  width: auto;
+  height: 44px;
+  max-width: 198px;
+  object-fit: contain;
+  margin-bottom: var(--spacing-l);
+}
+@media (min-width: 1025px) {
+  .t-footer__logo {
+    height: 48px;
+    max-width: 171px;
+  }
+}
 .t-footer__nap {
   display: grid;
   gap: var(--spacing-l);

@@ -46,7 +46,7 @@ export default function HomeTrustRow() {
 
             <img
               className={styles.media}
-              src="/placeholders/home-trust-img.svg"
+              src="/placeholders/home-trust-img.jpg"
               alt=""
               aria-hidden="true"
               width={360}

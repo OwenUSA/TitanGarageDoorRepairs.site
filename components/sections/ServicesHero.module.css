@@ -18,14 +18,14 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url('/placeholders/services-hero-bg-m.svg');
+  background-image: url('/placeholders/services-hero-bg-m.jpg');
   background-size: cover;
   background-position: 50% 20%;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .bg {
-    background-image: url('/placeholders/services-hero-bg.svg');
+    background-image: url('/placeholders/services-hero-bg.jpg');
   }
 }
 

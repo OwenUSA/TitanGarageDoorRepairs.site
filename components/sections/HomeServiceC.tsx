@@ -18,7 +18,7 @@ export default function HomeServiceC() {
           <div className={styles.grid}>
             <img
               className={styles.media}
-              src="/placeholders/home-svc-c-img.svg"
+              src="/placeholders/home-svc-c-img.jpg"
               alt=""
               aria-hidden="true"
               width={659}

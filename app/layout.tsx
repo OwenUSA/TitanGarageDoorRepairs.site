@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   applicationName: business.name,
   // D-15: no analytics, no pixels, no verification tokens.
   robots: { index: true, follow: true },
-  icons: { icon: '/placeholders/favicon.svg' },
+  icons: { icon: '/placeholders/favicon.png' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

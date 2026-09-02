@@ -14,3 +14,8 @@ next-env.d.ts
 .harness/devserver.log
 .harness/prodserver.log
 .harness/server.log
+
+# This project installs with pnpm (pnpm-lock.yaml is the committed lockfile and
+# Hostinger builds with it). An npm lockfile here would be a second source of
+# truth for the dependency tree.
+package-lock.json

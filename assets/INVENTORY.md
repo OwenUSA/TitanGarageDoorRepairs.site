@@ -148,3 +148,41 @@ the two that matter, flipping from tall portrait on a phone to landscape on desk
 
 Placeholder slots are a **known, tracked gap** — `docs/known-divergence.md` lists them as
 permanent floors until the generated files arrive. Never spend an iteration closing one.
+
+---
+
+## Asset drop-in — OVERRIDE 3, terminal step
+
+Owner handed back a logo and six photographs. What landed, and what is still a
+placeholder floor.
+
+### DELIVERED
+
+| slot ID | file | source | note |
+|---|---|---|---|
+| `logo-header` | `logo-header.png` 1037×300 | supplied logo, recomposed | icon + wordmark cut from the square mockup and set as a horizontal lockup; flat `--color-primary-deep` `rgb(1,26,32)`, alpha carries the artwork, no white card |
+| `logo-footer` | `logo-footer.png` 1037×300 | same | white lockup for the `--color-primary-deep` NAP band |
+| `favicon` | `favicon.png` 512×512 | same | house/G icon only, centred on a transparent square |
+| `home-hero-bg` | `home-hero-bg.jpg` 1376×784 · `-m.jpg` 896×1184 | supplied | both crops supplied; ratios match the slot's 1.76 / portrait flip |
+| `services-hero-bg` | `services-hero-bg.jpg` 1504×704 | supplied | `-m.jpg` 780×1516 **derived** by centre-crop — no portrait crop was handed back |
+| `home-trust-img` | `home-trust-img.jpg` 720×446 · `-m.jpg` 622×454 | supplied 1408×768 | recropped to the slot's 1.61 / 1.37 |
+| `home-svc-b-img` | `home-svc-b-img.jpg` 1328×800 | supplied | 1.66 vs slot 1.65 |
+| `home-svc-c-img` | `home-svc-c-img.jpg` 1328×800 | supplied | 1.66 vs slot 1.65 |
+| `home-project-1..8` | `home-project-N.jpg` 756×600 · `-m.jpg` 388×400 | one supplied photo | **all eight slots carry the same photograph** — only one project image was handed back |
+
+Originals kept out of `public/` at `assets/source/`: `logo-original.jpg`,
+`home-project-source.jpg`. They are not served.
+
+### STILL PLACEHOLDER — unchanged floors
+
+`home-svc-a-img`, `home-cta-media`, `about-story-img`, `about-credentials-1..3`,
+`services-item-1..8`, `home-map-poster`, `contact-map-poster`. Prompts for all of
+them are already written in `docs/asset-prompts.md`.
+
+### Two things the owner should look at
+
+- Eight identical project thumbnails read as a rendering bug rather than a
+  gallery. Seven more photos, or drop the slider to one.
+- The `/services` mobile hero is a centre-crop of the desktop landscape, so it
+  is much tighter than the composition that was designed. A real portrait crop
+  would be better.

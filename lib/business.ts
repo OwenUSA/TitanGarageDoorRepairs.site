@@ -99,7 +99,7 @@ export const localBusinessJsonLd = {
   description: business.tagline,
   url: business.siteUrl,
   telephone: business.phoneE164,
-  image: `${business.siteUrl}/placeholders/logo-header.svg`,
+  image: `${business.siteUrl}/placeholders/logo-header.png`,
   address: {
     '@type': 'PostalAddress',
     streetAddress: business.address.street,

@@ -29,6 +29,20 @@ export default function SiteFooter() {
   return (
     <footer>
       <section className="t-band--dark t-section" data-section="footer-nap">
+        {/* INVENTORY slot `logo-footer`, 171x68 @1440. White lockup, because the
+            NAP band is --color-primary-deep. Decorative: the footer already
+            names the business in its links band. */}
+        <div className="t-container">
+          <img
+            className="t-footer__logo"
+            src="/placeholders/logo-footer.png"
+            alt=""
+            aria-hidden="true"
+            width={171}
+            height={50}
+          />
+        </div>
+
         <div className="t-container t-footer__nap">
           <div>
             <h2 className="t-footer__heading">

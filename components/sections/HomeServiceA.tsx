@@ -21,8 +21,8 @@ export default function HomeServiceA() {
           <div className={styles.grid}>
             <img
               className={styles.media}
-              src="/placeholders/home-svc-a-img.svg"
-              alt="Garage door safety sensor and track repair in Oklahoma City"
+              src="/placeholders/home-svc-a-img.jpg"
+              alt="Garage door safety sensor and track repair in Tallahassee"
               width={659}
               height={400}
             />

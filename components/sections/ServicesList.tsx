@@ -41,8 +41,8 @@ export default function ServicesList() {
                 >
                   <img
                     className={styles.media}
-                    src={`/placeholders/services-item-${i + 1}.svg`}
-                    alt={`${item.heading} — garage door service in Oklahoma City`}
+                    src={`/placeholders/services-item-${i + 1}.jpg`}
+                    alt={`${item.heading} — garage door service in Tallahassee`}
                     width={659}
                     height={400}
                   />

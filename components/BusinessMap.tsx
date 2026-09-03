@@ -66,7 +66,7 @@ export default function BusinessMap({ zoom, poster, showAddress = true, id }: Pr
       <div className="t-map" ref={wrapRef}>
         <img
           className="t-map__poster"
-          src={`/placeholders/${poster}.svg`}
+          src={`/placeholders/${poster}.jpg`}
           alt=""
           aria-hidden="true"
           style={{ opacity: loaded ? 0 : 1 }}

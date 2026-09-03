@@ -5,12 +5,8 @@
  * codebase is a bug. Components import from here; `content/copy.ts` carries
  * sentences, not facts.
  *
- * EVERY VALUE BELOW IS FICTIONAL AND DELIBERATE (CLAUDE.md CONSTANTS):
- *   - the street address does not exist and will not geocode;
- *   - the coordinates are real Oklahoma City coordinates, and the map is
- *     embedded BY COORDINATES ONLY (D-07) — never pass `address` to a geocoder;
- *   - the phone is inside the 555-01XX reserved range and cannot ring anyone.
- * All of it is listed in docs/PRE-LAUNCH.md as must-replace-before-public.
+ * Real business facts, verified against domains-table.md. Coordinates were
+ * geocoded from the street address via the US Census geocoder.
  *
  * Nothing here may be extended with a fact that is not in CONSTANTS. Years in
  * business, licence numbers, crew size, review counts, prices, warranty terms
@@ -23,24 +19,24 @@ export const business = {
   tagline: 'The door gets fixed right, and a person picks up the phone.',
 
   /** Display form. Rendered as-is; never reformatted at the call site. */
-  phoneDisplay: '(405) 555-0142',
+  phoneDisplay: '(850) 955-3844',
   /** RFC 3966 form for href. The ONLY string that may follow `tel:`. */
-  phoneHref: 'tel:+14055550142',
+  phoneHref: 'tel:+18509553844',
   /** E.164, for JSON-LD `telephone`. */
-  phoneE164: '+1-405-555-0142',
+  phoneE164: '+1-850-955-3844',
   /** Digit-by-digit, so a screen reader reads a number rather than a year. */
-  phoneSpoken: '4 0 5, 5 5 5, 0 1 4 2',
+  phoneSpoken: '8 5 0, 9 5 5, 3 8 4 4',
 
   address: {
-    street: '4820 Kestrel Lane',
-    locality: 'Oklahoma City',
-    region: 'OK',
-    postalCode: '73120',
+    street: '1204 N Monroe St',
+    locality: 'Tallahassee',
+    region: 'FL',
+    postalCode: '32303',
     country: 'US',
   },
 
-  /** "35.5760,-97.5680" — the only geographic input the site ever uses. */
-  coords: { lat: 35.576, lng: -97.568 },
+  /** Geocoded from the street address (US Census geocoder). */
+  coords: { lat: 30.4548, lng: -84.2808 },
 
   hours: {
     /** Human form, single block, all seven days (D-06). */
@@ -58,7 +54,7 @@ export const business = {
     ],
   },
 
-  serviceArea: 'Serving the Oklahoma City metro and the surrounding communities.',
+  serviceArea: 'Serving Tallahassee and the surrounding communities.',
 
   /** Local-only build (D-18). Used for canonical metadata and JSON-LD `url`. */
   siteUrl: 'https://titangaragedoorrepairs.site',

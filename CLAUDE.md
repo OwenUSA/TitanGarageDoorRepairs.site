@@ -23,24 +23,22 @@ BREAKPOINTS        = <filled by Prompt 1 from the reference CSS>
 
 BUSINESS           = Titan Garage Door Repairs
 TAGLINE            = The door gets fixed right, and a person picks up the phone.
-PHONE              = (405) 555-0142
-ADDRESS            = 4820 Kestrel Lane, Oklahoma City, OK 73120
-MAP_COORDS         = 35.5760,-97.5680
+PHONE              = (850) 955-3844
+ADDRESS            = 1204 N Monroe St, Tallahassee, FL 32303
+MAP_COORDS         = 30.4548,-84.2808
 HOURS              = 7 days, 7:00 AM – 7:00 PM
-SERVICE_AREA       = Serving the Oklahoma City metro and the surrounding communities.
+SERVICE_AREA       = Serving Tallahassee and the surrounding communities.
 
 MAX_AGENTS         = 4     hard concurrency cap (amended, was 2)
 ITERATION_CAP      = 1     ONE fix attempt per section, then floored and logged (amended, was 3)
 BP_SET             = 390, 768, 1440   exactly three
 ```
 
-**Every business fact above is fictional and deliberate.** The address does not exist.
-The coordinates are real Oklahoma City coordinates and the map is embedded by coordinates
-only, per D-07. The phone is in the 555-01XX reserved range and cannot ring anyone. Treat
-all of it as ground truth for the build, and list every one of them in
-`docs/PRE-LAUNCH.md` as must-replace-before-public. This does not license inventing any
-OTHER fact — credentials, years in business, review counts, prices, response times, and
-team size are still `TODO(fact)` per D-14 and D-17.
+**These are Titan Garage Door Repairs' real business facts** (updated 2026-09-03, per
+`domains-table.md` at the repo root). The coordinates were geocoded from the street
+address via the US Census geocoder and the map is embedded by coordinates, per D-07.
+This does not license inventing any OTHER fact — credentials, years in business, review
+counts, prices, response times, and team size are still `TODO(fact)` per D-14 and D-17.
 
 ### Pre-answered, so the chain never stalls
 

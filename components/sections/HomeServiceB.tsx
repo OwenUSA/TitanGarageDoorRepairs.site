@@ -19,7 +19,7 @@ export default function HomeServiceB() {
             <img
               className={styles.media}
               src="/placeholders/home-svc-b-img.jpg"
-              alt="Noisy garage door roller and hinge repair in Oklahoma City"
+              alt="Noisy garage door roller and hinge repair in Tallahassee"
               width={659}
               height={400}
             />

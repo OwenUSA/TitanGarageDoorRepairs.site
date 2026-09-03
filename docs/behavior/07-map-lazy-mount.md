@@ -36,10 +36,10 @@ attribute is the backstop for the no-JS case — which is also why the `<noscrip
 below matters.
 
 URL, built in `lib/business.ts` from `MAP_COORDS` and **never** from the address string
-(D-07 — the address is fictional and will not geocode):
+(D-07 — coordinates are the more precise and stable input regardless):
 
 ```
-https://www.google.com/maps?q=35.5760,-97.5680&z=<zoom>&output=embed
+https://www.google.com/maps?q=30.4548,-84.2808&z=<zoom>&output=embed
 ```
 
 `zoom` is a prop: 13 on home, 15 on `/contact`. Keyless, so no `.env` and no third-party
@@ -49,10 +49,11 @@ Directions link, rendered as a real anchor **outside** the iframe so it works wi
 never mounted:
 
 ```
-https://www.google.com/maps/dir/?api=1&destination=35.5760,-97.5680
+https://www.google.com/maps/dir/?api=1&destination=30.4548,-84.2808
 ```
 
-The fake address is displayed as **text** beside the map, never passed to a geocoder.
+The address is displayed as **text** beside the map, never passed to a geocoder — the map
+stays coords-only per D-07 by construction, not because the address wouldn't resolve.
 
 `<noscript>`: render the poster and the directions link. Do not render the iframe inside
 `<noscript>` — it would load unconditionally for every no-JS visitor and defeat the point.
@@ -90,9 +91,8 @@ in a ~707px column at 768, which is 2.36:1; ours is deliberately taller at mobil
   a full-width band — which is exactly what `/contact` does (map beside the form).
 - **Mounting on `window.scroll`.** Fires hundreds of times, forces layout on every read, and
   reintroduces the scroll listener the reference does not have.
-- **Passing the address to the embed** (`?q=4820+Kestrel+Lane...`). It does not exist, so
-  Google either drops the pin somewhere plausible-but-wrong or shows an error card. Coords
-  only — this is D-07 and it is not negotiable.
+- **Passing the address to the embed** (`?q=1204+N+Monroe+St...`). Coords only — this is
+  D-07 and it is not negotiable, regardless of whether the address would resolve.
 - **A `title`-less iframe.** An unlabelled frame is announced as "frame" and is a WCAG 4.1.2
   failure. It is also a trivially avoidable one.
 - **Letting the observer stay connected.** It keeps firing for the life of the page for no

@@ -19,7 +19,7 @@ export default function HomeServiceC() {
             <img
               className={styles.media}
               src="/placeholders/home-svc-c-img.jpg"
-              alt="Broken garage door spring replacement in Oklahoma City"
+              alt="Broken garage door spring replacement in Tallahassee"
               width={659}
               height={400}
             />

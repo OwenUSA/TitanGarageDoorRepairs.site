@@ -22,23 +22,22 @@ BREAKPOINTS        = filled by Prompt 1 from the reference CSS
 
 BUSINESS           = Titan Garage Door Repairs
 TAGLINE            = The door gets fixed right, and a person picks up the phone.
-PHONE              = (405) 555-0142
-ADDRESS            = 4820 Kestrel Lane, Oklahoma City, OK 73120
-MAP_COORDS         = 35.5760,-97.5680
+PHONE              = (850) 955-3844
+ADDRESS            = 1204 N Monroe St, Tallahassee, FL 32303
+MAP_COORDS         = 30.4548,-84.2808
 HOURS              = 7 days, 7:00 AM – 7:00 PM
-SERVICE_AREA       = Serving the Oklahoma City metro and the surrounding communities.
+SERVICE_AREA       = Serving Tallahassee and the surrounding communities.
 
 MAX_AGENTS         = 2
 ITERATION_CAP      = 3
 BP_SET             = 390, 768, 1440
 
-EVERY BUSINESS FACT ABOVE IS FICTIONAL AND DELIBERATE. The address does not exist; the
-coordinates are real Oklahoma City coordinates and the map is embedded by coordinates
-only, per D-07. The phone is in the 555-01XX reserved range and cannot ring anyone.
-Treat all of it as ground truth for the build and list every one of them in
-docs/PRE-LAUNCH.md as must-replace-before-public. This does not license inventing any
-OTHER fact — credentials, years in business, review counts, prices, response times, and
-team size are still TODO(fact) per D-14 and D-17.
+UPDATE (2026-09-03): the business facts above were originally fictional placeholders and
+are now REAL, verified against ../domains-table.md — the phone, address, and coordinates
+in this block are live. The map is still embedded by coordinates only, per D-07; that
+choice was never about the address being fake, it is simply the more stable input. This
+does not license inventing any OTHER fact — credentials, years in business, review
+counts, prices, response times, and team size are still TODO(fact) per D-14 and D-17.
 
 THREE OVERRIDES to process.md. Where these conflict with the file, these win:
 

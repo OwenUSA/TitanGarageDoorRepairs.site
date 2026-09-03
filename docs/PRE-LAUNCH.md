@@ -9,30 +9,33 @@ file, no third-party key, no analytics and no backend (D-15, D-18).
 
 ---
 
-## 1. Every business fact on the site is FICTIONAL
+## 1. Business name, tagline, hours, and site URL are still FICTIONAL — phone and address are now REAL
 
-They are ground truth for the build and must be replaced before launch. All of them live in
-`lib/business.ts` — one file, one edit. Every one is named individually below because a
-"replace the placeholders" instruction with no list is how one of them survives to
-production.
+Phone, address, and map coordinates were updated to real, verified values on 2026-09-03
+(per `../domains-table.md`) and are resolved — see the "resolved" note on rows 3–8 below.
+The remaining rows are still placeholders and must be replaced before launch. All of them
+live in `lib/business.ts` — one file, one edit. Every one is named individually below
+because a "replace the placeholders" instruction with no list is how one of them survives
+to production.
 
-| # | fact | placeholder value | note |
+| # | fact | value | note |
 |---|---|---|---|
-| 1 | **Business name** | **Titan Garage Door Repairs** | Invented. Appears in the header wordmark, the footer, the CTA band heading, every page title, and JSON-LD `name`. |
-| 2 | Tagline | The door gets fixed right, and a person picks up the phone. | Invented; JSON-LD `description`. |
-| 3 | **Phone, display** | **(405) 555-0142** | 555-01XX is the reserved range — it **cannot ring anyone**. Rendered in the header, the drawer, the mobile call bar, the hero CTA, the CTA band, the footer, the `/contact` card, the form placeholder and the privacy policy. |
-| 4 | Phone, `tel:` href | `tel:+14055550142` | The only string that may follow `tel:`. |
-| 5 | Phone, E.164 | +1-405-555-0142 | JSON-LD `telephone`. Expected to differ in form from the display string — that is the schema requirement, not a NAP inconsistency. |
-| 6 | **Street address** | **4820 Kestrel Lane** | **Does not exist and will not geocode.** Never pass it to a geocoder (D-07). |
-| 7 | City / region / postcode | Oklahoma City, OK 73120 | |
-| 8 | Map coordinates | 35.5760, -97.5680 | Real Oklahoma City coordinates. Both maps are embedded by these coordinates **only**, keyless, and the fake address is displayed as text beside them (D-07). |
-| 9 | Hours | 7 days, 07:00–19:00 | Single block, no split hours, no "24/7", no after-hours or emergency claim (D-06). Also in JSON-LD `openingHoursSpecification`. |
-| 10 | Service-area sentence | Serving the Oklahoma City metro and the surrounding communities. | The only survivor of the deleted locations page (D-02). |
-| 11 | Site URL | https://titangaragedoorrepairs.site | `metadataBase`, every canonical, `robots.txt` host, `sitemap.xml`, JSON-LD `url` and `image`. |
+| 1 | **Business name** | **Titan Garage Door Repairs** | Invented. Appears in the header wordmark, the footer, the CTA band heading, every page title, and JSON-LD `name`. Still must-replace-before-public. |
+| 2 | Tagline | The door gets fixed right, and a person picks up the phone. | Invented; JSON-LD `description`. Still must-replace-before-public. |
+| 3 | **Phone, display** | **(850) 955-3844** | **RESOLVED.** Real number, verified against `../domains-table.md`. Rendered in the header, the drawer, the mobile call bar, the hero CTA, the CTA band, the footer, the `/contact` card, the form placeholder and the privacy policy. |
+| 4 | Phone, `tel:` href | `tel:+18509553844` | **RESOLVED.** The only string that may follow `tel:`. |
+| 5 | Phone, E.164 | +1-850-955-3844 | **RESOLVED.** JSON-LD `telephone`. Expected to differ in form from the display string — that is the schema requirement, not a NAP inconsistency. |
+| 6 | **Street address** | **1204 N Monroe St** | **RESOLVED.** Real, verified address. |
+| 7 | City / region / postcode | Tallahassee, FL 32303 | **RESOLVED.** |
+| 8 | Map coordinates | 30.4548, -84.2808 | **RESOLVED.** Geocoded from the real address via the US Census geocoder. Both maps are embedded by these coordinates **only**, keyless, per D-07 (a stability choice, not a fiction workaround). |
+| 9 | Hours | 7 days, 07:00–19:00 | Still invented. Single block, no split hours, no "24/7", no after-hours or emergency claim (D-06). Also in JSON-LD `openingHoursSpecification`. Still must-replace-before-public. |
+| 10 | Service-area sentence | Serving Tallahassee and the surrounding communities. | Wording is a template; verify it reads correctly now that the city is real. The only survivor of the deleted locations page (D-02). |
+| 11 | Site URL | https://titangaragedoorrepairs.site | `metadataBase`, every canonical, `robots.txt` host, `sitemap.xml`, JSON-LD `url` and `image`. Confirm this is the intended live domain before launch. |
 
-**When these are replaced:** re-verify the JSON-LD by hand (item 7 below), and re-run the
-NAP sweep — `rg -n "405.?555|4820 Kestrel|73120" app components lib content` should return
-hits in `lib/business.ts` and nowhere else.
+**Phone and address are resolved; re-verify the JSON-LD by hand anyway (item 7 below).**
+Re-run the NAP sweep — `rg -n "850.?955.?3844|1204 N Monroe|32303" app components lib content`
+should return hits in `lib/business.ts` and nowhere else. Business name, tagline, hours,
+and site URL rows remain must-replace-before-public.
 
 ## 2. Facts never invented, and still needed
 

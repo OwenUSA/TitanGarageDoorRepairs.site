@@ -47,7 +47,7 @@ export default function HomeTrustRow() {
             <img
               className={styles.media}
               src="/placeholders/home-trust-img.jpg"
-              alt="Titan Garage Door Repairs technician serving Oklahoma City homeowners"
+              alt="Titan Garage Door Repairs technician serving Tallahassee homeowners"
               width={360}
               height={223}
             />

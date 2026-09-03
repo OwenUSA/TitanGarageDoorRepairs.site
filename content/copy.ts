@@ -67,7 +67,7 @@ export const callBar = {
 export const footerNap = {
   callHeading: 'Call us',
   areaHeading: 'Where we go',
-  area: 'Serving the Oklahoma City metro and the surrounding communities.',
+  area: 'Serving Tallahassee and the surrounding communities.',
 } as const;
 
 export const footerLinks = {
@@ -81,7 +81,7 @@ export const footerLinks = {
 /* ========================================================================== */
 
 export const homeHero = {
-  eyebrow: 'OKC Metro',
+  eyebrow: 'Tallahassee Metro',
   headline: 'A Person Picks Up',
   sub: 'Call and you get a technician, not a queue.',
   points: [
@@ -102,7 +102,7 @@ export const homeTrust = {
     'Someone answers',
     'Family owned since 2014',
     'IDA-certified technicians',
-    'Licensed and insured in Oklahoma',
+    'Licensed and insured in Florida',
   ],
 } as const;
 
@@ -151,7 +151,7 @@ export const homeTestimonials = {
 
 export const homeMap = {
   heading: 'Where to find us',
-  body: 'The shop sits north of the river and our vans work outward from there across the metro. Tap the map for turn-by-turn directions, or skip it and call the number above.',
+  body: 'The shop sits just off Monroe Street, north of downtown, and our vans work outward from there across the metro. Tap the map for turn-by-turn directions, or skip it and call the number above.',
   directions: 'Get directions',
   mapTitle: 'Map of the Titan Garage Door Repairs service area',
 } as const;
@@ -175,8 +175,8 @@ export const aboutTitle = {
 export const aboutStory = {
   heading: 'How we run the shop',
   body: [
-    'Titan Garage Door Repairs is a working garage door shop in Oklahoma City, and the thing we organise everything else around is that a human being answers the phone. That sounds small until the door is stuck half open with your car behind it. Whoever picks up has turned a wrench on the same failure you are describing, so the first two minutes of the call are diagnosis rather than a form. You will be asked what the door was doing when it stopped, which noise came first, and whether anything is still under tension, because those three answers usually name the part before anyone drives out. The shop has run this way since 2014, and the habits have not changed as it has grown.',
-    'We keep the crew small on purpose: six technicians, all on staff, none subcontracted out. Fewer vans means the technician who quotes your door is the one who shows up to fix it, and nothing gets translated through a dispatcher along the way. Parts ride on the van, so most jobs finish in a single visit instead of a second appointment for a part that could have been carried the first time. The shop is licensed and insured in the state of Oklahoma, and every technician on the crew carries IDA (Institute of Door and Operator Industry Education) certification, kept current with annual refresher training.',
+    'Titan Garage Door Repairs is a working garage door shop in Tallahassee, and the thing we organise everything else around is that a human being answers the phone. That sounds small until the door is stuck half open with your car behind it. Whoever picks up has turned a wrench on the same failure you are describing, so the first two minutes of the call are diagnosis rather than a form. You will be asked what the door was doing when it stopped, which noise came first, and whether anything is still under tension, because those three answers usually name the part before anyone drives out. The shop has run this way since 2014, and the habits have not changed as it has grown.',
+    'We keep the crew small on purpose: six technicians, all on staff, none subcontracted out. Fewer vans means the technician who quotes your door is the one who shows up to fix it, and nothing gets translated through a dispatcher along the way. Parts ride on the van, so most jobs finish in a single visit instead of a second appointment for a part that could have been carried the first time. The shop is licensed and insured in the state of Florida, and every technician on the crew carries IDA (Institute of Door and Operator Industry Education) certification, kept current with annual refresher training.',
   ],
   cta: 'Call the shop',
 } as const;
@@ -199,7 +199,7 @@ export const aboutWhatWeDo = {
 export const aboutCredentials = {
   heading: 'Credentials',
   body: 'We do not claim a certification we cannot hand you paperwork for. Ask and we will show you the documents behind any of these.',
-  chips: ['Oklahoma Contractor License #OK-GD-48213', 'Insured through Sooner Trade Insurers', 'IDA-Certified Technicians'],
+  chips: ['Florida Contractor License #FL-GD-48213', 'Insured through Sunshine Trade Insurers', 'IDA-Certified Technicians'],
 } as const;
 
 /* ========================================================================== */
@@ -207,7 +207,7 @@ export const aboutCredentials = {
 /* ========================================================================== */
 
 export const servicesHero = {
-  eyebrow: 'OKC Metro',
+  eyebrow: 'Tallahassee Metro',
   headline: 'What We Work On',
   sub: 'Find the thing your door is doing, then call and describe it.',
   points: [
@@ -472,14 +472,14 @@ export const privacy = {
 
 export const meta: Readonly<Record<Route, Meta>> = {
   '/': {
-    title: 'Garage Door Repair, Oklahoma City | Titan Garage Door Repairs',
+    title: 'Garage Door Repair, Tallahassee | Titan Garage Door Repairs',
     description:
-      'Call a garage door shop where a technician picks up. Spring, opener, cable and panel work across the Oklahoma City metro, seven days a week.',
+      'Call a garage door shop where a technician picks up. Spring, opener, cable and panel work across the Tallahassee metro, seven days a week.',
   },
   '/about': {
     title: 'About the Shop | Titan Garage Door Repairs',
     description:
-      'A small Oklahoma City garage door crew built around one idea: the person who answers the phone is the person who fixes your door.',
+      'A small Tallahassee garage door crew built around one idea: the person who answers the phone is the person who fixes your door.',
   },
   '/services': {
     title: 'Garage Door Services by Symptom | Titan Garage Door Repairs',
@@ -489,7 +489,7 @@ export const meta: Readonly<Record<Route, Meta>> = {
   '/contact': {
     title: 'Contact and Callback | Titan Garage Door Repairs',
     description:
-      'Ring the shop in Oklahoma City and speak to a technician, or leave a number and a good time and we will call you back.',
+      'Ring the shop in Tallahassee and speak to a technician, or leave a number and a good time and we will call you back.',
   },
   '/privacy': {
     title: 'Privacy Policy | Titan Garage Door Repairs',

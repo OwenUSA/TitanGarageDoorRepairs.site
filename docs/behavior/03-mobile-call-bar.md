@@ -8,7 +8,7 @@ token conformance, not pixel diff.
 ## mechanism
 
 `position: fixed; left: 0; right: 0; bottom: 0; z-index: 60`, height 80px at 390, a single
-full-width `<a href="tel:+14055550142">` filling it.
+full-width `<a href="tel:+18509553844">` filling it.
 
 **Not** `position: sticky`. A sticky element is bounded by its containing block, so a sticky
 call bar unsticks and scrolls away as soon as its parent's bottom edge passes — which on
@@ -84,7 +84,7 @@ CTA-primacy check has a consistent target to rank.
 
 ## accessibility
 
-- A real `<a href="tel:+14055550142">` with visible text. Not a `<button>` whose `onClick`
+- A real `<a href="tel:+18509553844">` with visible text. Not a `<button>` whose `onClick`
   sets `location.href` — that is invisible to assistive tech as a phone link and dead
   without JS.
 - `aria-label` gives the full spoken form, built from `lib/business.ts`; the visible label

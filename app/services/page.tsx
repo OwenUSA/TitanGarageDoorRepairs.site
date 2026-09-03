@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: '/services',
     siteName: business.name,
     type: 'website',
-    images: [{ url: '/placeholders/services-hero-bg.jpg', width: 1504, height: 704, alt: 'Garage door services in Oklahoma City' }],
+    images: [{ url: '/placeholders/services-hero-bg.jpg', width: 1504, height: 704, alt: 'Garage door services in Tallahassee' }],
   },
   twitter: {
     card: 'summary_large_image',

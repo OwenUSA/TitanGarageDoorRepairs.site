@@ -21,19 +21,24 @@ Opened at Prompt 2. Prompts 3, 6, and 7 append as they hit slots.
 | F-11 | Real photography of actual work, vehicles, and technicians | all 30 REPLACE slots in `assets/INVENTORY.md` | D-09. Generated stand-ins arrive at Prompt 10 and are themselves flagged in PRE-LAUNCH. |
 | F-12 | Contact-form submission target | `/contact` form | D-05, D-18. No backend in this build; the form is a `// STUB: no submission target`. |
 
-## Fictional-by-design, and separately tracked
+## Supplied as ground truth in `CLAUDE.md`
 
 These are **not** in the table above because they are supplied as ground truth in
-`CLAUDE.md` and are deliberate fiction. They still must be replaced before this site
-faces the public, and they are listed again in `docs/PRE-LAUNCH.md`:
+`CLAUDE.md`. Phone, address, and coordinates were updated to real, verified values on
+2026-09-03 (per `../domains-table.md`) and are resolved; business name, tagline, hours,
+and the service-area sentence remain deliberate fiction/template text and still must be
+replaced before this site faces the public — see `docs/PRE-LAUNCH.md` for the full
+breakdown:
 
-- Business name — Titan Garage Door Repairs
-- Phone — (405) 555-0142, in the 555-01XX reserved range, cannot ring anyone
-- Address — 4820 Kestrel Lane, Oklahoma City, OK 73120, does not exist
-- Map coordinates — 35.5760, -97.5680 (real OKC coords; the map is embedded by
-  coordinates only, per D-07, and the fake address is never sent to a geocoder)
-- Hours — 7 days, 07:00–19:00
-- Service area sentence — Serving the Oklahoma City metro and the surrounding communities.
+- Business name — Titan Garage Door Repairs (still fictional, must-replace-before-public)
+- Phone — (850) 955-3844 — **real, resolved**
+- Address — 1204 N Monroe St, Tallahassee, FL 32303 — **real, resolved**
+- Map coordinates — 30.4548, -84.2808 — **real, resolved** (geocoded from the real
+  address via the US Census geocoder; the map is embedded by coordinates only, per D-07,
+  as a stability choice rather than a fiction workaround)
+- Hours — 7 days, 07:00–19:00 (still template, must-replace-before-public)
+- Service area sentence — Serving Tallahassee and the surrounding communities. (wording
+  updated for the real city; confirm final phrasing before launch)
 
 ## Added at the merged Prompt 5 turn
 

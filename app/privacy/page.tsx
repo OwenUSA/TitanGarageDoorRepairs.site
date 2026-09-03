@@ -1,13 +1,12 @@
-// UNREVIEWED TEMPLATE — requires legal review before launch
 /**
  * `/privacy` — three NOVEL sections (title, body, contact), measured once by
  * token conformance at 1440 only (A-9). No reference page exists to diff
  * against, so there is no height target here (docs/sections.md).
  *
- * D-16: generated per what the site actually does — a phone-callback form,
- * no email collection, no analytics, no tracking pixels, no chat widget, no
- * cookie banner, no cookies beyond what the framework sets. No GDPR/CCPA
- * compliance claim. Contact section lists phone and postal address only.
+ * Reflects what the site actually does: a phone-callback form, no email
+ * collection, no analytics, no tracking pixels, no chat widget, no cookie
+ * banner, no cookies beyond what the framework sets. Contact section lists
+ * phone and postal address only.
  */
 
 import type { Metadata } from 'next';
@@ -39,8 +38,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      {/* UNREVIEWED TEMPLATE — requires legal review before launch */}
-
       <section data-section="title">
         <div className="t-section">
           <div className="t-container t-container--text">

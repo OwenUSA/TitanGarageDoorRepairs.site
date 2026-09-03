@@ -427,7 +427,6 @@ export const contactMap = {
 /* ========================================================================== */
 
 export const privacy = {
-  reviewMarker: 'UNREVIEWED TEMPLATE - requires legal review before launch',
   heading: 'Privacy Policy',
   updated: 'This policy describes how this website handles information today.',
   sections: [

@@ -20,6 +20,20 @@ export const metadata: Metadata = {
   title: meta['/privacy'].title,
   description: meta['/privacy'].description,
   alternates: { canonical: '/privacy' },
+  openGraph: {
+    title: meta['/privacy'].title,
+    description: meta['/privacy'].description,
+    url: '/privacy',
+    siteName: business.name,
+    type: 'website',
+    images: [{ url: '/placeholders/home-hero-bg.jpg', width: 1376, height: 784, alt: business.name }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta['/privacy'].title,
+    description: meta['/privacy'].description,
+    images: ['/placeholders/home-hero-bg.jpg'],
+  },
 };
 
 export default function Page() {

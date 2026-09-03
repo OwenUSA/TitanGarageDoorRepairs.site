@@ -8,6 +8,7 @@
 
 import type { Metadata } from 'next';
 import { meta } from '@/content/copy';
+import { business } from '@/lib/business';
 
 import AboutTitle from '@/components/sections/AboutTitle';
 import AboutStory from '@/components/sections/AboutStory';
@@ -19,6 +20,20 @@ export const metadata: Metadata = {
   title: meta['/about'].title,
   description: meta['/about'].description,
   alternates: { canonical: '/about' },
+  openGraph: {
+    title: meta['/about'].title,
+    description: meta['/about'].description,
+    url: '/about',
+    siteName: business.name,
+    type: 'website',
+    images: [{ url: '/placeholders/home-hero-bg.jpg', width: 1376, height: 784, alt: 'About Titan Garage Door Repairs' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta['/about'].title,
+    description: meta['/about'].description,
+    images: ['/placeholders/home-hero-bg.jpg'],
+  },
 };
 
 export default function Page() {

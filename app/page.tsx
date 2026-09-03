@@ -14,6 +14,7 @@
 
 import type { Metadata } from 'next';
 import { meta } from '@/content/copy';
+import { business } from '@/lib/business';
 
 import HomeHero from '@/components/sections/HomeHero';
 import HomeTrustRow from '@/components/sections/HomeTrustRow';
@@ -30,6 +31,20 @@ export const metadata: Metadata = {
   title: meta['/'].title,
   description: meta['/'].description,
   alternates: { canonical: '/' },
+  openGraph: {
+    title: meta['/'].title,
+    description: meta['/'].description,
+    url: '/',
+    siteName: business.name,
+    type: 'website',
+    images: [{ url: '/placeholders/home-hero-bg.jpg', width: 1376, height: 784, alt: 'Titan Garage Door Repairs' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta['/'].title,
+    description: meta['/'].description,
+    images: ['/placeholders/home-hero-bg.jpg'],
+  },
 };
 
 export default function Page() {

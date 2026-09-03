@@ -19,8 +19,7 @@ export default function HomeServiceB() {
             <img
               className={styles.media}
               src="/placeholders/home-svc-b-img.jpg"
-              alt=""
-              aria-hidden="true"
+              alt="Noisy garage door roller and hinge repair in Oklahoma City"
               width={659}
               height={400}
             />

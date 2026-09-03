@@ -16,6 +16,28 @@ export const metadata: Metadata = {
   // D-15: no analytics, no pixels, no verification tokens.
   robots: { index: true, follow: true },
   icons: { icon: '/placeholders/favicon.png' },
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: meta['/'].title,
+    description: meta['/'].description,
+    url: business.siteUrl,
+    siteName: business.name,
+    type: 'website',
+    images: [
+      {
+        url: '/placeholders/home-hero-bg.jpg',
+        width: 1376,
+        height: 784,
+        alt: business.name,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta['/'].title,
+    description: meta['/'].description,
+    images: ['/placeholders/home-hero-bg.jpg'],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -49,7 +49,7 @@ export default function HomeProjects() {
                   <img
                     className={styles.shot}
                     src={`/placeholders/home-project-${n}-m.jpg`}
-                    alt="Completed garage door repair"
+                    alt={`Completed garage door repair in Oklahoma City, project ${n}`}
                     width={378}
                     height={300}
                     loading="lazy"

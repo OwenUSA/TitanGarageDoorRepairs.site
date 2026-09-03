@@ -43,8 +43,7 @@ export default function CtaBand() {
             <img
               className={styles.media}
               src="/placeholders/home-cta-media.svg"
-              alt=""
-              aria-hidden="true"
+              alt="Garage door repaired by Titan Garage Door Repairs in Oklahoma City"
               width={636}
               height={298}
             />

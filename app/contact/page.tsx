@@ -19,6 +19,7 @@
 
 import type { Metadata } from 'next';
 import { meta } from '@/content/copy';
+import { business } from '@/lib/business';
 
 import ContactTitle from '@/components/sections/ContactTitle';
 import ContactMap from '@/components/sections/ContactMap';
@@ -30,6 +31,20 @@ export const metadata: Metadata = {
   title: meta['/contact'].title,
   description: meta['/contact'].description,
   alternates: { canonical: '/contact' },
+  openGraph: {
+    title: meta['/contact'].title,
+    description: meta['/contact'].description,
+    url: '/contact',
+    siteName: business.name,
+    type: 'website',
+    images: [{ url: '/placeholders/home-hero-bg.jpg', width: 1376, height: 784, alt: 'Contact Titan Garage Door Repairs' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta['/contact'].title,
+    description: meta['/contact'].description,
+    images: ['/placeholders/home-hero-bg.jpg'],
+  },
 };
 
 export default function Page() {

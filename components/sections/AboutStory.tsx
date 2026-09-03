@@ -36,8 +36,7 @@ export default function AboutStory() {
             <img
               className={styles.media}
               src="/placeholders/about-story-img.svg"
-              alt=""
-              aria-hidden="true"
+              alt="Titan Garage Door Repairs technician at work in Oklahoma City"
               width={395}
               height={211}
             />

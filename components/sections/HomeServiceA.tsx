@@ -22,8 +22,7 @@ export default function HomeServiceA() {
             <img
               className={styles.media}
               src="/placeholders/home-svc-a-img.svg"
-              alt=""
-              aria-hidden="true"
+              alt="Garage door safety sensor and track repair in Oklahoma City"
               width={659}
               height={400}
             />

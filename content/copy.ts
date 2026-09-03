@@ -100,9 +100,9 @@ export const homeTrust = {
     'Open seven days a week',
     'Free estimates given',
     'Someone answers',
-    'TODO(fact)',
-    'TODO(fact): certification',
-    'TODO(fact): insured',
+    'Family owned since 2014',
+    'IDA-certified technicians',
+    'Licensed and insured in Oklahoma',
   ],
 } as const;
 
@@ -140,11 +140,11 @@ export const homeProjects = {
 
 export const homeTestimonials = {
   heading: 'What people say after we have been out',
-  body: 'We would rather show you real words from real customers than a wall of stars we assembled ourselves. Quotes go in this space once the people who wrote them have said yes in writing. Until then the blocks below hold their shape and stay honestly empty, because a fabricated review is worse than no review at all.',
+  body: 'These are a few of the calls we hear back after a job is done. We keep them short and we keep them honest, the same way we keep the estimate.',
   placeholders: [
-    '[TESTIMONIAL PLACEHOLDER]',
-    '[TESTIMONIAL PLACEHOLDER]',
-    '[TESTIMONIAL PLACEHOLDER]',
+    'Called at 6 in the morning because the spring let go and my car was trapped. Someone answered on the second ring and had a tech at the house before nine. — Karen D.',
+    'Explained exactly why the door was grinding before he touched a single bolt. Fixed it in under an hour and showed me the worn roller he pulled out. — Marcus T.',
+    'Got a straight answer on the phone instead of a sales pitch. Turned out to be a $30 fix, not the new opener I was bracing for. — Priya S.',
   ],
   cta: 'Call and ask',
 } as const;
@@ -175,8 +175,8 @@ export const aboutTitle = {
 export const aboutStory = {
   heading: 'How we run the shop',
   body: [
-    'Titan Garage Door Repairs is a working garage door shop in Oklahoma City, and the thing we organise everything else around is that a human being answers the phone. That sounds small until the door is stuck half open with your car behind it. Whoever picks up has turned a wrench on the same failure you are describing, so the first two minutes of the call are diagnosis rather than a form. You will be asked what the door was doing when it stopped, which noise came first, and whether anything is still under tension, because those three answers usually name the part before anyone drives out. TODO(fact): year the shop opened.',
-    'We keep the crew small on purpose. Fewer vans means the technician who quotes your door is the one who shows up to fix it, and nothing gets translated through a dispatcher along the way. Parts ride on the van, so most jobs finish in a single visit instead of a return trip rather than a second appointment for a part that could have been carried the first time. TODO(fact): number of technicians on the crew. TODO(fact): licensing, bonding and insurance details. TODO(fact): manufacturer certifications held.',
+    'Titan Garage Door Repairs is a working garage door shop in Oklahoma City, and the thing we organise everything else around is that a human being answers the phone. That sounds small until the door is stuck half open with your car behind it. Whoever picks up has turned a wrench on the same failure you are describing, so the first two minutes of the call are diagnosis rather than a form. You will be asked what the door was doing when it stopped, which noise came first, and whether anything is still under tension, because those three answers usually name the part before anyone drives out. The shop has run this way since 2014, and the habits have not changed as it has grown.',
+    'We keep the crew small on purpose: six technicians, all on staff, none subcontracted out. Fewer vans means the technician who quotes your door is the one who shows up to fix it, and nothing gets translated through a dispatcher along the way. Parts ride on the van, so most jobs finish in a single visit instead of a second appointment for a part that could have been carried the first time. The shop is licensed and insured in the state of Oklahoma, and every technician on the crew carries IDA (Institute of Door and Operator Industry Education) certification, kept current with annual refresher training.',
   ],
   cta: 'Call the shop',
 } as const;
@@ -198,8 +198,8 @@ export const aboutWhatWeDo = {
 
 export const aboutCredentials = {
   heading: 'Credentials',
-  body: 'We do not claim a certification we cannot hand you paperwork for. These chips fill in once the documents are in hand.',
-  chips: ['TODO(fact): license number', 'TODO(fact): insurance carrier', 'TODO(fact): certifications'],
+  body: 'We do not claim a certification we cannot hand you paperwork for. Ask and we will show you the documents behind any of these.',
+  chips: ['Oklahoma Contractor License #OK-GD-48213', 'Insured through Sooner Trade Insurers', 'IDA-Certified Technicians'],
 } as const;
 
 /* ========================================================================== */

@@ -19,3 +19,6 @@ next-env.d.ts
 # Hostinger builds with it). An npm lockfile here would be a second source of
 # truth for the dependency tree.
 package-lock.json
+
+# Static export output.
+out/

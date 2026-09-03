@@ -6,12 +6,11 @@
   "scripts": {
     "dev": "next dev -p 3100",
     "build": "next build",
-    "start": "node scripts/start-standalone.mjs",
+    "serve": "npx serve out",
     "capture:ref": "node harness/capture.mjs --side ref",
     "capture:ours": "node harness/capture.mjs --side ours",
     "diff": "node harness/diff.mjs",
-    "profile": "node harness/profile.mjs",
-    "postbuild": "node scripts/postbuild-standalone.mjs"
+    "profile": "node harness/profile.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.38.0",

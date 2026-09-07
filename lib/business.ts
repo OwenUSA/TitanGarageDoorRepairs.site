@@ -19,13 +19,13 @@ export const business = {
   tagline: 'The door gets fixed right, and a person picks up the phone.',
 
   /** Display form. Rendered as-is; never reformatted at the call site. */
-  phoneDisplay: '(850) 889-8908',
+  phoneDisplay: '(850) 955-3844',
   /** RFC 3966 form for href. The ONLY string that may follow `tel:`. */
-  phoneHref: 'tel:+18508898908',
+  phoneHref: 'tel:+18509553844',
   /** E.164, for JSON-LD `telephone`. */
-  phoneE164: '+1-850-889-8908',
+  phoneE164: '+1-850-955-3844',
   /** Digit-by-digit, so a screen reader reads a number rather than a year. */
-  phoneSpoken: '8 5 0, 8 8 9, 8 9 0 8',
+  phoneSpoken: '8 5 0, 9 5 5, 3 8 4 4',
 
   address: {
     street: '6710 Hunt St, Ste 1',

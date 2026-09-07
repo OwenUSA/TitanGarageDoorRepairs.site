@@ -19,24 +19,24 @@ export const business = {
   tagline: 'The door gets fixed right, and a person picks up the phone.',
 
   /** Display form. Rendered as-is; never reformatted at the call site. */
-  phoneDisplay: '(850) 955-3844',
+  phoneDisplay: '(850) 889-8908',
   /** RFC 3966 form for href. The ONLY string that may follow `tel:`. */
-  phoneHref: 'tel:+18509553844',
+  phoneHref: 'tel:+18508898908',
   /** E.164, for JSON-LD `telephone`. */
-  phoneE164: '+1-850-955-3844',
+  phoneE164: '+1-850-889-8908',
   /** Digit-by-digit, so a screen reader reads a number rather than a year. */
-  phoneSpoken: '8 5 0, 9 5 5, 3 8 4 4',
+  phoneSpoken: '8 5 0, 8 8 9, 8 9 0 8',
 
   address: {
-    street: '1204 N Monroe St',
-    locality: 'Tallahassee',
+    street: '6710 Hunt St, Ste 1',
+    locality: 'Milton',
     region: 'FL',
-    postalCode: '32303',
+    postalCode: '32570',
     country: 'US',
   },
 
-  /** Geocoded from the street address (US Census geocoder). */
-  coords: { lat: 30.4548, lng: -84.2808 },
+  /** Geocoded from the street address (Nominatim/OSM). */
+  coords: { lat: 30.6296, lng: -87.0419 },
 
   hours: {
     /** Human form, single block, all seven days (D-06). */
